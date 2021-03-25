@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Heiroghliphics_translate_project"
