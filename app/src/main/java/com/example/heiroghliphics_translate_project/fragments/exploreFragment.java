@@ -11,6 +11,11 @@ import android.view.ViewGroup;
 import com.example.heiroghliphics_translate_project.R;
 
 public class exploreFragment extends Fragment {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

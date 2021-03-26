@@ -3,21 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/home_nav"
-    app:startDestination="@id/exploreFragment">
-
+    app:startDestination="@id/myTranslationsFragment2">
     <fragment
-        android:id="@+id/exploreFragment"
-        android:name="com.example.heiroghliphics_translate_project.fragments.exploreFragment"
-        android:label="fragment_explore"
-        tools:layout="@layout/fragment_explore" />
-    <fragment
-        android:id="@+id/myTranslationsFragment"
+        android:id="@+id/myTranslationsFragment2"
         android:name="com.example.heiroghliphics_translate_project.fragments.myTranslationsFragment"
         android:label="fragment_my_translations"
         tools:layout="@layout/fragment_my_translations" />
     <fragment
-        android:id="@+id/cameraFragment"
-        android:name="com.example.heiroghliphics_translate_project.cameraFragment"
+        android:id="@+id/exploreFragment2"
+        android:name="com.example.heiroghliphics_translate_project.fragments.exploreFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" />
+    <fragment
+        android:id="@+id/cameraFragment2"
+        android:name="com.example.heiroghliphics_translate_project.fragments.cameraFragment"
         android:label="fragment_camera"
         tools:layout="@layout/fragment_camera" />
 </navigation>

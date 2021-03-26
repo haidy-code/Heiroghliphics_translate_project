@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:tools="http://schemas.android.com/tools"
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/exploreFragment"
+        android:id="@+id/exploreFragment2"
         android:icon="@drawable/ic_home"
         android:title="Explore"
         tools:ignore="HardcodedText" />
    <item
-       android:id="@+id/cameraFragment"
+       android:id="@+id/cameraFragment2"
        android:title=""
        />
     <item
-        android:id="@+id/myTranslationsFragment"
+        android:id="@+id/myTranslationsFragment2"
         android:icon="@drawable/ic_add_bookmark"
         android:title="MyTranslations"
         tools:ignore="HardcodedText" />
