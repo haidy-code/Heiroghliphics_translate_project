@@ -51,10 +51,10 @@
         
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        app:layout_anchor="@id/bottomAppBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_photo_camera"
-        app:layout_anchor="@id/bottomAppBar"
         android:backgroundTint="@color/yellow"
         app:useCompatPadding="true"
         tools:ignore="ContentDescription" />
