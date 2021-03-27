@@ -51,12 +51,12 @@ public class myTranslationsFragment extends Fragment {
         placesRvAdapter = new PlacesRVAdapter(placesList, requireContext());
 
         placesRv.setLayoutManager(new GridLayoutManager(requireContext(),1,GridLayoutManager.VERTICAL,false));
-        placesRv.addItemDecoration(new DividerItemDecoration(requireContext(), LinearLayoutManager.VERTICAL));
+        placesRv.addItemDecoration(new DividerItemDecoration(requireContext(), 0));
 
         placesRv.setAdapter(placesRvAdapter);
     }
     private void addDataToList() {
-        PlacesModel placesModel=new PlacesModel("pyramids",R.drawable.ic_launcher_background);
+        PlacesModel placesModel=new PlacesModel("Add Another Folder",R.drawable.add);
         placesList.add(placesModel);
         placesList.add(placesModel);
         placesList.add(placesModel);

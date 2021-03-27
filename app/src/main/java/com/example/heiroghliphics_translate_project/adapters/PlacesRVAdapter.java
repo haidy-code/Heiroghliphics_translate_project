@@ -36,7 +36,7 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
     public void onBindViewHolder(@NonNull Placesviewholder holder, int position) {
         PlacesModel placesModel=placesList.get(position);;
         holder.nametv.setText(placesModel.getName());
-        Glide.with(context).load(R.drawable.ic_launcher_background).into(holder.imageiv);
+        Glide.with(context).load(placesModel.getImage()).into(holder.imageiv);
     }
 
     @Override
@@ -50,6 +50,7 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
         public Placesviewholder(@NonNull View itemView) {
             super(itemView);
             nametv=itemView.findViewById(R.id.place_tv);
+
             imageiv=itemView.findViewById(R.id.place_iv);
         }
     }
