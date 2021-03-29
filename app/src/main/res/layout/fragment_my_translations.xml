@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.myTranslationsFragment">
 
+<!--    *************************start of left rounded yellow by using linear comp****************-->
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/yellow_linearlayout"
         android:layout_width="100dp"
@@ -18,23 +19,26 @@
         android:backgroundTint="@color/yellow"
         android:layout_marginBottom="120dp"
         android:layout_marginTop="70dp"
-        >
+        />
+    <!--    *************************End of left rounded yellow by using linear comp****************-->
 
+<!--    ******************* Start of Recycler View inside constrain layout******************-->
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/places_rv"
+        android:id="@+id/translationPlaces_rv"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="150dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="150dp"
         android:layout_marginTop="100dp"
-        android:layout_marginLeft="30dp"
-
+        android:layout_marginStart="30dp"
         />
+    <!--    ******************* End of Recycler View inside constrain layout******************-->
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

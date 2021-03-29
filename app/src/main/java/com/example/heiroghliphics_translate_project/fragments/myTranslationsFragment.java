@@ -6,7 +6,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -30,29 +29,24 @@ public class myTranslationsFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_my_translations, container, false);
-        placesRv=view.findViewById(R.id.places_rv);
+        placesRv=view.findViewById(R.id.translationPlaces_rv);
         return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        setuprecyclerview();
+        setupRecycleVview();
         addDataToList();
     }
 
-    private void setuprecyclerview() {
-
-
+    private void setupRecycleVview() {
         placesRvAdapter = new PlacesRVAdapter(placesList, requireContext());
-
         placesRv.setLayoutManager(new GridLayoutManager(requireContext(),1,GridLayoutManager.VERTICAL,false));
         placesRv.addItemDecoration(new DividerItemDecoration(requireContext(), 0));
-
         placesRv.setAdapter(placesRvAdapter);
     }
     private void addDataToList() {

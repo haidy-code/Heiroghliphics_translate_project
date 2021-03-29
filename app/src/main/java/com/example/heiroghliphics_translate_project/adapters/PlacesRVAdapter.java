@@ -35,8 +35,8 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
     @Override
     public void onBindViewHolder(@NonNull Placesviewholder holder, int position) {
         PlacesModel placesModel=placesList.get(position);;
-        holder.nametv.setText(placesModel.getName());
-        Glide.with(context).load(placesModel.getImage()).into(holder.imageiv);
+        holder.translationNametv.setText(placesModel.getName());
+        Glide.with(context).load(placesModel.getImage()).into(holder.folderTranslationImageiv);
     }
 
     @Override
@@ -45,13 +45,13 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
     }
 
     class Placesviewholder extends RecyclerView.ViewHolder{
-        TextView nametv;
-        ImageView imageiv;
+        TextView translationNametv;
+        ImageView folderTranslationImageiv;
         public Placesviewholder(@NonNull View itemView) {
             super(itemView);
-            nametv=itemView.findViewById(R.id.place_tv);
+            translationNametv=itemView.findViewById(R.id.translationPlace_tv);
 
-            imageiv=itemView.findViewById(R.id.place_iv);
+            folderTranslationImageiv=itemView.findViewById(R.id.folderTranslationImage_iv);
         }
     }
 }

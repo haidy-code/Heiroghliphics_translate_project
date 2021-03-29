@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
 //        disable camera item which defined in menu as a blanked for desgin
         bottomNavigationView.getMenu().getItem(1).setEnabled(false);
 
-
 //      *************************end of bottom navigation***************************
 
     }

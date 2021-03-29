@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/exploreFragment2"
+        android:id="@+id/translationFullDetailFragment"
         android:icon="@drawable/ic_home"
         android:title="Explore"
         tools:ignore="HardcodedText" />

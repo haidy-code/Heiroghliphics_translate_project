@@ -10,7 +10,7 @@
         android:label="fragment_my_translations"
         tools:layout="@layout/fragment_my_translations" />
     <fragment
-        android:id="@+id/exploreFragment2"
+        android:id="@+id/translationFullDetailFragment"
         android:name="com.example.heiroghliphics_translate_project.fragments.exploreFragment"
         android:label="fragment_explore"
         tools:layout="@layout/fragment_explore" />
@@ -19,4 +19,9 @@
         android:name="com.example.heiroghliphics_translate_project.fragments.cameraFragment"
         android:label="fragment_camera"
         tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/translationFullDetailFragment"
+        android:name="com.example.heiroghliphics_translate_project.fragments.translationFullDetailFragment"
+        android:label="fragment_translation_full_detail"
+        tools:layout="@layout/fragment_translation_full_detail" />
 </navigation>
