@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -44,9 +45,14 @@ public class myTranslationsFragment extends Fragment {
     }
 
     private void setupRecycleVview() {
-        placesRvAdapter = new PlacesRVAdapter(placesList, requireContext());
+        placesRvAdapter = new PlacesRVAdapter(placesList, requireContext(), new PlacesRVAdapter.OnPlaceClickListener() {
+            @Override
+            public void onPlaceClick(View view, int position) {
+                Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment2_to_place_translationFragment);
+            }
+        });
         placesRv.setLayoutManager(new GridLayoutManager(requireContext(),1,GridLayoutManager.VERTICAL,false));
-        placesRv.addItemDecoration(new DividerItemDecoration(requireContext(), 0));
+        placesRv.addItemDecoration(new DividerItemDecoration(requireContext(), 0));//orientation zero brcause i deleted line seperating each item in recycler view
         placesRv.setAdapter(placesRvAdapter);
     }
     private void addDataToList() {

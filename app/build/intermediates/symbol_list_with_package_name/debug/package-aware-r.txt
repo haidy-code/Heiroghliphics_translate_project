@@ -1742,6 +1742,7 @@ drawable ic_photo_camera
 drawable ic_right_arrow
 drawable ic_search_black_24dp
 drawable layout_bg
+drawable leftarrow
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1859,6 +1860,8 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_myTranslationsFragment2_to_place_translationFragment
+id action_place_translationFragment_to_myTranslationsFragment2
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1882,6 +1885,8 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back_btn
+id backtotranslation_tv
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -1927,6 +1932,7 @@ id custom
 id customPanel
 id cut
 id date_picker_actions
+id date_tv
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -2103,7 +2109,13 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id photo_1_tv_places_translation
+id photo_2_tv_places_translation
+id photo_3_tv_places_translation
 id pin
+id place_mame_tv
+id place_translationFragment
+id placestranslation_rv
 id position
 id postLayout
 id progress_circular
@@ -2231,6 +2243,7 @@ id unlabeled
 id up
 id useLogo
 id view_offset_helper
+id viewall_tv
 id visible
 id visible_removing_fragment_view_tag
 id withText
@@ -2328,6 +2341,7 @@ layout design_text_input_start_icon
 layout fragment_camera
 layout fragment_explore
 layout fragment_my_translations
+layout fragment_place_translation
 layout fragment_translation_full_detail
 layout material_chip_input_combo
 layout material_clock_display
@@ -2388,6 +2402,7 @@ layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout places_rv_item
+layout places_translation_rv_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

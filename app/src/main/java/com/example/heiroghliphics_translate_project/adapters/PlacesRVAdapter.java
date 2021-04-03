@@ -17,12 +17,19 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Placesviewholder> {
+
     private List<PlacesModel> placesList;
     private Context context;
+    private OnPlaceClickListener onPlaceClickListener;
 
-    public PlacesRVAdapter(List<PlacesModel> placesList, Context context) {
+    public interface OnPlaceClickListener {
+        void onPlaceClick(View view, int position);
+    }
+
+    public PlacesRVAdapter(List<PlacesModel> placesList, Context context, OnPlaceClickListener onPlaceClickListener) {
         this.placesList = placesList;
         this.context = context;
+        this.onPlaceClickListener = onPlaceClickListener;
     }
 
     @NonNull
@@ -33,10 +40,16 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Placesviewholder holder, int position) {
+    public void onBindViewHolder(@NonNull final Placesviewholder holder, int position) {
         PlacesModel placesModel=placesList.get(position);;
         holder.translationNametv.setText(placesModel.getName());
         Glide.with(context).load(placesModel.getImage()).into(holder.folderTranslationImageiv);
+        holder.arrow_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+onPlaceClickListener.onPlaceClick(view,holder.getAdapterPosition());
+            }
+        });
     }
 
     @Override
@@ -47,11 +60,13 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
     class Placesviewholder extends RecyclerView.ViewHolder{
         TextView translationNametv;
         ImageView folderTranslationImageiv;
+      ImageView arrow_iv;
         public Placesviewholder(@NonNull View itemView) {
             super(itemView);
             translationNametv=itemView.findViewById(R.id.translationPlace_tv);
 
             folderTranslationImageiv=itemView.findViewById(R.id.folderTranslationImage_iv);
+            arrow_iv=itemView.findViewById(R.id.arrow_iv);
         }
     }
 }

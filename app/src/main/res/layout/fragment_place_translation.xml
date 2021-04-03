@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Place_translationFragment">
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/backtotranslation_tv"
+        app:layout_constraintTop_toTopOf="@+id/backtotranslation_tv"
+        app:layout_constraintBottom_toBottomOf="@+id/backtotranslation_tv"
+        android:background="@drawable/leftarrow"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+
+
+        />
+    <TextView
+        android:id="@+id/backtotranslation_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/back_btn"
+        app:layout_constraintBottom_toTopOf="@+id/place_mame_tv"
+        android:text="Back To My Translations"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="#000"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+    <TextView
+        android:id="@+id/place_mame_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backtotranslation_tv"
+        app:layout_constraintBottom_toTopOf="@+id/placestranslation_rv"
+        android:text="Pyramids Of Giza"
+        android:textSize="25sp"
+        android:textColor="#FFD600"
+android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/placestranslation_rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/place_mame_tv"
+        android:layout_marginBottom="100dp"
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
