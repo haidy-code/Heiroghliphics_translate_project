@@ -8,6 +8,10 @@
         "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/layout/fragment_camera.xml"
     },
     {
+        "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_arrow_down_24.xml.flat",
+        "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_arrow_down_24.xml"
+    },
+    {
         "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/menu_bottom_nav_menu.xml.flat",
         "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/menu/bottom_nav_menu.xml"
     },
@@ -80,12 +84,12 @@
         "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/font/mulish_bold.ttf"
     },
     {
-        "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
         "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_extralightitalic.ttf.flat",
         "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/font/mulish_extralightitalic.ttf"
+    },
+    {
+        "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
         "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_extrabold.ttf.flat",

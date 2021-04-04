@@ -1730,6 +1730,7 @@ drawable design_snackbar_background
 drawable horizontal_layout
 drawable ic__col_heiroglyphic
 drawable ic_add_bookmark
+drawable ic_arrow_down_24
 drawable ic_clock_black_24dp
 drawable ic_close_24
 drawable ic_home
@@ -1867,6 +1868,7 @@ id action_myTranslationsFragment_to_place_translationFragment
 id action_place_translationFragment_to_myTranslationsFragment
 id action_place_translationFragment_to_translationFullDetailFragment
 id action_text
+id action_translationFullDetailFragment_to_place_translationFragment
 id actions
 id activity_chooser_view_content
 id actual_translation_tv
@@ -1891,6 +1893,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id back_btn
+id back_to_place_translation_iv
 id backtotranslation_tv
 id barrier
 id baseline

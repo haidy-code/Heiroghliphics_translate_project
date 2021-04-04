@@ -11,53 +11,55 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:text="28 May"
+        android:fontFamily="@font/mulish_bold"
+        android:textColor="@color/darkGray"
         android:textSize="20sp"
         android:textAllCaps="false"
-        android:textColor="#000"
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="120dp"
+        android:layout_marginTop="20dp"
 
         />
-<TextView
-    android:id="@+id/viewall_tv"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintTop_toTopOf="@+id/date_tv"
-    app:layout_constraintBottom_toBottomOf="@+id/date_tv"
-    app:layout_constraintRight_toRightOf="parent"
-    android:text="View all"
-    android:textAllCaps="false"
-    android:textColor="#FFD600"
-    android:textStyle="bold"
-    android:textSize="15dp"
-    android:layout_marginRight="20dp"/>
-    <ImageView
-        android:id="@+id/photo_1_tv_places_translation"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        app:layout_constraintStart_toStartOf="@+id/date_tv"
-        app:layout_constraintTop_toBottomOf="@+id/date_tv"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/demotranslation2"
-        />
-    <ImageView
-        android:id="@+id/photo_2_tv_places_translation"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        app:layout_constraintLeft_toRightOf="@+id/photo_1_tv_places_translation"
-        app:layout_constraintTop_toTopOf="@+id/photo_1_tv_places_translation"
-        android:layout_marginLeft="20dp"
-        android:src="@drawable/demotranslation2"
-        />
-    <ImageView
-        android:id="@+id/photo_3_tv_places_translation"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        app:layout_constraintLeft_toRightOf="@+id/photo_2_tv_places_translation"
-        app:layout_constraintTop_toTopOf="@+id/photo_2_tv_places_translation"
-        android:layout_marginLeft="20dp"
-        android:src="@drawable/demotranslation2"
-        />
+        <TextView
+        android:id="@+id/viewall_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/date_tv"
+        app:layout_constraintBottom_toBottomOf="@+id/date_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="View all"
+        android:textAllCaps="false"
+        android:textColor="@color/yellow"
+            android:fontFamily="@font/mulish_bold"
+        android:textSize="15dp"
+        android:layout_marginRight="20dp"/>
+        <ImageView
+            android:id="@+id/photo_1_tv_places_translation"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:layout_constraintStart_toStartOf="@+id/date_tv"
+            app:layout_constraintTop_toBottomOf="@+id/date_tv"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/demotranslation2"
+            />
+        <ImageView
+            android:id="@+id/photo_2_tv_places_translation"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toRightOf="@+id/photo_1_tv_places_translation"
+            app:layout_constraintTop_toTopOf="@+id/photo_1_tv_places_translation"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/demotranslation2"
+            />
+        <ImageView
+            android:id="@+id/photo_3_tv_places_translation"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toRightOf="@+id/photo_2_tv_places_translation"
+            app:layout_constraintTop_toTopOf="@+id/photo_2_tv_places_translation"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/demotranslation2"
+            />
 
 
 
