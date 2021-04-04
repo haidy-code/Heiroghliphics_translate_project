@@ -48,7 +48,7 @@ public class myTranslationsFragment extends Fragment {
         placesRvAdapter = new PlacesRVAdapter(placesList, requireContext(), new PlacesRVAdapter.OnPlaceClickListener() {
             @Override
             public void onPlaceClick(View view, int position) {
-                Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment2_to_place_translationFragment);
+                Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment_to_place_translationFragment);
             }
         });
         placesRv.setLayoutManager(new GridLayoutManager(requireContext(),1,GridLayoutManager.VERTICAL,false));

@@ -59,7 +59,7 @@ public class Place_translationFragment extends Fragment {
         back_iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.action_place_translationFragment_to_myTranslationsFragment2);
+                Navigation.findNavController(view).navigate(R.id.action_place_translationFragment_to_myTranslationsFragment);
             }
         });
 
