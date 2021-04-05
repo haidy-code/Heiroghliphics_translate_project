@@ -14,6 +14,7 @@ import com.example.heiroghliphics_translate_project.models.PlacesModel;
 import java.util.List;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Placesviewholder> {
@@ -47,7 +48,9 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
         holder.arrow_iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-onPlaceClickListener.onPlaceClick(view,holder.getAdapterPosition());
+        onPlaceClickListener.onPlaceClick(view,holder.getAdapterPosition());
+
+
             }
         });
     }
@@ -67,6 +70,14 @@ onPlaceClickListener.onPlaceClick(view,holder.getAdapterPosition());
 
             folderTranslationImageiv=itemView.findViewById(R.id.folderTranslationImage_iv);
             arrow_iv=itemView.findViewById(R.id.arrow_iv);
+
+//            function navigate from myTranslationfolders Fragment to addNewFolder Fragment
+            folderTranslationImageiv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Navigation.findNavController(v).navigate(R.id.action_myTranslationsFragment_to_addNewFolderFragment);
+                }
+            });
         }
     }
 }

@@ -31,7 +31,6 @@ public class Place_translationFragment extends Fragment {
     PlacesTranslationRVAdapter placestranslationRvAdapter;
     private ArrayList<PlacesTranslationModel> placestranslationList = new ArrayList<>();
     private ImageView back_iv;
-    TextView translatedImage; //for delete
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,7 +44,6 @@ public class Place_translationFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_place_translation, container, false);
         placestranslationRV=view.findViewById(R.id.placestranslation_rv);
-        translatedImage=view.findViewById(R.id.place_mame_tv); //for delete
         back_iv=view.findViewById(R.id.back_btn);
         return view;
     }
@@ -56,18 +54,9 @@ public class Place_translationFragment extends Fragment {
         setupRecycleVview();
         addDataToList();
         backclicklistener();
-        clickTranslatedImage();//for delete
     }
 
-//    *************************** Fuction on click translated Image go to translationFullDetail Fragment  **************************
-    private  void clickTranslatedImage(){
-        translatedImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Navigation.findNavController(v).navigate(R.id.action_place_translationFragment_to_translationFullDetailFragment);
-            }
-        });
-    }
+
  //    *************************** Fuction on click backIcon go From placeTranslation to myTranslation Fragment **************************
 
     private void backclicklistener() {

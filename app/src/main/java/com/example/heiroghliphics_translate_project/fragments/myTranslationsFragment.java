@@ -19,6 +19,8 @@ import com.example.heiroghliphics_translate_project.models.PlacesModel;
 
 import java.util.ArrayList;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class myTranslationsFragment extends Fragment {
     private RecyclerView placesRv;
     PlacesRVAdapter placesRvAdapter;
@@ -41,8 +43,7 @@ public class myTranslationsFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         setupRecycleVview();
-        addDataToList();
-    }
+        addDataToList();}
 
     private void setupRecycleVview() {
         placesRvAdapter = new PlacesRVAdapter(placesList, requireContext(), new PlacesRVAdapter.OnPlaceClickListener() {

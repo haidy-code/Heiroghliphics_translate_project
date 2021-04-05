@@ -15,6 +15,7 @@ import com.example.heiroghliphics_translate_project.models.PlacesTranslationMode
 import java.util.List;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class PlacesTranslationRVAdapter extends RecyclerView.Adapter<PlacesTranslationRVAdapter.PlacesTranslationViewholder> {
@@ -63,6 +64,12 @@ public class PlacesTranslationRVAdapter extends RecyclerView.Adapter<PlacesTrans
             photo2Imageiv=itemView.findViewById(R.id.photo_2_tv_places_translation);
             photo3Imageiv=itemView.findViewById(R.id.photo_3_tv_places_translation);
 
+            //    *************************** Fuction on click translated Image go to translationFullDetail Fragment  **************************
+            photo1Imageiv.setOnClickListener(new View.OnClickListener() {
+              @Override
+               public void onClick(View v) {
+                  Navigation.findNavController(v).navigate(R.id.action_place_translationFragment_to_translationFullDetailFragment); }
+                });
         }
     }
 }
