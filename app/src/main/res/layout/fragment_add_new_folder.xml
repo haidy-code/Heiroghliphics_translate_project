@@ -97,6 +97,44 @@
            style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
 
            />
+       <TextView
+           android:id="@+id/select_image_tv"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@+id/select_date_tv"
+           app:layout_constraintStart_toStartOf="@+id/select_date_tv"
+           android:text="Select Image"
+           android:layout_marginTop="50dp"
+           android:fontFamily="@font/mulish_bold"
+           />
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           app:layout_constraintStart_toStartOf="@+id/date_picker_btn"
+           app:layout_constraintEnd_toEndOf="@+id/date_picker_btn"
+           app:layout_constraintTop_toTopOf="@+id/select_image_tv"
+           app:layout_constraintBottom_toBottomOf="@+id/select_image_tv"
+           android:background="@drawable/horizontal_layout"
+           android:text="choose Folder Image"
+           android:fontFamily="@font/mulish_bold"
+           android:textColor="#000"
+           />
+
+       <Button
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:layout_marginBottom="50dp"
+           android:layout_marginStart="30dp"
+           android:layout_marginEnd="30dp"
+           android:text="add folder"
+           android:fontFamily="@font/mulish_bold"
+           android:textColor="#000"
+           app:cornerRadius="58dp"
+
+           />
 
 
 
