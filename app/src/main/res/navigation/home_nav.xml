@@ -30,19 +30,6 @@
         android:label="fragment_camera"
         tools:layout="@layout/fragment_camera" />
     <fragment
-        android:id="@+id/translationFullDetailFragment"
-        android:name="com.example.heiroghliphics_translate_project.fragments.translationFullDetailFragment"
-        android:label="fragment_translation_full_detail"
-        tools:layout="@layout/fragment_translation_full_detail" >
-        <action
-            android:id="@+id/action_translationFullDetailFragment_to_place_translationFragment"
-            app:destination="@id/place_translationFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
-    </fragment>
-    <fragment
         android:id="@+id/exploreFragment"
         android:name="com.example.heiroghliphics_translate_project.fragments.exploreFragment"
         android:label="fragment_explore"
@@ -53,15 +40,15 @@
         android:label="fragment_place_translation"
         tools:layout="@layout/fragment_place_translation" >
         <action
-            android:id="@+id/action_place_translationFragment_to_translationFullDetailFragment"
-            app:destination="@id/translationFullDetailFragment"
+            android:id="@+id/action_place_translationFragment_to_myTranslationsFragment"
+            app:destination="@id/myTranslationsFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
         <action
-            android:id="@+id/action_place_translationFragment_to_myTranslationsFragment"
-            app:destination="@id/myTranslationsFragment"
+            android:id="@+id/action_place_translationFragment_to_translationFullDetailFragment"
+            app:destination="@id/translationFullDetailFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
@@ -79,5 +66,21 @@
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_exit_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/translationFullDetailFragment"
+        android:name="com.example.heiroghliphics_translate_project.fragments.translationFullDetailFragment"
+        android:label="fragment_translation_full_detail"
+        tools:layout="@layout/fragment_translation_full_detail" >
+        <action
+            android:id="@+id/action_translationFullDetailFragment_to_place_translationFragment"
+            app:destination="@id/place_translationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_translationFullDetailFragment_to_place_translationFragment3"
+            app:destination="@id/place_translationFragment" />
     </fragment>
 </navigation>

@@ -16,12 +16,12 @@
         "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/menu/bottom_nav_menu.xml"
     },
     {
-        "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_search_black_24dp.xml.flat",
@@ -68,20 +68,20 @@
         "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/font/mulish_italic.ttf"
     },
     {
-        "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_bold.ttf.flat",
-        "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/font/mulish_bold.ttf"
-    },
-    {
-        "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_leftarrow.xml.flat",
-        "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/drawable/leftarrow.xml"
+        "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable-xhdpi_demotranslation2.png.flat",
         "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/drawable-xhdpi/demotranslation2.png"
     },
     {
-        "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_leftarrow.xml.flat",
+        "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/drawable/leftarrow.xml"
+    },
+    {
+        "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_bold.ttf.flat",
+        "source": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/res/font/mulish_bold.ttf"
     },
     {
         "merged": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_extralightitalic.ttf.flat",

@@ -6,8 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.myTranslationsFragment">
 
-<!--    *************************start of left rounded yellow by using linear comp****************-->
-    <androidx.appcompat.widget.LinearLayoutCompat
+<!--    *************************start of left rounded yellow****************-->
+    <View
         android:id="@+id/yellow_linearlayout"
         android:layout_width="100dp"
         android:layout_height="0dp"
@@ -18,26 +18,10 @@
         android:background="@drawable/layout_bg"
         android:backgroundTint="@color/yellow"
         android:layout_marginBottom="120dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="120dp"
+        android:elevation="7dp"
         />
-    <!--    *************************End of left rounded yellow by using linear comp****************-->
-
-<!--    ******************* Start of Recycler View inside constrain layout******************-->
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/translationPlaces_rv"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginBottom="150dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginStart="30dp"
-        />
-    <!--    ******************* End of Recycler View inside constrain layout******************-->
-
+    <!--    *************************End of left rounded yellow ****************-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,8 +32,27 @@
         android:text="My Translations"
         android:textSize="20sp"
         android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"/>
+        android:textColor="@color/darkGray"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/mulish_bold"
+        />
+
+<!--    ******************* Start of Recycler View inside constrain layout******************-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/translationPlaces_rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/yellow_linearlayout"
+        app:layout_constraintTop_toTopOf="@+id/yellow_linearlayout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:elevation="7dp"
+
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -75,6 +75,7 @@ public class Place_translationFragment extends Fragment {
         placestranslationList.add(placesTranslationModel);
         placestranslationList.add(placesTranslationModel);
         placestranslationList.add(placesTranslationModel);
+        placestranslationList.add(placesTranslationModel);
     }
 
     private void setupRecycleVview() {

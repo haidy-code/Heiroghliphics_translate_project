@@ -62,5 +62,9 @@ public class myTranslationsFragment extends Fragment {
         placesList.add(placesModel);
         placesList.add(placesModel);
         placesList.add(placesModel);
+        placesList.add(placesModel);
+        placesList.add(placesModel);
+        placesList.add(placesModel);
+
     }
 }
