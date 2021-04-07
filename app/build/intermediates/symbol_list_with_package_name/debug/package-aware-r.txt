@@ -1848,6 +1848,8 @@ id accessibility_custom_action_8
 id accessibility_custom_action_9
 id action0
 id action_addNewFolderFragment_to_myTranslationsFragment
+id action_allTranslationsFragment_to_place_translationFragment
+id action_allTranslationsFragment_to_translationFullDetailFragment
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1866,9 +1868,11 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_myTranslationsFragment_to_addNewFolderFragment
 id action_myTranslationsFragment_to_place_translationFragment
+id action_place_translationFragment_to_allTranslationsFragment
 id action_place_translationFragment_to_myTranslationsFragment
 id action_place_translationFragment_to_translationFullDetailFragment
 id action_text
+id action_translationFullDetailFragment_to_allTranslationsFragment
 id action_translationFullDetailFragment_to_place_translationFragment
 id action_translationFullDetailFragment_to_place_translationFragment3
 id actions
@@ -1879,6 +1883,9 @@ id addNewFolderFragment
 id alertTitle
 id aligned
 id all
+id allTranslationsFragment
+id all_translation_photo_iv
+id all_translation_rv
 id always
 id analyzed_photo_1_tv
 id analyzed_photo_2_tv
@@ -1895,7 +1902,9 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id back_btn
+id back_to_place_btn
 id back_to_place_translation_iv
+id back_to_place_translation_tv
 id backtotranslation_tv
 id barrier
 id baseline
@@ -2167,6 +2176,7 @@ id search_src_text
 id search_voice_btn
 id select_date_tv
 id select_dialog_listview
+id select_image_tv
 id selected
 id selection_type
 id seprator_add_folder_v
@@ -2339,6 +2349,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout all_translation_rv
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2356,6 +2367,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_add_new_folder
+layout fragment_all_translations
 layout fragment_camera
 layout fragment_explore
 layout fragment_my_translations
