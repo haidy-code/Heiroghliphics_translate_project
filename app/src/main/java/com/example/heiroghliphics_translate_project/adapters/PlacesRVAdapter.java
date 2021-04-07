@@ -45,12 +45,21 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
         PlacesModel placesModel=placesList.get(position);;
         holder.translationNametv.setText(placesModel.getName());
         Glide.with(context).load(placesModel.getImage()).into(holder.folderTranslationImageiv);
+
+        //navigate from my translation to place translation
         holder.arrow_iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-        onPlaceClickListener.onPlaceClick(view,holder.getAdapterPosition());
+                Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment_to_place_translationFragment);
+            }
+        });
 
 
+        //          navigate from myTranslationfolders Fragment to addNewFolder Fragment
+        holder.folderTranslationImageiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.action_myTranslationsFragment_to_addNewFolderFragment);
             }
         });
     }
@@ -67,17 +76,9 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
         public Placesviewholder(@NonNull View itemView) {
             super(itemView);
             translationNametv=itemView.findViewById(R.id.translationPlace_tv);
-
             folderTranslationImageiv=itemView.findViewById(R.id.folderTranslationImage_iv);
             arrow_iv=itemView.findViewById(R.id.arrow_iv);
 
-//            function navigate from myTranslationfolders Fragment to addNewFolder Fragment
-            folderTranslationImageiv.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Navigation.findNavController(v).navigate(R.id.action_myTranslationsFragment_to_addNewFolderFragment);
-                }
-            });
         }
     }
 }

@@ -54,6 +54,8 @@ public class Place_translationFragment extends Fragment {
         setupRecycleVview();
         addDataToList();
         backclicklistener();
+
+
     }
 
 

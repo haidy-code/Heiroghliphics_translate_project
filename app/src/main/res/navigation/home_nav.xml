@@ -53,6 +53,13 @@
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_place_translationFragment_to_allTranslationsFragment"
+            app:destination="@id/allTranslationsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/addNewFolderFragment"
@@ -82,5 +89,32 @@
         <action
             android:id="@+id/action_translationFullDetailFragment_to_place_translationFragment3"
             app:destination="@id/place_translationFragment" />
+        <action
+            android:id="@+id/action_translationFullDetailFragment_to_allTranslationsFragment"
+            app:destination="@id/allTranslationsFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/allTranslationsFragment"
+        android:name="com.example.heiroghliphics_translate_project.fragments.allTranslationsFragment"
+        android:label="fragment_all_translations"
+        tools:layout="@layout/fragment_all_translations" >
+        <action
+            android:id="@+id/action_allTranslationsFragment_to_place_translationFragment"
+            app:destination="@id/place_translationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_allTranslationsFragment_to_translationFullDetailFragment"
+            app:destination="@id/translationFullDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
 </navigation>

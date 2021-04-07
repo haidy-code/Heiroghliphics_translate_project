@@ -43,6 +43,13 @@ public class PlacesTranslationRVAdapter extends RecyclerView.Adapter<PlacesTrans
         Glide.with(context).load(placesTranslationModel.getImage2()).into(holder.photo2Imageiv);
         Glide.with(context).load(placesTranslationModel.getImage3()).into(holder.photo3Imageiv);
 
+        holder.viewAllTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.action_place_translationFragment_to_allTranslationsFragment);
+            }
+        });
+
     }
 
     @Override
@@ -55,6 +62,8 @@ public class PlacesTranslationRVAdapter extends RecyclerView.Adapter<PlacesTrans
         ImageView photo1Imageiv;
         ImageView photo2Imageiv;
         ImageView photo3Imageiv;
+        TextView viewAllTv;
+
 
 
         public PlacesTranslationViewholder(@NonNull View itemView) {
@@ -63,6 +72,8 @@ public class PlacesTranslationRVAdapter extends RecyclerView.Adapter<PlacesTrans
             photo1Imageiv=itemView.findViewById(R.id.photo_1_tv_places_translation);
             photo2Imageiv=itemView.findViewById(R.id.photo_2_tv_places_translation);
             photo3Imageiv=itemView.findViewById(R.id.photo_3_tv_places_translation);
+            viewAllTv=itemView.findViewById(R.id.viewall_tv);
+
 
             //    *************************** Fuction on click translated Image go to translationFullDetail Fragment  **************************
             photo1Imageiv.setOnClickListener(new View.OnClickListener() {
