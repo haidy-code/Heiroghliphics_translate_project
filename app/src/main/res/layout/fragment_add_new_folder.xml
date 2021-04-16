@@ -107,7 +107,22 @@
            android:layout_marginTop="50dp"
            android:fontFamily="@font/mulish_bold"
            />
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/selected_image_iv"
+           app:layout_constraintTop_toTopOf="@+id/select_image_tv"
+           app:layout_constraintBottom_toBottomOf="@+id/select_image_tv"
+           app:layout_constraintStart_toEndOf="@+id/select_image_tv"
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           android:layout_width="60dp"
+           android:layout_height="60dp"
+           android:src="@drawable/add"
+           android:layout_marginStart="20dp"
+           android:elevation="10dp"
+           app:civ_border_width="10dp"
+           app:civ_border_color="#fff"
+           />
        <Button
+           android:id="@+id/select_image_btn"
            android:layout_width="0dp"
            android:layout_height="wrap_content"
            app:layout_constraintStart_toStartOf="@+id/date_picker_btn"
@@ -115,9 +130,10 @@
            app:layout_constraintTop_toTopOf="@+id/select_image_tv"
            app:layout_constraintBottom_toBottomOf="@+id/select_image_tv"
            android:background="@drawable/horizontal_layout"
-           android:text="choose Folder Image"
+           android:text="choose Image"
            android:fontFamily="@font/mulish_bold"
            android:textColor="#000"
+           android:textSize="12sp"
            />
 
        <Button

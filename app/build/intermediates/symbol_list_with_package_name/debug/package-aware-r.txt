@@ -2176,8 +2176,10 @@ id search_src_text
 id search_voice_btn
 id select_date_tv
 id select_dialog_listview
+id select_image_btn
 id select_image_tv
 id selected
+id selected_image_iv
 id selection_type
 id seprator_add_folder_v
 id seprator_v

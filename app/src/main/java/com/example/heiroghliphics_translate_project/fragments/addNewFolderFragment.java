@@ -3,6 +3,8 @@ package com.example.heiroghliphics_translate_project.fragments;
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -19,10 +21,15 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.example.heiroghliphics_translate_project.MainActivity;
 import com.example.heiroghliphics_translate_project.R;
 
 import java.util.Calendar;
+
+import de.hdodenhof.circleimageview.CircleImageView;
+
+import static android.app.Activity.RESULT_OK;
 
 public class addNewFolderFragment extends Fragment {
 
@@ -32,6 +39,11 @@ public class addNewFolderFragment extends Fragment {
     private DatePickerDialog datePickerDialog;
     private Button datePickerBtn;
     ImageView closeBtn;
+    CircleImageView choosenImage;
+    Button chooseImage;
+    private final int REQUEST_CODE = 14;
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,6 +52,8 @@ public class addNewFolderFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_add_new_folder, container, false);
         datePickerBtn=view.findViewById(R.id.date_picker_btn);      //******************Delecration of button in xml with java variable to make setonclicklistener********************
         closeBtn=view.findViewById(R.id.close_iv);
+        choosenImage=view.findViewById(R.id.selected_image_iv);
+        chooseImage=view.findViewById(R.id.select_image_btn);
         return view;
     }
 
@@ -49,8 +63,32 @@ public class addNewFolderFragment extends Fragment {
 
         popUpCalender();
         backToPlacesTranslation();
+        selectIamge();
     }
 
+    private void selectIamge() {
+        chooseImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_PICK);
+                intent.setType("image/*");
+                startActivityForResult(intent, REQUEST_CODE);
+
+            }
+        });
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) {
+
+            Uri selectedImage = data.getData();
+
+            Glide.with(getContext()).load(selectedImage).into(choosenImage);
+
+        }
+    }
 
     //       ********************* setOnClickListener Function on Button *********************
     private void popUpCalender() {
