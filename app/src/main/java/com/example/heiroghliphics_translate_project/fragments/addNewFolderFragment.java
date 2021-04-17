@@ -63,6 +63,8 @@ public class addNewFolderFragment extends Fragment {
 
         popUpCalender();
         backToPlacesTranslation();
+        selectIamge();
+
     }
 
     private void selectIamge() {
