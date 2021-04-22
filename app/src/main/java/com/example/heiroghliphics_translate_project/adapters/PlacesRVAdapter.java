@@ -72,7 +72,7 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
     class Placesviewholder extends RecyclerView.ViewHolder{
         TextView translationNametv;
         ImageView folderTranslationImageiv;
-      ImageView arrow_iv;
+        ImageView arrow_iv;
         public Placesviewholder(@NonNull View itemView) {
             super(itemView);
             translationNametv=itemView.findViewById(R.id.translationPlace_tv);
