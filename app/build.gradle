@@ -43,6 +43,9 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     //circle image
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //Room
+    implementation "androidx.room:room-runtime:2.3.0"
+    annotationProcessor "androidx.room:room-compiler:2.3.0"
 
 
 }
