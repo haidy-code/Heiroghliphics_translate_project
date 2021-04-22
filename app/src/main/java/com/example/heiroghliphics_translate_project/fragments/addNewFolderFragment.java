@@ -85,7 +85,7 @@ public class addNewFolderFragment extends Fragment {
         if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) {
 
             Uri selectedImage = data.getData();
-//            Toast.makeText(requireContext(), selectedImage.toString(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(requireContext(), selectedImage.toString(), Toast.LENGTH_SHORT).show();
 
             Glide.with(getContext()).load(selectedImage).into(choosenImage);
 
