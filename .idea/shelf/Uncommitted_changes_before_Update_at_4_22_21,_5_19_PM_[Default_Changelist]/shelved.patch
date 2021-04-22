@@ -1,0 +1,69 @@
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>apply plugin: 'com.android.application'\n\nandroid {\n    compileSdkVersion 30\n    buildToolsVersion \"30.0.2\"\n\n    defaultConfig {\n        applicationId \"com.example.heiroghliphics_translate_project\"\n        minSdkVersion 21\n        targetSdkVersion 30\n        versionCode 1\n        versionName \"1.0\"\n\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\n    }\n\n    buildTypes {\n        release {\n            minifyEnabled false\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\n        }\n    }\n}\n\ndependencies {\n    implementation fileTree(dir: \"libs\", include: [\"*.jar\"])\n    implementation 'androidx.appcompat:appcompat:1.2.0'\n    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'\n    implementation 'androidx.legacy:legacy-support-v4:1.0.0'\n    testImplementation 'junit:junit:4.13.2'\n    androidTestImplementation 'androidx.test.ext:junit:1.1.2'\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'\n\n    //navigation components\n    implementation \"androidx.navigation:navigation-fragment:2.3.4\"\n    implementation \"androidx.navigation:navigation-ui:2.3.4\"\n\n    //material dependencies\n    implementation 'com.google.android.material:material:1.4.0-alpha01'\n    implementation \"androidx.coordinatorlayout:coordinatorlayout:1.1.0\"\n    // glide\n    implementation 'com.github.bumptech.glide:glide:4.11.0'\n    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'\n    //circle image\n    implementation 'de.hdodenhof:circleimageview:3.1.0'\n\n\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(revision 4490315cd8dc98337812bfeabe035ed7539bff26)
++++ app/build.gradle	(date 1619104393000)
+@@ -43,6 +43,9 @@
+     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+     //circle image
+     implementation 'de.hdodenhof:circleimageview:3.1.0'
++    //Room
++    implementation "androidx.room:room-runtime:2.3.0"
++    annotationProcessor "androidx.room:room-compiler:2.3.0"
+ 
+ 
+ }
+\ No newline at end of file
+Index: app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#Fri Apr 16 17:48:33 EET 2021\nbase.0=/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex\npath.1=classes.dex\nrenamed.1=classes2.dex\npath.0=classes.dex\nrenamed.0=classes.dex\nbase.1=/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt	(revision 4490315cd8dc98337812bfeabe035ed7539bff26)
++++ app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt	(date 1618660425000)
+@@ -1,4 +1,4 @@
+-#Fri Apr 16 17:48:33 EET 2021
++#Sat Apr 17 13:53:45 EET 2021
+ base.0=/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+ path.1=classes.dex
+ renamed.1=classes2.dex
+Index: app/src/main/java/com/example/heiroghliphics_translate_project/room/AddFolderDAO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/heiroghliphics_translate_project/room/AddFolderDAO.java	(date 1619104761000)
++++ app/src/main/java/com/example/heiroghliphics_translate_project/room/AddFolderDAO.java	(date 1619104761000)
+@@ -0,0 +1,7 @@
++package com.example.heiroghliphics_translate_project.room;
++
++import androidx.room.Dao;
++
++@Dao
++public interface AddFolderDAO {
++}
+Index: app/src/main/java/com/example/heiroghliphics_translate_project/room/AddFolderDatabase.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/heiroghliphics_translate_project/room/AddFolderDatabase.java	(date 1619104761000)
++++ app/src/main/java/com/example/heiroghliphics_translate_project/room/AddFolderDatabase.java	(date 1619104761000)
+@@ -0,0 +1,11 @@
++package com.example.heiroghliphics_translate_project.room;
++
++import androidx.room.Database;
++import androidx.room.RoomDatabase;
++
++
++@Database(entities = {.class} , version = 2 , exportSchema = false)
++public abstract class AddFolderDatabase extends RoomDatabase {
++    public abstract AddFolderDAO getAddFolder();
++
++}
