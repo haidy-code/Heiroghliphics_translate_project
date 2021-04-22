@@ -12,9 +12,19 @@ import java.util.List;
 
 @Dao
 public interface AddFolderDAO {
-//    @Query("SELECT * FROM Addnewfoldermodel")
+
+//    @Query("SELECT * FROM )
 //    List<Addnewfoldermodel> getAllPlaces();
+
     @Insert
-    void insert place(Addnewfoldermodel )
+    void insertPlace(Addnewfoldermodel addnewfoldermodel);
+
+    @Update
+    void updatePlace(Addnewfoldermodel addnewfoldermodel);
+
+    @Delete
+    void deletePlace(Addnewfoldermodel addnewfoldermodel);
+
+
 
 }
