@@ -2,7 +2,7 @@ package com.example.heiroghliphics_translate_project.asyncTasks;
 
 import android.os.AsyncTask;
 
-import com.example.heiroghliphics_translate_project.models.Addnewfoldermodel;
+import com.example.heiroghliphics_translate_project.room.Addnewfoldermodel;
 import com.example.heiroghliphics_translate_project.room.AddFolderDAO;
 
 import java.util.List;

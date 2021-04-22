@@ -1,4 +1,4 @@
-package com.example.heiroghliphics_translate_project.models;
+package com.example.heiroghliphics_translate_project.room;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
