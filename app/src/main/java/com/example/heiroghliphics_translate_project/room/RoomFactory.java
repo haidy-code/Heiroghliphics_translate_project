@@ -9,9 +9,9 @@ public class RoomFactory {
 
     public static AddFolderDatabase getDatabase(Context context) {
         if(database==null){
-            database= Room.databaseBuilder(context,AddFolderDatabase.class,)
+            database= Room.databaseBuilder(context,AddFolderDatabase.class ,"AddFolder_db").build();
         }
-        return null;
+        return database;
     }
 
 }
