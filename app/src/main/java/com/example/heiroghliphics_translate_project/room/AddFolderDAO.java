@@ -13,8 +13,8 @@ import java.util.List;
 @Dao
 public interface AddFolderDAO {
 
-//    @Query("SELECT * FROM )
-//    List<Addnewfoldermodel> getAllPlaces();
+    @Query("SELECT * FROM placesfolder")
+    List<Addnewfoldermodel> getAllPlaces();
 
     @Insert
     void insertPlace(Addnewfoldermodel addnewfoldermodel);
