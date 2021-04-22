@@ -16,8 +16,8 @@ public interface AddFolderDAO {
 //    @Query("SELECT * FROM )
 //    List<Addnewfoldermodel> getAllPlaces();
 
-    @Insert
-    void insertPlace(Addnewfoldermodel addnewfoldermodel);
+//    @Insert
+//    void insertPlace(Addnewfoldermodel addnewfoldermodel);
 
     @Update
     void updatePlace(Addnewfoldermodel addnewfoldermodel);
