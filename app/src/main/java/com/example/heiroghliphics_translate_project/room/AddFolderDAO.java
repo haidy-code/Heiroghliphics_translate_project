@@ -6,8 +6,6 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.heiroghliphics_translate_project.models.Addnewfoldermodel;
-
 import java.util.List;
 
 @Dao
