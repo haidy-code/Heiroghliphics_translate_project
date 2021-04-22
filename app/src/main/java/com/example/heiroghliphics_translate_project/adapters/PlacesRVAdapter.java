@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.heiroghliphics_translate_project.R;
-import com.example.heiroghliphics_translate_project.models.PlacesModel;
+import com.example.heiroghliphics_translate_project.room.Addnewfoldermodel;
 
 import java.util.List;
 
@@ -19,7 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Placesviewholder> {
 
-    private List<PlacesModel> placesList;
+    private List<Addnewfoldermodel> foldersList;
     private Context context;
     private OnPlaceClickListener onPlaceClickListener;
 
@@ -27,8 +27,8 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
         void onPlaceClick(View view, int position);
     }
 
-    public PlacesRVAdapter(List<PlacesModel> placesList, Context context, OnPlaceClickListener onPlaceClickListener) {
-        this.placesList = placesList;
+    public PlacesRVAdapter(List<Addnewfoldermodel> placesList, Context context, OnPlaceClickListener onPlaceClickListener) {
+        this.foldersList = placesList;
         this.context = context;
         this.onPlaceClickListener = onPlaceClickListener;
     }
@@ -42,8 +42,8 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
 
     @Override
     public void onBindViewHolder(@NonNull final Placesviewholder holder, int position) {
-        PlacesModel placesModel=placesList.get(position);;
-        holder.translationNametv.setText(placesModel.getName());
+        Addnewfoldermodel placesModel= foldersList.get(position);;
+        holder.translationNametv.setText(placesModel.getFoldername());
         Glide.with(context).load(placesModel.getImage()).into(holder.folderTranslationImageiv);
 
         //navigate from my translation to place translation
@@ -66,7 +66,7 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
 
     @Override
     public int getItemCount() {
-        return placesList.size();
+        return foldersList.size();
     }
 
     class Placesviewholder extends RecyclerView.ViewHolder{

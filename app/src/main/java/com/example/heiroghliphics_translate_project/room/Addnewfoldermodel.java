@@ -13,10 +13,15 @@ public class Addnewfoldermodel {
     @ColumnInfo(name = "date")
     private String date;
     @ColumnInfo(name = "image")
-    private String image;
+    private int image;
 
 
     public Addnewfoldermodel() {
+    }
+
+    public Addnewfoldermodel(String foldername, int image) {
+        this.foldername = foldername;
+        this.image = image;
     }
 
     public long getId() {
@@ -43,11 +48,11 @@ public class Addnewfoldermodel {
         this.date = date;
     }
 
-    public String getImage() {
+    public int getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(int image) {
         this.image = image;
     }
 }

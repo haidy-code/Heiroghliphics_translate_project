@@ -15,16 +15,14 @@ import android.view.ViewGroup;
 
 import com.example.heiroghliphics_translate_project.R;
 import com.example.heiroghliphics_translate_project.adapters.PlacesRVAdapter;
-import com.example.heiroghliphics_translate_project.models.PlacesModel;
+import com.example.heiroghliphics_translate_project.room.Addnewfoldermodel;
 
 import java.util.ArrayList;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 
 public class myTranslationsFragment extends Fragment {
     private RecyclerView placesRv;
     PlacesRVAdapter placesRvAdapter;
-    private ArrayList<PlacesModel> placesList = new ArrayList<>();
+    private ArrayList<Addnewfoldermodel> foldersList = new ArrayList<>();
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +44,7 @@ public class myTranslationsFragment extends Fragment {
         addDataToList();}
 
     private void setupRecycleVview() {
-        placesRvAdapter = new PlacesRVAdapter(placesList, requireContext(), new PlacesRVAdapter.OnPlaceClickListener() {
+        placesRvAdapter = new PlacesRVAdapter(foldersList, requireContext(), new PlacesRVAdapter.OnPlaceClickListener() {
             @Override
             public void onPlaceClick(View view, int position) {
                 Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment_to_place_translationFragment);
@@ -57,14 +55,8 @@ public class myTranslationsFragment extends Fragment {
         placesRv.setAdapter(placesRvAdapter);
     }
     private void addDataToList() {
-        PlacesModel placesModel=new PlacesModel("Add Another Folder",R.drawable.add);
-        placesList.add(placesModel);
-        placesList.add(placesModel);
-        placesList.add(placesModel);
-        placesList.add(placesModel);
-        placesList.add(placesModel);
-        placesList.add(placesModel);
-        placesList.add(placesModel);
+        Addnewfoldermodel placesModel=new Addnewfoldermodel("Add Another Folder",R.drawable.add);
+        foldersList.add(placesModel);
 
     }
 }
