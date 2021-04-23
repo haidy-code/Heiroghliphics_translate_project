@@ -1,5 +1,7 @@
 package com.example.heiroghliphics_translate_project.fragments;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -68,7 +70,8 @@ public class myTranslationsFragment extends Fragment {
         placesRvAdapter = new PlacesRVAdapter(foldersList, requireContext(), new PlacesRVAdapter.OnPlaceClickListener() {
             @Override
             public void onPlaceClick(View view, int position) {
-                Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment_to_addNewFolderFragment);
+                setUpEditOrDeletorvieweDialog(view , position);
+               // Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment_to_addNewFolderFragment);
                 //Toast.makeText(requireContext(), "There is an empty field", Toast.LENGTH_SHORT).show();
 
 
@@ -78,6 +81,44 @@ public class myTranslationsFragment extends Fragment {
         placesRv.addItemDecoration(new DividerItemDecoration(requireContext(), 0));//orientation zero brcause i deleted line seperating each item in recycler view
         placesRv.setAdapter(placesRvAdapter);
     }
+
+    private void setUpEditOrDeletorvieweDialog(final View view, int position) {
+        AlertDialog.Builder dialog = new AlertDialog.Builder(requireContext());
+        dialog.setMessage("Do you want to edit or delete or view this note?");
+        dialog.setNegativeButton("Delete", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+             //   deletefolder(position);
+                Toast.makeText(requireContext(), "delete", Toast.LENGTH_SHORT).show();
+               // getAllfoldersFromDB();
+            }
+        });
+        dialog.setPositiveButton("Edit", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+//
+//                Addnewfoldermodel folder = foldersList.get(position);
+//                // to send data to EditFragment
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable("note_object", note);
+//                Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_editFragment, bundle);
+                Toast.makeText(requireContext(), "edittttttt", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+        dialog.setNeutralButton("view", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment_to_addNewFolderFragment);
+
+            }
+        });
+
+        dialog.show();
+
+    }
+
 //    private void addDataToList() {
 //       foldersList.clear();
 //        Addnewfoldermodel placesModel=new Addnewfoldermodel("Add Another Folder",R.drawable.add);
