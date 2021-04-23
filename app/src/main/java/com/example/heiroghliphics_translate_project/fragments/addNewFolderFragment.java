@@ -29,6 +29,7 @@ import com.example.heiroghliphics_translate_project.MainActivity;
 import com.example.heiroghliphics_translate_project.R;
 import com.example.heiroghliphics_translate_project.asyncTasks.GetplacesAsyncTask;
 import com.example.heiroghliphics_translate_project.asyncTasks.insertAsyncTask;
+import com.example.heiroghliphics_translate_project.asyncTasks.updateAsyncTask;
 import com.example.heiroghliphics_translate_project.room.Addnewfoldermodel;
 import com.example.heiroghliphics_translate_project.room.RoomFactory;
 
@@ -105,6 +106,7 @@ public class addNewFolderFragment extends Fragment {
     private void insertToRoom(String foldername , String date) {
 
         new insertAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute(new Addnewfoldermodel(foldername,date));
+
 
 
     }

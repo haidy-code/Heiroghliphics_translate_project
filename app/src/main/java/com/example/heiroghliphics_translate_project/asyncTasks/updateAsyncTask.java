@@ -8,11 +8,7 @@ import com.example.heiroghliphics_translate_project.room.AddFolderDAO;
 public class updateAsyncTask extends AsyncTask<Addnewfoldermodel, Void,Void> {
     private AddFolderDAO folderDAO;
 
-    public AddFolderDAO getFolderDAO() {
-        return folderDAO;
-    }
-
-    public void setFolderDAO(AddFolderDAO folderDAO) {
+    public updateAsyncTask(AddFolderDAO folderDAO) {
         this.folderDAO = folderDAO;
     }
 
