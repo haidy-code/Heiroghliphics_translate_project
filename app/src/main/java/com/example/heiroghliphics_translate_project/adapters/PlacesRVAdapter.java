@@ -1,11 +1,13 @@
 package com.example.heiroghliphics_translate_project.adapters;
 
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.heiroghliphics_translate_project.R;
@@ -56,10 +58,32 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
 
 
         //          navigate from myTranslationfolders Fragment to addNewFolder Fragment
-        holder.folderTranslationImageiv.setOnClickListener(new View.OnClickListener() {
+
+
+//        holder.folderTranslationImageiv.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Uri addimage=Uri.parse("android.resource://com.example.heiroghliphics_translate_project/"+R.drawable.add);
+//                String addpath=addimage.toString();
+//                Uri placeoraddimage=Uri.parse("android.resource://com.example.heiroghliphics_translate_project/"+holder.folderTranslationImageiv.getDrawable());
+//                String placeimg=placeoraddimage.toString();
+//                if (placeimg .equals(addpath) ){
+//                    Navigation.findNavController(v).navigate(R.id.action_myTranslationsFragment_to_addNewFolderFragment);
+//                }
+//
+//                else {
+//                  // Toast.makeText(context, placeimg, Toast.LENGTH_LONG).show();
+//                    Toast.makeText(context, addpath, Toast.LENGTH_LONG).show();
+//                }
+//
+//            }
+//        });
+
+        // when clicking on place row
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Navigation.findNavController(v).navigate(R.id.action_myTranslationsFragment_to_addNewFolderFragment);
+            public void onClick(View view) {
+onPlaceClickListener.onPlaceClick(view,holder.getAdapterPosition());
             }
         });
     }
