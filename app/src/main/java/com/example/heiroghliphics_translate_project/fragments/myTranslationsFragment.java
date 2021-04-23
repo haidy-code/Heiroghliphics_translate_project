@@ -99,12 +99,14 @@ public class myTranslationsFragment extends Fragment {
         dialog.setPositiveButton("Edit", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-//
-//                Addnewfoldermodel folder = foldersList.get(position);
+
+                Addnewfoldermodel folder = foldersList.get(position);
 //                // to send data to EditFragment
-//                Bundle bundle = new Bundle();
-//                bundle.putSerializable("note_object", note);
-//                Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_editFragment, bundle);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("folder_object", folder);
+                Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment_to_editFolderFragment, bundle);
+
+
                 Toast.makeText(requireContext(), "edittttttt", Toast.LENGTH_SHORT).show();
 
             }
@@ -127,7 +129,8 @@ public class myTranslationsFragment extends Fragment {
         placesRvAdapter.notifyDataSetChanged();
     }
 
-//    private void addDataToList() {
+//    private void addDataToList()
+//    {
 //       foldersList.clear();
 //        Addnewfoldermodel placesModel=new Addnewfoldermodel("Add Another Folder",R.drawable.add);
 //        foldersList.add(placesModel);

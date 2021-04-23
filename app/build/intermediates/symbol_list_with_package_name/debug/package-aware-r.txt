@@ -1860,6 +1860,7 @@ id action_bar_title
 id action_container
 id action_context_bar
 id action_divider
+id action_editFolderFragment_to_myTranslationsFragment
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -1867,6 +1868,7 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_myTranslationsFragment_to_addNewFolderFragment
+id action_myTranslationsFragment_to_editFolderFragment
 id action_myTranslationsFragment_to_place_translationFragment
 id action_place_translationFragment_to_allTranslationsFragment
 id action_place_translationFragment_to_myTranslationsFragment
@@ -1983,7 +1985,17 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
+id editFolderFragment
+id edit_close_iv
+id edit_date_picker_btn
+id edit_folder_name_tv
+id edit_foldername_et
 id edit_query
+id edit_select_date_tv
+id edit_select_image_btn
+id edit_select_image_tv
+id edit_selected_image_iv
+id edit_updatefolder_btn
 id elastic
 id end
 id endToStart
@@ -2373,6 +2385,7 @@ layout design_text_input_start_icon
 layout fragment_add_new_folder
 layout fragment_all_translations
 layout fragment_camera
+layout fragment_edit_folder
 layout fragment_explore
 layout fragment_my_translations
 layout fragment_place_translation
