@@ -19,6 +19,7 @@ import android.widget.Toast;
 import com.example.heiroghliphics_translate_project.R;
 import com.example.heiroghliphics_translate_project.adapters.PlacesRVAdapter;
 import com.example.heiroghliphics_translate_project.asyncTasks.GetplacesAsyncTask;
+import com.example.heiroghliphics_translate_project.asyncTasks.deleteAsyncTask;
 import com.example.heiroghliphics_translate_project.room.Addnewfoldermodel;
 import com.example.heiroghliphics_translate_project.room.RoomFactory;
 
@@ -82,16 +83,17 @@ public class myTranslationsFragment extends Fragment {
         placesRv.setAdapter(placesRvAdapter);
     }
 
-    private void setUpEditOrDeletorvieweDialog(final View view, int position) {
+    private void setUpEditOrDeletorvieweDialog(final View view, final int position) {
         AlertDialog.Builder dialog = new AlertDialog.Builder(requireContext());
         dialog.setMessage("Do you want to edit or delete or view this note?");
         dialog.setNegativeButton("Delete", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
-             //   deletefolder(position);
-                Toast.makeText(requireContext(), "delete", Toast.LENGTH_SHORT).show();
-               // getAllfoldersFromDB();
+               
+                //Toast.makeText(requireContext(), "delete", Toast.LENGTH_SHORT).show();
+                deletefolder(position);
+                getAllfoldersFromDB();
             }
         });
         dialog.setPositiveButton("Edit", new DialogInterface.OnClickListener() {
@@ -117,6 +119,12 @@ public class myTranslationsFragment extends Fragment {
 
         dialog.show();
 
+    }
+
+    private void deletefolder(int which) {
+        Addnewfoldermodel folder=foldersList.get(which);
+        new deleteAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute(folder);
+        placesRvAdapter.notifyDataSetChanged();
     }
 
 //    private void addDataToList() {
