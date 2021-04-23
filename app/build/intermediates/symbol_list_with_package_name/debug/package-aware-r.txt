@@ -1880,6 +1880,7 @@ id activity_chooser_view_content
 id actual_translation_tv
 id add
 id addNewFolderFragment
+id addfolder_btn
 id alertTitle
 id aligned
 id all
@@ -2004,6 +2005,7 @@ id flip
 id floating
 id folderTranslationImage_iv
 id folder_name_tv
+id foldername_et
 id forever
 id fragment_container_view_tag
 id ghost_view

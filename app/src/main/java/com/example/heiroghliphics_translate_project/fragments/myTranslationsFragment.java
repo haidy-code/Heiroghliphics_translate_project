@@ -12,12 +12,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.heiroghliphics_translate_project.R;
 import com.example.heiroghliphics_translate_project.adapters.PlacesRVAdapter;
+import com.example.heiroghliphics_translate_project.asyncTasks.GetplacesAsyncTask;
 import com.example.heiroghliphics_translate_project.room.Addnewfoldermodel;
+import com.example.heiroghliphics_translate_project.room.RoomFactory;
 
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 public class myTranslationsFragment extends Fragment {
     private RecyclerView placesRv;
@@ -40,23 +44,44 @@ public class myTranslationsFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        getAllfoldersFromDB();
         setupRecycleVview();
-        addDataToList();}
+       // addDataToList();
+
+        }
+
+    private void getAllfoldersFromDB() {
+        foldersList.clear();
+        try {
+            foldersList.addAll(new GetplacesAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute().get());
+            Addnewfoldermodel placesModel=new Addnewfoldermodel("Add Another Folder",R.drawable.add);
+            foldersList.add(placesModel);
+
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
     private void setupRecycleVview() {
         placesRvAdapter = new PlacesRVAdapter(foldersList, requireContext(), new PlacesRVAdapter.OnPlaceClickListener() {
             @Override
             public void onPlaceClick(View view, int position) {
-                Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment_to_place_translationFragment);
+                Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment_to_addNewFolderFragment);
+                //Toast.makeText(requireContext(), "There is an empty field", Toast.LENGTH_SHORT).show();
+
+
             }
         });
         placesRv.setLayoutManager(new GridLayoutManager(requireContext(),1,GridLayoutManager.VERTICAL,false));
         placesRv.addItemDecoration(new DividerItemDecoration(requireContext(), 0));//orientation zero brcause i deleted line seperating each item in recycler view
         placesRv.setAdapter(placesRvAdapter);
     }
-    private void addDataToList() {
-        Addnewfoldermodel placesModel=new Addnewfoldermodel("Add Another Folder",R.drawable.add);
-        foldersList.add(placesModel);
-
-    }
+//    private void addDataToList() {
+//       foldersList.clear();
+//        Addnewfoldermodel placesModel=new Addnewfoldermodel("Add Another Folder",R.drawable.add);
+//        foldersList.add(placesModel);
+//
+//    }
 }
