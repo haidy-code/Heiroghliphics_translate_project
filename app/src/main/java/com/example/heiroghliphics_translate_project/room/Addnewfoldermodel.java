@@ -19,6 +19,11 @@ public class Addnewfoldermodel {
     public Addnewfoldermodel() {
     }
 
+    public Addnewfoldermodel(String foldername, String date) {
+        this.foldername = foldername;
+        this.date = date;
+    }
+
     public Addnewfoldermodel(String foldername, int image) {
         this.foldername = foldername;
         this.image = image;
