@@ -41,7 +41,7 @@
         app:layout_constraintStart_toEndOf="@id/folderTranslationImage_iv"
         app:layout_constraintTop_toTopOf="@id/horizontal_linearlayout"
         app:layout_constraintBottom_toBottomOf="@+id/folderTranslationImage_iv"
-        android:text="Add Another Folder"
+        android:text="add another folder"
         android:ellipsize="end"
         android:textSize="18sp"
         android:textAllCaps="false"

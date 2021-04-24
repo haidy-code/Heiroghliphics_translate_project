@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.heiroghliphics_translate_project.R;
@@ -30,6 +32,7 @@ public class myTranslationsFragment extends Fragment {
     private RecyclerView placesRv;
     PlacesRVAdapter placesRvAdapter;
     private ArrayList<Addnewfoldermodel> foldersList = new ArrayList<>();
+    TextView foldername;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +44,7 @@ public class myTranslationsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_my_translations, container, false);
         placesRv=view.findViewById(R.id.translationPlaces_rv);
+        foldername=view.findViewById(R.id.translationPlace_tv);
         return view;
     }
 
@@ -49,7 +53,7 @@ public class myTranslationsFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         getAllfoldersFromDB();
         setupRecycleVview();
-       // addDataToList();
+     
 
         }
 
@@ -71,9 +75,16 @@ public class myTranslationsFragment extends Fragment {
         placesRvAdapter = new PlacesRVAdapter(foldersList, requireContext(), new PlacesRVAdapter.OnPlaceClickListener() {
             @Override
             public void onPlaceClick(View view, int position) {
-                setUpEditOrDeletorvieweDialog(view , position);
-               // Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment_to_addNewFolderFragment);
-                //Toast.makeText(requireContext(), "There is an empty field", Toast.LENGTH_SHORT).show();
+
+
+                if(foldersList.get(position).getFoldername().equals("Add Another Folder")){
+
+                   Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment_to_addNewFolderFragment);
+                }
+                else {
+
+                setUpEditOrDeletorvieweDialog(view , position);}
+
 
 
             }
@@ -90,8 +101,7 @@ public class myTranslationsFragment extends Fragment {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
-               
-                //Toast.makeText(requireContext(), "delete", Toast.LENGTH_SHORT).show();
+
                 deletefolder(position);
                 getAllfoldersFromDB();
             }
@@ -107,14 +117,6 @@ public class myTranslationsFragment extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment_to_editFolderFragment, bundle);
 
 
-                Toast.makeText(requireContext(), "edittttttt", Toast.LENGTH_SHORT).show();
-
-            }
-        });
-        dialog.setNeutralButton("view", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment_to_addNewFolderFragment);
 
             }
         });
@@ -129,11 +131,5 @@ public class myTranslationsFragment extends Fragment {
         placesRvAdapter.notifyDataSetChanged();
     }
 
-//    private void addDataToList()
-//    {
-//       foldersList.clear();
-//        Addnewfoldermodel placesModel=new Addnewfoldermodel("Add Another Folder",R.drawable.add);
-//        foldersList.add(placesModel);
-//
-//    }
+
 }

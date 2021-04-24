@@ -92,7 +92,11 @@ public class addNewFolderFragment extends Fragment {
 
                 if(foldername.isEmpty() || date.equals("mm-dd-yy") ){
                     Toast.makeText(requireContext(), "There is an empty field", Toast.LENGTH_SHORT).show();
-                } else {
+                }
+                else if (foldername.equals("Add Another Folder")){
+                    Toast.makeText(requireContext(), "no plz change the name", Toast.LENGTH_SHORT).show();
+                }
+                else {
 
                     insertToRoom(foldername , date);
                     Toast.makeText(requireContext(), date, Toast.LENGTH_SHORT).show();
