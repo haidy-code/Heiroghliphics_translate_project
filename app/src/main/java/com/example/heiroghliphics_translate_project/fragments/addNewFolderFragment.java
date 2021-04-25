@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
@@ -15,6 +16,8 @@ import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import android.provider.MediaStore;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,6 +36,8 @@ import com.example.heiroghliphics_translate_project.asyncTasks.updateAsyncTask;
 import com.example.heiroghliphics_translate_project.room.Addnewfoldermodel;
 import com.example.heiroghliphics_translate_project.room.RoomFactory;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -52,6 +57,9 @@ public class addNewFolderFragment extends Fragment {
     EditText folderName;
     Button addFolder;
     private final int REQUEST_CODE = 14;
+    private ArrayList<Addnewfoldermodel> foldersList = new ArrayList<>();
+    //String imagePath;
+    Uri selectedImage;
 
 
 
@@ -86,7 +94,10 @@ public class addNewFolderFragment extends Fragment {
             public void onClick(View view) {
                 String foldername=folderName.getText().toString();
                 String date=datePickerBtn.getText().toString();
-               // ImageView choosenimage=choosenImage.getDrawable();
+
+                //ImageView choosenimage=choosenImage.getDrawable();
+
+
 
 
 
@@ -98,7 +109,7 @@ public class addNewFolderFragment extends Fragment {
                 }
                 else {
 
-                    insertToRoom(foldername , date);
+                    insertToRoom(foldername , date,selectedImage);
                     Toast.makeText(requireContext(), date, Toast.LENGTH_SHORT).show();
 
                     Navigation.findNavController(view).navigate(R.id.action_addNewFolderFragment_to_myTranslationsFragment);
@@ -107,9 +118,16 @@ public class addNewFolderFragment extends Fragment {
             }
         });
     }
-    private void insertToRoom(String foldername , String date) {
+    private void insertToRoom(String foldername , String date,Uri selectedImage) {
 
-        new insertAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute(new Addnewfoldermodel(foldername,date));
+        if(selectedImage != null){
+            new insertAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute(new Addnewfoldermodel(foldername,date,selectedImage.toString()));
+
+        } else {
+            new insertAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute(new Addnewfoldermodel(foldername,date));
+
+        }
+
 
 
 
@@ -131,13 +149,34 @@ public class addNewFolderFragment extends Fragment {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) {
 
-            Uri selectedImage = data.getData();
-            Toast.makeText(requireContext(), selectedImage.toString(), Toast.LENGTH_SHORT).show();
+             selectedImage =data.getData();
+            choosenImage.setImageURI(selectedImage);
 
-            Glide.with(getContext()).load(selectedImage).into(choosenImage);
+
+            //imagePath = selectedImage.getPath();
+            /*try {
+                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), selectedImage);
+                //carImage.setImageBitmap(bitmap);
+            } catch (IOException e) {
+                Log.i("TAG", "Some exception " + e);
+            }*/
+
+            Log.d("Omar",selectedImage.toString());
+                     // insertRoom(selectedImage);
+
 
         }
     }
+
+//    private void insertRoom(Uri selectedImage) {
+//
+//
+//            new insertAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute(new Addnewfoldermodel(selectedImage));
+//
+//
+//
+//
+//    }
 
     //       ********************* setOnClickListener Function on Button *********************
     private void popUpCalender() {

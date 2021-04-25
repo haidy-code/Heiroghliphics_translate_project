@@ -1,5 +1,7 @@
 package com.example.heiroghliphics_translate_project.room;
 
+import android.net.Uri;
+
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -15,8 +17,26 @@ public class Addnewfoldermodel implements Serializable {
     @ColumnInfo(name = "date")
     private String date;
     @ColumnInfo(name = "image")
-    private int image;
+    private String image;
 
+    private  int icons;
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getImage() {
+
+        return image;
+    }
+
+    public int getIcons() {
+        return icons;
+    }
+
+    public void setIcons(int icons) {
+        this.icons = icons;
+    }
 
     public Addnewfoldermodel() {
     }
@@ -26,9 +46,15 @@ public class Addnewfoldermodel implements Serializable {
         this.date = date;
     }
 
-    public Addnewfoldermodel(String foldername, int image) {
+    public Addnewfoldermodel(String foldername, String date, String image) {
         this.foldername = foldername;
+        this.date = date;
         this.image = image;
+    }
+
+    public Addnewfoldermodel(String foldername, int icons) {
+        this.foldername = foldername;
+        this.icons = icons;
     }
 
     public long getId() {
@@ -55,13 +81,7 @@ public class Addnewfoldermodel implements Serializable {
         this.date = date;
     }
 
-    public int getImage() {
-        return image;
-    }
 
-    public void setImage(int image) {
-        this.image = image;
-    }
 }
 
 

@@ -26,6 +26,7 @@ import com.example.heiroghliphics_translate_project.room.Addnewfoldermodel;
 import com.example.heiroghliphics_translate_project.room.RoomFactory;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.concurrent.ExecutionException;
 
 public class myTranslationsFragment extends Fragment {
@@ -53,7 +54,7 @@ public class myTranslationsFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         getAllfoldersFromDB();
         setupRecycleVview();
-     
+
 
         }
 
@@ -72,6 +73,7 @@ public class myTranslationsFragment extends Fragment {
     }
 
     private void setupRecycleVview() {
+        Collections.reverse(foldersList);
         placesRvAdapter = new PlacesRVAdapter(foldersList, requireContext(), new PlacesRVAdapter.OnPlaceClickListener() {
             @Override
             public void onPlaceClick(View view, int position) {

@@ -16,6 +16,10 @@
         "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_add_bookmark.xml"
     },
     {
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_place_holder.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_place_holder.xml"
+    },
+    {
         "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
@@ -44,16 +48,16 @@
         "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_bold.ttf"
     },
     {
-        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic__col_heiroglyphic.xml.flat",
-        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic__col_heiroglyphic.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_mediumitalic.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_mediumitalic.ttf"
     },
     {
         "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_add.xml.flat",
         "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\add.xml"
     },
     {
-        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_mediumitalic.ttf.flat",
-        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_mediumitalic.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic__col_heiroglyphic.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic__col_heiroglyphic.xml"
     },
     {
         "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_down_24.xml.flat",

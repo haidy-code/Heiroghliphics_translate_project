@@ -2,6 +2,7 @@ package com.example.heiroghliphics_translate_project.adapters;
 
 import android.content.Context;
 import android.net.Uri;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,9 +45,29 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
 
     @Override
     public void onBindViewHolder(@NonNull final Placesviewholder holder, int position) {
-        Addnewfoldermodel placesModel= foldersList.get(position);;
+        Addnewfoldermodel placesModel= foldersList.get(position);
         holder.translationNametv.setText(placesModel.getFoldername());
-        Glide.with(context).load(placesModel.getImage()).into(holder.folderTranslationImageiv);
+       // Log.d("Omar",placesModel.getImage());
+
+        if(placesModel.getImage() != null){
+            Uri imageUri = Uri.parse( placesModel.getImage());
+            if(imageUri == null){
+                Glide.with(context).load(R.drawable.ic_place_holder).into(holder.folderTranslationImageiv);
+
+            } else {
+                Glide.with(context).load(imageUri).into(holder.folderTranslationImageiv);
+
+            }
+
+        }
+        //ana ally mgaraba al7ta dh
+//       else if (placesModel.getImage()==null||placesModel.getIcons()==0){
+//            Glide.with(context).load(R.drawable.ic_place_holder).into(holder.folderTranslationImageiv);
+//        }
+
+
+
+
 
         //navigate from my translation to place translation
         holder.arrow_iv.setOnClickListener(new View.OnClickListener() {
