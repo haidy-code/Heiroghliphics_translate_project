@@ -185,6 +185,7 @@ attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
 attr buttonTintMode
+attr button_drawable
 attr cardBackgroundColor
 attr cardCornerRadius
 attr cardElevation
@@ -614,6 +615,24 @@ attr listPreferredItemPaddingRight
 attr listPreferredItemPaddingStart
 attr logo
 attr logoDescription
+attr lottieAnimationViewStyle
+attr lottie_autoPlay
+attr lottie_cacheComposition
+attr lottie_colorFilter
+attr lottie_enableMergePathsForKitKatAndAbove
+attr lottie_fallbackRes
+attr lottie_fileName
+attr lottie_ignoreDisabledSystemAnimations
+attr lottie_imageAssetsFolder
+attr lottie_loop
+attr lottie_progress
+attr lottie_rawRes
+attr lottie_renderMode
+attr lottie_repeatCount
+attr lottie_repeatMode
+attr lottie_scale
+attr lottie_speed
+attr lottie_url
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogTheme
 attr materialAlertDialogTitleIconStyle
@@ -1721,6 +1740,8 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable circle_blank
+drawable circle_filled
 drawable demotranslation2
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1728,12 +1749,17 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable horizontal_layout
+drawable ic__
+drawable ic__34
 drawable ic__col_heiroglyphic
 drawable ic_add_bookmark
 drawable ic_arrow_down_24
+drawable ic_button
 drawable ic_clock_black_24dp
 drawable ic_close_24
+drawable ic_group_8221
 drawable ic_home
+drawable ic_icon
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1741,10 +1767,15 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_one
 drawable ic_photo_camera
 drawable ic_place_holder
+drawable ic_process
+drawable ic_pyramids
 drawable ic_right_arrow
 drawable ic_search_black_24dp
+drawable ic_shaped_subtraction
+drawable ic_two
 drawable layout_bg
 drawable leftarrow
 drawable material_cursor_drawable
@@ -1905,6 +1936,8 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id automatic
+id back
 id back_btn
 id back_to_place_btn
 id back_to_place_translation_iv
@@ -1914,6 +1947,7 @@ id barrier
 id baseline
 id beginOnFirstDraw
 id beginning
+id bg_yellow_iv
 id blocking
 id bottom
 id bottomAppBar
@@ -2024,6 +2058,7 @@ id fragment_container_view_tag
 id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
+id glyphic_tv
 id gone
 id graph
 id graph_wrap
@@ -2031,7 +2066,9 @@ id group_divider
 id grouping
 id groups
 id guideline
+id hardware
 id header_title
+id heiro_tv
 id heiroglyphic_tv
 id hideable
 id home
@@ -2041,10 +2078,15 @@ id honorRequest
 id horizontal_linearlayout
 id icon
 id icon_group
+id icon_iv
 id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image_splash_iv
+id indicator_one
+id indicator_three
+id indicator_two
 id info
 id invisible
 id inward
@@ -2061,6 +2103,7 @@ id line3
 id linear
 id listMode
 id list_item
+id lottie_layer_name
 id masked
 id material_clock_display
 id material_clock_face
@@ -2085,6 +2128,8 @@ id media_actions
 id message
 id middle
 id mini
+id momental_desc_tv
+id momental_sites_tv
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -2126,6 +2171,7 @@ id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
 id never
+id next
 id noScroll
 id none
 id normal
@@ -2138,6 +2184,7 @@ id outline
 id outlinedTextField
 id outward
 id packed
+id pager
 id parallax
 id parent
 id parentPanel
@@ -2148,6 +2195,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id pharoh
 id photo_1_tv_places_translation
 id photo_2_tv_places_translation
 id photo_3_tv_places_translation
@@ -2159,9 +2207,12 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id pyramids_iv
 id radio
 id ratio
 id rectangles
+id restart
+id reverse
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2209,7 +2260,11 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id software
 id spacer
+id splash_bg_iv
+id splash_icon_iv
+id splash_overlay_icon_iv
 id spline
 id split_action_bar
 id spread
@@ -2223,6 +2278,7 @@ id start
 id startHorizontal
 id startToEnd
 id startVertical
+id start_activity_btn
 id staticLayout
 id staticPostLayout
 id status_bar_latest_event_content
@@ -2267,6 +2323,7 @@ id toggle
 id top
 id topPanel
 id touch_outside
+id tourismapp_tv
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -2366,6 +2423,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_splash_screens
 layout all_translation_rv
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2390,6 +2448,11 @@ layout fragment_edit_folder
 layout fragment_explore
 layout fragment_my_translations
 layout fragment_place_translation
+layout fragment_splash_five
+layout fragment_splash_four
+layout fragment_splash_one
+layout fragment_splash_three
+layout fragment_splash_two
 layout fragment_translation_full_detail
 layout material_chip_input_combo
 layout material_clock_display
@@ -3383,7 +3446,9 @@ styleable Layout android_orientation android_layout_width android_layout_height 
 styleable LinearLayoutCompat android_gravity android_orientation android_baselineAligned android_baselineAlignedChildIndex android_weightSum divider dividerPadding measureWithLargestChild showDividers
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable LinearProgressIndicator indeterminateAnimationType indicatorDirectionLinear
+styleable LiquidPager button_drawable
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
+styleable LottieAnimationView lottie_autoPlay lottie_cacheComposition lottie_colorFilter lottie_enableMergePathsForKitKatAndAbove lottie_fallbackRes lottie_fileName lottie_ignoreDisabledSystemAnimations lottie_imageAssetsFolder lottie_loop lottie_progress lottie_rawRes lottie_renderMode lottie_repeatCount lottie_repeatMode lottie_scale lottie_speed lottie_url
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType

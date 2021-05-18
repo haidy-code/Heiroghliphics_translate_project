@@ -2,6 +2,7 @@ package com.example.heiroghliphics_translate_project.fragments;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -61,6 +62,8 @@ public class myTranslationsFragment extends Fragment {
     private void getAllfoldersFromDB() {
         foldersList.clear();
         try {
+//            Uri addimage=Uri.parse("android.resource://com.example.heiroghliphics_translate_project/drawable/add");
+//            String addpath=addimage.toString();
             foldersList.addAll(new GetplacesAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute().get());
             Addnewfoldermodel placesModel=new Addnewfoldermodel("Add Another Folder",R.drawable.add);
             foldersList.add(placesModel);

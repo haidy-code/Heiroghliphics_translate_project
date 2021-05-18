@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.getMenu().getItem(1).setEnabled(false);
 
 //      *************************end of bottom navigation***************************
-        //tagroba
+
 
     }
 }
