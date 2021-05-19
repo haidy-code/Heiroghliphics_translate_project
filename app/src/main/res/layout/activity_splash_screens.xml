@@ -7,14 +7,77 @@
     tools:context=".SplashScreens">
 
 
-    <com.cuberto.liquid_swipe.LiquidPager
-        android:id="@+id/pager"
+    <ImageView
+        android:id="@+id/splash_bg_iv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_group_8221"
+        android:scaleType="centerCrop"
+        android:background="@color/yellow"
+        />
+    <ImageView
+        android:id="@+id/splash_icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_icon"
+        android:elevation="1dp"
+        android:layout_marginBottom="50dp"
+
+        />
+    <ImageView
+        android:id="@+id/splash_overlay_icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_process"
+        />
+    <TextView
+        android:id="@+id/heiro_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="90dp"
+        app:layout_constraintTop_toBottomOf="@+id/splash_icon_iv"
+        android:text="Heiro"
+        android:textSize="30sp"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/mulish_extrabold"
+        />
+    <TextView
+        android:id="@+id/glyphic_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/heiro_tv"
+        app:layout_constraintTop_toBottomOf="@+id/splash_icon_iv"
+        android:text="Glyphic"
+        android:textSize="30sp"
+        android:textColor="@color/darkGray"
+        android:fontFamily="@font/mulish_extrabold"
+        android:paddingLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/heiro_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="TOURISM APP"
+        android:paddingTop="10dp"
+        android:fontFamily="@font/mulish_bold"
+        android:textColor="@color/darkGray"
+
         />
 
 

@@ -2,4 +2,18 @@
     <string name="app_name">Heiroghliphics_translate_project</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    splash screen strings-->
+
+    <string name="first_slide_title">Momental Sites</string>
+    <string name="secand_slide_title">Capture Image</string>
+    <string name="third_slide_title">Save Translation</string>
+
+    <string name="first_slide_desc">Discover the best Momental sites over 26 Government and enjoy full description about it</string>
+    <string name="secand_slide_desc">You Can Use Your Camera And Start To Capture Your Hieroglyphics Symbol </string>
+    <string name="third_slide_desc">Real time translation and after that you have an option to save it at your translation folder </string>
+
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_start">Lets Get Started</string>
 </resources>

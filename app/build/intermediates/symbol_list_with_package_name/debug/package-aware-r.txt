@@ -11,6 +11,7 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+anim bottom_anim
 anim btn_checkbox_to_checked_box_inner_merged_animation
 anim btn_checkbox_to_checked_box_outer_merged_animation
 anim btn_checkbox_to_checked_icon_null_animation
@@ -41,6 +42,7 @@ anim nav_default_enter_anim
 anim nav_default_exit_anim
 anim nav_default_pop_enter_anim
 anim nav_default_pop_exit_anim
+anim side_anim
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -1754,6 +1756,7 @@ drawable ic__34
 drawable ic__col_heiroglyphic
 drawable ic_add_bookmark
 drawable ic_arrow_down_24
+drawable ic_baseline_keyboard_arrow_right_24
 drawable ic_button
 drawable ic_clock_black_24dp
 drawable ic_close_24
@@ -1998,6 +2001,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id desc_splash_tv
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -2010,6 +2014,7 @@ id disableHome
 id disablePostScroll
 id disableScroll
 id disjoint
+id dots
 id dragDown
 id dragEnd
 id dragLeft
@@ -2084,9 +2089,6 @@ id ignore
 id ignoreRequest
 id image
 id image_splash_iv
-id indicator_one
-id indicator_three
-id indicator_two
 id info
 id invisible
 id inward
@@ -2128,8 +2130,6 @@ id media_actions
 id message
 id middle
 id mini
-id momental_desc_tv
-id momental_sites_tv
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -2184,7 +2184,6 @@ id outline
 id outlinedTextField
 id outward
 id packed
-id pager
 id parallax
 id parent
 id parentPanel
@@ -2240,6 +2239,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id secand_constrain_layout
 id select_date_tv
 id select_dialog_listview
 id select_image_btn
@@ -2254,8 +2254,10 @@ id showCustom
 id showHome
 id showTitle
 id sin
+id skip
 id skipCollapsed
 id slide
+id slider
 id snackbar_action
 id snackbar_text
 id snap
@@ -2264,6 +2266,7 @@ id software
 id spacer
 id splash_bg_iv
 id splash_icon_iv
+id splash_one_desc
 id splash_overlay_icon_iv
 id spline
 id split_action_bar
@@ -2279,6 +2282,7 @@ id startHorizontal
 id startToEnd
 id startVertical
 id start_activity_btn
+id start_btn
 id staticLayout
 id staticPostLayout
 id status_bar_latest_event_content
@@ -2318,6 +2322,7 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id title_splash_tv
 id title_template
 id toggle
 id top
@@ -2423,7 +2428,9 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_splash_one
 layout activity_splash_screens
+layout activity_start_splash
 layout all_translation_rv
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2448,11 +2455,6 @@ layout fragment_edit_folder
 layout fragment_explore
 layout fragment_my_translations
 layout fragment_place_translation
-layout fragment_splash_five
-layout fragment_splash_four
-layout fragment_splash_one
-layout fragment_splash_three
-layout fragment_splash_two
 layout fragment_translation_full_detail
 layout material_chip_input_combo
 layout material_clock_display
@@ -2517,6 +2519,7 @@ layout places_translation_rv_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout splash_screens_layout
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_chip_zero_corner_radius
@@ -2578,10 +2581,13 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string first_slide_desc
+string first_slide_title
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string let_get_start
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection
@@ -2639,13 +2645,19 @@ string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string next_btn
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
+string secand_slide_desc
+string secand_slide_title
+string skip_btn
 string status_bar_notification_info_overflow
+string third_slide_desc
+string third_slide_title
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

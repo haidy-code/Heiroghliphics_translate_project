@@ -18,6 +18,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.heiroghliphics_translate_project.SplashOne" />
+        <activity android:name="com.example.heiroghliphics_translate_project.StartSplash" />
         <activity android:name="com.example.heiroghliphics_translate_project.SplashScreens" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,8 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.heiroghliphics_translate_project.MainActivity" >
-        </activity>
+        <activity android:name="com.example.heiroghliphics_translate_project.MainActivity" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
