@@ -4,26 +4,7 @@
             "outputFile": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "/Users/mennaraafat/.gradle/caches/transforms-2/files-2.1/702974eead929cb167f132efe0eabb04/media-1.0.0/res/values-v21/values-v21.xml",
-                    "from": {
-                        "startLines": "2,5,8,11",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,223,386,554",
-                        "endLines": "4,7,10,13",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "218,381,549,716"
-                    },
-                    "to": {
-                        "startLines": "330,333,337,341",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "24800,24968,25257,25553",
-                        "endLines": "332,335,339,343",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "24963,25126,25420,25715"
-                    }
-                },
-                {
-                    "source": "/Users/mennaraafat/.gradle/caches/transforms-2/files-2.1/c2711020c454eee3b83baa180b3fcc85/material-1.4.0-alpha01/res/values-v21/values-v21.xml",
+                    "source": "/Users/mennaraafat/.gradle/caches/transforms-2/files-2.1/bab0939ddb25b035ac68ce0c1c7299d6/material-1.4.0-beta01/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,19,22,25,28,31,34,37,40,41,44,49,60,66,72,78,84,90,91,92,93,97,100,103,106,109,113,117",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -42,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/mennaraafat/.gradle/caches/transforms-2/files-2.1/82353ad9dd753c93bc0889bea34c08f5/core-1.3.2/res/values-v21/values-v21.xml",
+                    "source": "/Users/mennaraafat/.gradle/caches/transforms-2/files-2.1/ffdddee8a8d6c40e555a351aaec76ddb/core-1.5.0-rc01/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -58,6 +39,25 @@
                         "endLines": "2,13,14,15,328,329,336,340,389,394",
                         "endColumns": "117,63,66,63,115,125,125,127,12,12",
                         "endOffsets": "168,1079,1146,1210,24669,24795,25252,25548,28986,29338"
+                    }
+                },
+                {
+                    "source": "/Users/mennaraafat/.gradle/caches/transforms-2/files-2.1/702974eead929cb167f132efe0eabb04/media-1.0.0/res/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
+                    },
+                    "to": {
+                        "startLines": "330,333,337,341",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "24800,24968,25257,25553",
+                        "endLines": "332,335,339,343",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "24963,25126,25420,25715"
                     }
                 },
                 {
