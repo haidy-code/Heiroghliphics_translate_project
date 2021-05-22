@@ -1,5 +1,6 @@
 package com.example.heiroghliphics_translate_project;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +13,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import io.flutter.embedding.android.FlutterActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
 //      *************************end of bottom navigation***************************
 
+
        
     }
+    
 }

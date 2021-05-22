@@ -12,13 +12,23 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.heiroghliphics_translate_project.AllSplashScreens.cashingFlutterEngine;
 
-public class SplashScreens extends AppCompatActivity {
+import io.flutter.embedding.android.FlutterActivity;
+import io.flutter.embedding.android.FlutterActivityLaunchConfigs;
+import io.flutter.embedding.engine.FlutterEngine;
+import io.flutter.embedding.engine.FlutterEngineCache;
+import io.flutter.embedding.engine.dart.DartExecutor;
+
+
+public class SplashScreens extends cashingFlutterEngine {
     ImageView iconApp;
    TextView heiroText;
    TextView glyphicText;
+    public FlutterEngine flutterEngine;
 
-   //Animation decleration which created in anim directory
+
+    //Animation decleration which created in anim directory
     Animation sideAnim , bottomAnim;
 
     // splash timer
@@ -61,14 +71,37 @@ public class SplashScreens extends AppCompatActivity {
                     finish();
                 }
                 else {
-
-                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                    startActivity(intent);
-                    finish();
+//                    startActivity(
+//                            FlutterActivity.createDefaultIntent(getApplicationContext())
+//                    );
+                    cashingFlutterEngine();
                 }
 
             }
         },SPLASH_TIMER);
+
+    }
+
+    public void cashingFlutterEngine(){
+        // Instantiate a FlutterEngine.
+        flutterEngine = new FlutterEngine(getApplicationContext());
+
+        // Start executing Dart code to pre-warm the FlutterEngine.
+        flutterEngine.getDartExecutor().executeDartEntrypoint(
+                DartExecutor.DartEntrypoint.createDefault()
+        );
+        // Cache the FlutterEngine to be used by FlutterActivity.
+        FlutterEngineCache
+                .getInstance()
+                .put("my_engine_id", flutterEngine);
+        startActivity(
+                FlutterActivity
+                        .withCachedEngine("my_engine_id")
+                        .build(getApplicationContext())
+
+        );
+
+        finish();
 
     }
 }

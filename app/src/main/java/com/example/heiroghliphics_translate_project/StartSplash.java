@@ -18,6 +18,12 @@ import android.widget.TextView;
 
 import com.example.heiroghliphics_translate_project.AllSplashScreens.SplashScreenAdapter;
 
+import io.flutter.embedding.android.FlutterActivity;
+import io.flutter.embedding.android.FlutterActivityLaunchConfigs;
+import io.flutter.embedding.engine.FlutterEngine;
+import io.flutter.embedding.engine.FlutterEngineCache;
+import io.flutter.embedding.engine.dart.DartExecutor;
+
 public class StartSplash extends AppCompatActivity {
     ViewPager viewPager;
     SplashScreenAdapter splashScreenAdapter;
@@ -29,6 +35,8 @@ public class StartSplash extends AppCompatActivity {
     TextView back;
     int currentPosition;
     Animation animation;
+    public FlutterEngine flutterEngine;
+
 
 
     @Override
@@ -56,22 +64,45 @@ public class StartSplash extends AppCompatActivity {
         back(viewPager);
         startActivity(viewPager);
     }
+    public void cashingFlutterEngine(){
+        // Instantiate a FlutterEngine.
+        flutterEngine = new FlutterEngine(getApplicationContext());
 
+        // Start executing Dart code to pre-warm the FlutterEngine.
+        flutterEngine.getDartExecutor().executeDartEntrypoint(
+                DartExecutor.DartEntrypoint.createDefault()
+        );
+        // Cache the FlutterEngine to be used by FlutterActivity.
+        FlutterEngineCache
+                .getInstance()
+                .put("my_engine_id", flutterEngine);
+        startActivity(
+                FlutterActivity
+                        .withCachedEngine("my_engine_id")
+                        .build(getApplicationContext())
+        );
+
+        finish();
+
+    }
     public void skip(View view){
         skipBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                finish();
+//                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+//                finish();
+                cashingFlutterEngine();
             }
         });
     }
+
     public void startActivity (View view){
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                finish();
+//                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+//                finish();
+                cashingFlutterEngine();
             }
         });
     }
