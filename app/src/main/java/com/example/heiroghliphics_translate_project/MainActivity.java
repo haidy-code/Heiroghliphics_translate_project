@@ -9,6 +9,8 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import io.flutter.embedding.android.FlutterActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -27,6 +29,6 @@ public class MainActivity extends AppCompatActivity {
 
 //      *************************end of bottom navigation***************************
 
-
+       
     }
 }
