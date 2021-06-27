@@ -120,7 +120,9 @@ public class addNewFolderFragment extends Fragment {
     }
     private void insertToRoom(String foldername , String date,Uri selectedImage) {
 
+
         if(selectedImage != null){
+
             new insertAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute(new Addnewfoldermodel(foldername,date,selectedImage.toString()));
 
         } else {

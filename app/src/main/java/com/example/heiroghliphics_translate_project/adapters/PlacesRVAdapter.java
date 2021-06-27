@@ -51,19 +51,29 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
 
         if(placesModel.getImage() != null){
             Uri imageUri = Uri.parse( placesModel.getImage());
-            if(imageUri == null){
+            if (placesModel.getFoldername().equals("Add Another Folder")){
+                Glide.with(context).load(R.drawable.add).into(holder.folderTranslationImageiv);
+            }
+            if(imageUri == null&&placesModel.getIcons()==0){
+                if (placesModel.getFoldername().equals("Add Another Folder")){
+                    Glide.with(context).load(R.drawable.add).into(holder.folderTranslationImageiv);
+                }
                 Glide.with(context).load(R.drawable.ic_place_holder).into(holder.folderTranslationImageiv);
 
             } else {
+                if (placesModel.getFoldername().equals("Add Another Folder")){
+                    Glide.with(context).load(R.drawable.add).into(holder.folderTranslationImageiv);}
                 Glide.with(context).load(imageUri).into(holder.folderTranslationImageiv);
 
             }
 
         }
         //ana ally mgaraba al7ta dh
-//       else if (placesModel.getImage()==null||placesModel.getIcons()==0){
-//            Glide.with(context).load(R.drawable.ic_place_holder).into(holder.folderTranslationImageiv);
-//        }
+       else if (placesModel.getImage()==null&&placesModel.getIcons()==0){
+            if (placesModel.getFoldername().equals("Add Another Folder")){
+                Glide.with(context).load(R.drawable.add).into(holder.folderTranslationImageiv);}
+            Glide.with(context).load(R.drawable.ic_place_holder).into(holder.folderTranslationImageiv);
+        }
 
 
 
