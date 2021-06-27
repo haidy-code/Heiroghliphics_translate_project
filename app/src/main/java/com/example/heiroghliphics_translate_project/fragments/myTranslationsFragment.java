@@ -18,12 +18,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.example.heiroghliphics_translate_project.R;
 import com.example.heiroghliphics_translate_project.adapters.PlacesRVAdapter;
 import com.example.heiroghliphics_translate_project.asyncTasks.GetplacesAsyncTask;
 import com.example.heiroghliphics_translate_project.asyncTasks.deleteAsyncTask;
-import com.example.heiroghliphics_translate_project.asyncTasks.insertAsyncTask;
 import com.example.heiroghliphics_translate_project.room.Addnewfoldermodel;
 import com.example.heiroghliphics_translate_project.room.RoomFactory;
 
@@ -36,12 +34,9 @@ public class myTranslationsFragment extends Fragment {
     PlacesRVAdapter placesRvAdapter;
     private ArrayList<Addnewfoldermodel> foldersList = new ArrayList<>();
     TextView foldername;
-    Addnewfoldermodel placesModel=new Addnewfoldermodel("Add Another Folder",R.drawable.add);
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 
     }
 
@@ -51,14 +46,12 @@ public class myTranslationsFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_my_translations, container, false);
         placesRv=view.findViewById(R.id.translationPlaces_rv);
         foldername=view.findViewById(R.id.translationPlace_tv);
-
         return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
         getAllfoldersFromDB();
         setupRecycleVview();
 
@@ -68,24 +61,19 @@ public class myTranslationsFragment extends Fragment {
     private void getAllfoldersFromDB() {
         foldersList.clear();
         try {
-          // Addnewfoldermodel placesModel=new Addnewfoldermodel("Add Another Folder",R.drawable.add);
-
-
-            foldersList.add(placesModel);
             foldersList.addAll(new GetplacesAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute().get());
-            
-
+            Addnewfoldermodel placesModel=new Addnewfoldermodel("Add Another Folder",R.drawable.add);
+            foldersList.add(placesModel);
 
         } catch (ExecutionException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        
     }
 
     private void setupRecycleVview() {
-      // Collections.reverse(foldersList);
+        Collections.reverse(foldersList);
         placesRvAdapter = new PlacesRVAdapter(foldersList, requireContext(), new PlacesRVAdapter.OnPlaceClickListener() {
             @Override
             public void onPlaceClick(View view, int position) {
@@ -118,8 +106,6 @@ public class myTranslationsFragment extends Fragment {
 
                 deletefolder(position);
                 getAllfoldersFromDB();
-
-
             }
         });
         dialog.setPositiveButton("Edit", new DialogInterface.OnClickListener() {
@@ -141,18 +127,10 @@ public class myTranslationsFragment extends Fragment {
 
     }
 
-
-
     private void deletefolder(int which) {
-       // Collections.reverse(foldersList);
         Addnewfoldermodel folder=foldersList.get(which);
         new deleteAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute(folder);
-
-
-
         placesRvAdapter.notifyDataSetChanged();
-
-
     }
 
 

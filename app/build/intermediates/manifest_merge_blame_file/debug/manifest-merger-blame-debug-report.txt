@@ -6,51 +6,91 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml
+8-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml
+9-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml
 10
-11    <application
-11-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:5:5-19:19
-12        android:allowBackup="true"
-12-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.3.1] C:\Users\h\.gradle\caches\transforms-2\files-2.1\ae3468b444d41a56f261ecbb8448fe17\core-1.3.1\AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.heiroghliphics_translate_project.MainActivity" >
-21-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:12:9-18:20
-21-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:12:19-47
-22            <intent-filter>
-22-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:13:13-17:29
-23                <action android:name="android.intent.action.MAIN" />
-23-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:14:17-69
-23-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:14:25-66
-24
-25                <category android:name="android.intent.category.LAUNCHER" />
-25-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:16:17-77
-25-->C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:16:27-74
-26            </intent-filter>
-27        </activity>
-28
-29        <service
-29-->[androidx.room:room-runtime:2.3.0] C:\Users\h\.gradle\caches\transforms-2\files-2.1\f8db68f1034ecb530e8b68d95614d92b\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
-30            android:name="androidx.room.MultiInstanceInvalidationService"
-30-->[androidx.room:room-runtime:2.3.0] C:\Users\h\.gradle\caches\transforms-2\files-2.1\f8db68f1034ecb530e8b68d95614d92b\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
-31            android:directBootAware="true"
-31-->[androidx.room:room-runtime:2.3.0] C:\Users\h\.gradle\caches\transforms-2\files-2.1\f8db68f1034ecb530e8b68d95614d92b\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
-32            android:exported="false" />
-32-->[androidx.room:room-runtime:2.3.0] C:\Users\h\.gradle\caches\transforms-2\files-2.1\f8db68f1034ecb530e8b68d95614d92b\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
-33    </application>
-34
-35</manifest>
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[:flutter] /Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/flutter_module/.android/Flutter/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-67
+11-->[:flutter] /Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/flutter_module/.android/Flutter/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-64
+12
+13    <application
+13-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:5:5-29:19
+14        android:allowBackup="true"
+14-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:6:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.5.0-rc01] /Users/mennaraafat/.gradle/caches/transforms-2/files-2.1/ffdddee8a8d6c40e555a351aaec76ddb/core-1.5.0-rc01/AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:7:9-43
+18        android:label="@string/app_name"
+18-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:8:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:9:9-54
+20        android:supportsRtl="true"
+20-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:10:9-35
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:11:9-40
+23        <activity
+23-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:12:9-17:15
+24            android:name="io.flutter.embedding.android.FlutterActivity"
+24-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:13:13-72
+25            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+25-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:14:13-144
+26            android:hardwareAccelerated="true"
+26-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:15:13-47
+27            android:windowSoftInputMode="adjustResize" />
+27-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:16:13-55
+28        <activity android:name="com.example.heiroghliphics_translate_project.SplashScreens" >
+28-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:19:9-24:20
+28-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:19:19-48
+29            <intent-filter>
+29-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:20:13-23:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:21:17-69
+30-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:21:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:22:17-77
+32-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:22:27-74
+33            </intent-filter>
+34        </activity>
+35        <activity android:name="com.example.heiroghliphics_translate_project.SplashOne" />
+35-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:26:9-47
+35-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:26:19-44
+36        <activity android:name="com.example.heiroghliphics_translate_project.StartSplash" />
+36-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:27:9-49
+36-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:27:19-46
+37        <activity android:name="com.example.heiroghliphics_translate_project.MainActivity" />
+37-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:28:9-50
+37-->/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:28:19-47
+38
+39        <meta-data
+39-->[:flutter] /Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/flutter_module/.android/Flutter/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:38
+40            android:name="flutterProjectType"
+40-->[:flutter] /Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/flutter_module/.android/Flutter/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-46
+41            android:value="module" />
+41-->[:flutter] /Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/flutter_module/.android/Flutter/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-35
+42        <!--
+43           Don't delete the meta-data below.
+44           It is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+45        -->
+46        <meta-data
+46-->[:flutter] /Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/flutter_module/.android/Flutter/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-25:33
+47            android:name="flutterEmbedding"
+47-->[:flutter] /Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/flutter_module/.android/Flutter/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-44
+48            android:value="2" />
+48-->[:flutter] /Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/flutter_module/.android/Flutter/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-30
+49
+50        <service
+50-->[androidx.room:room-runtime:2.3.0] /Users/mennaraafat/.gradle/caches/transforms-2/files-2.1/f8db68f1034ecb530e8b68d95614d92b/room-runtime-2.3.0/AndroidManifest.xml:25:9-28:40
+51            android:name="androidx.room.MultiInstanceInvalidationService"
+51-->[androidx.room:room-runtime:2.3.0] /Users/mennaraafat/.gradle/caches/transforms-2/files-2.1/f8db68f1034ecb530e8b68d95614d92b/room-runtime-2.3.0/AndroidManifest.xml:26:13-74
+52            android:directBootAware="true"
+52-->[androidx.room:room-runtime:2.3.0] /Users/mennaraafat/.gradle/caches/transforms-2/files-2.1/f8db68f1034ecb530e8b68d95614d92b/room-runtime-2.3.0/AndroidManifest.xml:27:13-43
+53            android:exported="false" />
+53-->[androidx.room:room-runtime:2.3.0] /Users/mennaraafat/.gradle/caches/transforms-2/files-2.1/f8db68f1034ecb530e8b68d95614d92b/room-runtime-2.3.0/AndroidManifest.xml:28:13-37
+54    </application>
+55
+56</manifest>
