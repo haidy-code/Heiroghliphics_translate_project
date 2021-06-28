@@ -2,6 +2,7 @@ package com.example.heiroghliphics_translate_project.fragments;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -61,9 +62,12 @@ public class myTranslationsFragment extends Fragment {
     private void getAllfoldersFromDB() {
         foldersList.clear();
         try {
-            foldersList.addAll(new GetplacesAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute().get());
+//            Uri addimage=Uri.parse("android.resource://com.example.heiroghliphics_translate_project/drawable/add");
+//            String addpath=addimage.toString();
             Addnewfoldermodel placesModel=new Addnewfoldermodel("Add Another Folder",R.drawable.add);
             foldersList.add(placesModel);
+            foldersList.addAll(new GetplacesAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute().get());
+
 
         } catch (ExecutionException e) {
             e.printStackTrace();
@@ -73,7 +77,7 @@ public class myTranslationsFragment extends Fragment {
     }
 
     private void setupRecycleVview() {
-        Collections.reverse(foldersList);
+//        Collections.reverse(foldersList);
         placesRvAdapter = new PlacesRVAdapter(foldersList, requireContext(), new PlacesRVAdapter.OnPlaceClickListener() {
             @Override
             public void onPlaceClick(View view, int position) {

@@ -69,7 +69,7 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
 
         }
         //ana ally mgaraba al7ta dh
-       else if (placesModel.getImage()==null&&placesModel.getIcons()==0){
+        else if (placesModel.getImage()==null&&placesModel.getIcons()==0){
             if (placesModel.getFoldername().equals("Add Another Folder")){
                 Glide.with(context).load(R.drawable.add).into(holder.folderTranslationImageiv);}
             Glide.with(context).load(R.drawable.ic_place_holder).into(holder.folderTranslationImageiv);

@@ -74,7 +74,10 @@ public class SplashScreens extends cashingFlutterEngine {
 //                    startActivity(
 //                            FlutterActivity.createDefaultIntent(getApplicationContext())
 //                    );
-                    cashingFlutterEngine();
+//                    cashingFlutterEngine();
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(intent);
+
                 }
 
             }
