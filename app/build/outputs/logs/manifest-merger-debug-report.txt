@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-31:12
+ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-30:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] /home/abdalla/.gradle/caches/transforms-2/files-2.1/c68d9af26460f57ee1c86a320d2f296b/navigation-ui-2.3.5/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.4.0-beta01] /home/abdalla/.gradle/caches/transforms-2/files-2.1/bab0939ddb25b035ac68ce0c1c7299d6/material-1.4.0-beta01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/abdalla/.gradle/caches/transforms-2/files-2.1/cdaa83194e29814d01eb1fc6312e9c9a/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
@@ -60,25 +60,25 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/abdal
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /home/abdalla/.gradle/caches/transforms-2/files-2.1/eaa1cbe2ef40ba62ba3fc8b8fb69519a/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/abdalla/.gradle/caches/transforms-2/files-2.1/e737982ea91fdf7ea321d344c75db0be/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/abdalla/.gradle/caches/transforms-2/files-2.1/97888b20f6dba24150fc76a5afcbce8d/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:3:5-59
 		INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml
 		INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml
-		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-31:12
+		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-30:12
 		INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml
-		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-31:12
+		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:1-30:12
 		INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:5:5-29:19
+ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:5:5-28:19
 MERGED from [com.google.android.material:material:1.4.0-beta01] /home/abdalla/.gradle/caches/transforms-2/files-2.1/bab0939ddb25b035ac68ce0c1c7299d6/material-1.4.0-beta01/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0-beta01] /home/abdalla/.gradle/caches/transforms-2/files-2.1/bab0939ddb25b035ac68ce0c1c7299d6/material-1.4.0-beta01/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /home/abdalla/.gradle/caches/transforms-2/files-2.1/cdaa83194e29814d01eb1fc6312e9c9a/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
@@ -118,7 +118,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/abdal
 	android:theme
 		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:11:9-40
 activity#io.flutter.embedding.android.FlutterActivity
-ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:12:9-17:15
+ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:12:9-16:58
 	android:hardwareAccelerated
 		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:15:13-47
 	android:windowSoftInputMode
@@ -128,31 +128,31 @@ ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidMa
 	android:name
 		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:13:13-72
 activity#com.example.heiroghliphics_translate_project.SplashScreens
-ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:19:9-24:20
+ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:18:9-24:20
 	android:name
-		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:19:19-48
+		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:18:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:20:13-23:29
+ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:21:17-69
+ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:21:25-66
+		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
 ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
 		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:22:27-74
 activity#com.example.heiroghliphics_translate_project.SplashOne
-ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:26:9-47
+ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:25:9-47
 	android:name
-		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:26:19-44
+		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:25:19-44
 activity#com.example.heiroghliphics_translate_project.StartSplash
-ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:27:9-49
+ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:26:9-49
 	android:name
-		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:27:19-46
+		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:26:19-46
 activity#com.example.heiroghliphics_translate_project.MainActivity
-ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:28:9-50
+ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:27:9-50
 	android:name
-		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:28:19-47
+		ADDED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml:27:19-47
 uses-sdk
 INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/abdalla/Heiroghliphics_translate_project/app/src/main/AndroidManifest.xml
