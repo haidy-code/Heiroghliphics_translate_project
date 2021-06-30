@@ -41,6 +41,11 @@
         <activity android:name="com.example.heiroghliphics_translate_project.StartSplash" />
         <activity android:name="com.example.heiroghliphics_translate_project.MainActivity" />
 
+        <service
+            android:name="com.example.heiroghliphics_translate_project.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
         <meta-data
             android:name="flutterProjectType"
             android:value="module" />

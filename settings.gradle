@@ -1,9 +1,11 @@
 include ':app'
 setBinding(new Binding([gradle: this]))
 evaluate(new File(
-  settingsDir,
-  'flutter_module/.android/include_flutter.groovy'
+        settingsDir,
+        'flutter_module/.android/include_flutter.groovy'
 ))
 rootProject.name = "Heiroghliphics_translate_project"
 
 include ':flutter_module'
+
+

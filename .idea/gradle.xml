@@ -15,10 +15,12 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/flutter_module" />
             <option value="$PROJECT_DIR$/flutter_module/.android/Flutter" />
+            <option value="C:/flutter_windows_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/camera-0.8.1+3/android" />
+            <option value="C:/flutter_windows_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.2/android" />
+            <option value="C:/flutter_windows_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.7.5+4/android" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
-        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
   </component>

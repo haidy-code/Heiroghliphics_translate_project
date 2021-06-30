@@ -1,5 +1,6 @@
 package com.example.heiroghliphics_translate_project;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,6 +12,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.heiroghliphics_translate_project.AllSplashScreens.cashingFlutterEngine;
 
@@ -28,6 +30,7 @@ public class SplashScreens extends cashingFlutterEngine {
     public FlutterEngine flutterEngine;
 
 
+
     //Animation decleration which created in anim directory
     Animation sideAnim , bottomAnim;
 
@@ -35,7 +38,7 @@ public class SplashScreens extends cashingFlutterEngine {
     private static int SPLASH_TIMER = 5000;
 
     SharedPreferences startSplash;
-
+    boolean isflatter=false;
 
 
 
@@ -55,6 +58,8 @@ public class SplashScreens extends cashingFlutterEngine {
         heiroText.setAnimation(bottomAnim);
         glyphicText.setAnimation(bottomAnim);
 
+
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -65,18 +70,28 @@ public class SplashScreens extends cashingFlutterEngine {
                     SharedPreferences.Editor editor = startSplash.edit();
                     editor.putBoolean("firstTime" , false);
                     editor.commit();
-
+//                    Intent intent = new Intent(getApplicationContext(), MyService.class);
+//                    startService(intent);
                     Intent intent = new Intent(getApplicationContext(), SplashOne.class);
+
                     startActivity(intent);
+
                     finish();
                 }
                 else {
 //                    startActivity(
 //                            FlutterActivity.createDefaultIntent(getApplicationContext())
 //                    );
-//                    cashingFlutterEngine();
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                    startActivity(intent);
+if (isflatter){
+    Intent intent = new Intent(getApplicationContext(), MyService.class);
+    startService(intent);
+}
+                    cashingFlutterEngine();
+
+
+
+
+
 
                 }
 
@@ -86,6 +101,7 @@ public class SplashScreens extends cashingFlutterEngine {
     }
 
     public void cashingFlutterEngine(){
+
         // Instantiate a FlutterEngine.
         flutterEngine = new FlutterEngine(getApplicationContext());
 
@@ -106,5 +122,8 @@ public class SplashScreens extends cashingFlutterEngine {
 
         finish();
 
+
     }
+
+
 }
