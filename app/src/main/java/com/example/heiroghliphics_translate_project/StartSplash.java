@@ -100,8 +100,9 @@ public class StartSplash extends AppCompatActivity {
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                startActivity(new Intent(getApplicationContext(),MainActivity.class));
-//                finish();
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                // flutter
                 cashingFlutterEngine();
             }
         });

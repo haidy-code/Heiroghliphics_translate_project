@@ -2,8 +2,10 @@ package com.example.heiroghliphics_translate_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
@@ -68,22 +70,22 @@ public class SplashScreens extends cashingFlutterEngine {
 
                     Intent intent = new Intent(getApplicationContext(), SplashOne.class);
                     startActivity(intent);
-                    finish();
+//                    finish();
                 }
                 else {
-//                    startActivity(
-//                            FlutterActivity.createDefaultIntent(getApplicationContext())
-//                    );
-//                    cashingFlutterEngine();
+
+                    // Go to file system
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
-
+                    // flutter
+                    cashingFlutterEngine();
                 }
 
             }
         },SPLASH_TIMER);
 
     }
+
 
     public void cashingFlutterEngine(){
         // Instantiate a FlutterEngine.

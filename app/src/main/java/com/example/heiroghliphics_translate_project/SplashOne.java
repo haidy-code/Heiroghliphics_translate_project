@@ -3,6 +3,7 @@ package com.example.heiroghliphics_translate_project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -44,7 +45,6 @@ public class SplashOne extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), StartSplash.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -52,6 +52,11 @@ public class SplashOne extends AppCompatActivity {
         skipBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    // TDOO: go to file system
+                    // Go to file system
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(intent);
+                    // flutter
                     cashingFlutterEngine();
                 }
             });
