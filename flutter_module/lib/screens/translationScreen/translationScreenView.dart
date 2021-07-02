@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:camera/camera.dart' as cameraPlugin;
 import 'package:flutter/services.dart';
 import 'package:flutter_module/packages/bottomBarView.dart';
+import 'package:path_provider/path_provider.dart' as path_provider;
 
 class TranslationScreen extends StatelessWidget {
   final cameraPlugin.XFile image;
@@ -169,7 +170,12 @@ class TranslationScreenView extends StatelessWidget {
                 top: screenHeight * 0.28,
                 right: screenWidth * 0.05,
                 child: InkWell(
-                  onTap: () {
+                  onTap: () async {
+                    final directory =
+                        await path_provider.getExternalStorageDirectory();
+                    String _localPath = directory.path;
+                    File myfile = File('$_localPath/counter.txt');
+                    await myfile.writeAsString('i am a data');
                     SystemNavigator.pop();
                   },
                   child: Image.asset(

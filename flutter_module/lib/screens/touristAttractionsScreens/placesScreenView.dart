@@ -1,25 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_module/packages/bottomBarView.dart';
 import 'package:flutter_module/screens/capturingScreen/captureingScreenView.dart';
+import 'package:flutter_module/screens/touristAttractionsScreens/siteViewerScreen.dart';
 
-const List<Map<String, dynamic>> places = [
+final List<Map<String, dynamic>> places = [
   {
     "name": "Pyramids Of Giza",
     "image": "assets/images/touristAttractionsScreens/image1.png",
+    "cover": "assets/images/touristAttractionsScreens/image4.png",
     "tages": "# Giza  # Culture  #Historical",
-    "city": "Giza"
+    "city": "Giza",
+    "siteId": 0
   },
   {
     "name": "Abu Simple Temple",
     "image": "assets/images/touristAttractionsScreens/image2.png",
+    "cover": "assets/images/touristAttractionsScreens/image5.jpg",
     "tages": "# Aswan  # Culture  #Historical",
-    "city": "Aswan"
+    "city": "Aswan",
+    "siteId": 1
   },
   {
     "name": "Philae Temple",
     "image": "assets/images/touristAttractionsScreens/image3.png",
+    "cover": "assets/images/touristAttractionsScreens/image6.jpeg",
     "tages": "# Aswan  # Culture  #Historical",
-    "city": "Aswan"
+    "city": "Aswan",
+    "siteId": 2
   }
 ];
 
@@ -48,12 +55,13 @@ class PlacesScreenView extends StatelessWidget {
                 child: Center(
                   child: Container(
                     width: screenWidth * 0.85,
-                    height: screenHeight * 0.2,
-                    // color: Colors.yellow,
+                    height: screenHeight * 0.17,
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
+                        // the title
                         Padding(
-                          padding: const EdgeInsets.all(18),
+                          padding: const EdgeInsets.all(1),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -124,13 +132,13 @@ class PlacesScreenView extends StatelessWidget {
                 )),
             // the screenbody
             Positioned(
-                top: screenHeight * 0.25,
+                top: screenHeight * 0.22,
                 width: screenWidth,
-                height: screenHeight * 0.6,
+                height: screenHeight * 0.63,
                 child: Center(
                   child: Container(
                     width: screenWidth * 0.9,
-                    height: screenHeight * 0.6,
+                    height: screenHeight * 0.63,
                     padding: EdgeInsets.only(top: 10),
                     child: Theme(
                       data: ThemeData(accentColor: Colors.white),
@@ -140,11 +148,11 @@ class PlacesScreenView extends StatelessWidget {
                             ...List.generate(
                                 places.length,
                                 (index) => TouristAttractionOuter(
-                                      image: places[index]["image"],
-                                      name: places[index]["name"],
-                                      tages: places[index]["tages"],
-                                      city: places[index]["city"],
-                                    ))
+                                    image: places[index]["image"],
+                                    name: places[index]["name"],
+                                    tages: places[index]["tages"],
+                                    city: places[index]["city"],
+                                    siteId: places[index]["siteId"]))
                           ],
                         ),
                       ),
@@ -168,16 +176,8 @@ class PlacesScreenView extends StatelessWidget {
                 ],
                 functions: [
                   () {
-                    // back to home screen
-                    // for now will open it in a snake bar
-                    SnackBar snackBar = SnackBar(
-                      content: Text(
-                        'Go To HomeScreen',
-                        textAlign: TextAlign.center,
-                      ),
-                      duration: Duration(seconds: 2),
-                    );
-                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    // home screen
+                    print("i am already here");
                   },
                   () async {
                     // capture an image
@@ -209,11 +209,13 @@ class PlacesScreenView extends StatelessWidget {
 class TouristAttractionOuter extends StatelessWidget {
   double screenWidth, screenHeight;
   final String name, image, tages, city;
+  final int siteId;
   TouristAttractionOuter({
     @required this.city,
     @required this.name,
     @required this.tages,
     @required this.image,
+    @required this.siteId,
   });
   @override
   Widget build(BuildContext context) {
@@ -223,74 +225,83 @@ class TouristAttractionOuter extends StatelessWidget {
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 8.0),
-      child: Container(
-        width: screenWidth * 0.9,
-        height: screenHeight * 0.2,
-        decoration: BoxDecoration(
-          image: new DecorationImage(
-            image: new ExactAssetImage(image),
-            fit: BoxFit.cover,
-          ),
-        ),
+      child: InkWell(
+        onTap: () {
+          print("i will go to site with is : $siteId");
+          Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => SiteViwer(
+                    siteId: siteId,
+                  )));
+        },
         child: Container(
           width: screenWidth * 0.9,
           height: screenHeight * 0.2,
           decoration: BoxDecoration(
-              gradient: LinearGradient(
-            begin: const Alignment(0.0, 1.0),
-            end: const Alignment(0.0, 0.0),
-            colors: <Color>[const Color(0xff4a4a4a), const Color(0x004a4a4a)],
-          )),
-          child: Stack(
-            children: [
-              // title
-              Positioned(
-                top: screenHeight * 0.12,
-                left: screenWidth * 0.08,
-                child: Text(
-                  name,
-                  style: TextStyle(
-                      fontSize: screenHeight * 0.026,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold),
+            image: new DecorationImage(
+              image: new ExactAssetImage(image),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: Container(
+            width: screenWidth * 0.9,
+            height: screenHeight * 0.2,
+            decoration: BoxDecoration(
+                gradient: LinearGradient(
+              begin: const Alignment(0.0, 1.0),
+              end: const Alignment(0.0, 0.0),
+              colors: <Color>[const Color(0xff4a4a4a), const Color(0x004a4a4a)],
+            )),
+            child: Stack(
+              children: [
+                // title
+                Positioned(
+                  top: screenHeight * 0.12,
+                  left: screenWidth * 0.08,
+                  child: Text(
+                    name,
+                    style: TextStyle(
+                        fontSize: screenHeight * 0.026,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
-              ),
-              // tages
-              Positioned(
-                top: screenHeight * 0.16,
-                left: screenWidth * 0.08,
-                child: Text(
-                  tages,
-                  style: TextStyle(
-                      fontSize: screenHeight * 0.018,
-                      color: Colors.yellow.shade600,
-                      fontWeight: FontWeight.bold),
+                // tages
+                Positioned(
+                  top: screenHeight * 0.16,
+                  left: screenWidth * 0.08,
+                  child: Text(
+                    tages,
+                    style: TextStyle(
+                        fontSize: screenHeight * 0.018,
+                        color: Colors.yellow.shade600,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
-              ),
-              Positioned(
-                top: screenHeight * 0.16,
-                right: screenWidth * 0.08,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.location_pin,
-                      color: Colors.yellow.shade600,
-                      size: screenHeight * 0.02,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 5.0),
-                      child: Text(
-                        city,
-                        style: TextStyle(
-                          fontSize: screenHeight * 0.018,
-                          color: Colors.white,
-                        ),
+                Positioned(
+                  top: screenHeight * 0.16,
+                  right: screenWidth * 0.08,
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.location_pin,
+                        color: Colors.yellow.shade600,
+                        size: screenHeight * 0.02,
                       ),
-                    )
-                  ],
+                      Padding(
+                        padding: const EdgeInsets.only(left: 5.0),
+                        child: Text(
+                          city,
+                          style: TextStyle(
+                            fontSize: screenHeight * 0.018,
+                            color: Colors.white,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
