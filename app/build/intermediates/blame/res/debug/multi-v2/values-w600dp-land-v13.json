@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "outputFile": "/Users/mennaraafat/Desktop/android diploma/Heiroghliphics_translate_project/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/home/abdalla/.gradle/caches/transforms-2/files-2.1/bab0939ddb25b035ac68ce0c1c7299d6/material-1.4.0-beta01/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+                    "source": "/Users/mennaraafat/.gradle/caches/transforms-2/files-2.1/bab0939ddb25b035ac68ce0c1c7299d6/material-1.4.0-beta01/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
