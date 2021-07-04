@@ -174,8 +174,14 @@ class TranslationScreenView extends StatelessWidget {
                     final directory =
                         await path_provider.getExternalStorageDirectory();
                     String _localPath = directory.path;
-                    File myfile = File('$_localPath/counter.txt');
-                    await myfile.writeAsString('i am a data');
+                    File myfile = File('$_localPath/data.json');
+                    await myfile.writeAsString({
+                      "symbolsList": [
+                        ["A15", "E1", "C23"]
+                      ],
+                      "translationList": ["hello panda"],
+                      "imageName":"the name of the image",
+                    }.toString());
                     SystemNavigator.pop();
                   },
                   child: Image.asset(
