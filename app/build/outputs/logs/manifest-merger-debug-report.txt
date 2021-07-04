@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-31:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] C:\Users\h\.gradle\caches\transforms-2\files-2.1\c68d9af26460f57ee1c86a320d2f296b\navigation-ui-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.4.0-beta01] C:\Users\h\.gradle\caches\transforms-2\files-2.1\bab0939ddb25b035ac68ce0c1c7299d6\material-1.4.0-beta01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\h\.gradle\caches\transforms-2\files-2.1\cdaa83194e29814d01eb1fc6312e9c9a\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
@@ -61,25 +61,31 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\h\
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\h\.gradle\caches\transforms-2\files-2.1\eaa1cbe2ef40ba62ba3fc8b8fb69519a\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\h\.gradle\caches\transforms-2\files-2.1\e737982ea91fdf7ea321d344c75db0be\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\h\.gradle\caches\transforms-2\files-2.1\97888b20f6dba24150fc76a5afcbce8d\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:3:5-59
 		INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml
 		INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:4:5-80
+MERGED from [:image_picker] C:\flutter_windows_2.0.6-stable\flutter\.pub-cache\hosted\pub.dartlang.org\image_picker-0.7.5+4\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+MERGED from [:image_picker] C:\flutter_windows_2.0.6-stable\flutter\.pub-cache\hosted\pub.dartlang.org\image_picker-0.7.5+4\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:4:22-77
 application
-ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:5:5-28:19
+ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:6:5-29:19
 MERGED from [com.google.android.material:material:1.4.0-beta01] C:\Users\h\.gradle\caches\transforms-2\files-2.1\bab0939ddb25b035ac68ce0c1c7299d6\material-1.4.0-beta01\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0-beta01] C:\Users\h\.gradle\caches\transforms-2\files-2.1\bab0939ddb25b035ac68ce0c1c7299d6\material-1.4.0-beta01\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\h\.gradle\caches\transforms-2\files-2.1\cdaa83194e29814d01eb1fc6312e9c9a\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -107,53 +113,53 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\h\
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0-rc01] C:\Users\h\.gradle\caches\transforms-2\files-2.1\ffdddee8a8d6c40e555a351aaec76ddb\core-1.5.0-rc01\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:9:9-41
 	android:roundIcon
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:12:9-40
 activity#io.flutter.embedding.android.FlutterActivity
-ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:12:9-16:58
+ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:13:9-17:58
 	android:hardwareAccelerated
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:15:13-47
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:16:13-47
 	android:windowSoftInputMode
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:16:13-55
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:17:13-55
 	android:configChanges
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:14:13-144
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:15:13-144
 	android:name
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:13:13-72
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:14:13-72
 activity#com.example.heiroghliphics_translate_project.SplashScreens
-ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:18:9-24:20
+ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:19:9-25:20
 	android:name
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:18:19-48
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:19:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:23:27-74
 activity#com.example.heiroghliphics_translate_project.SplashOne
-ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:25:9-47
+ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:26:9-47
 	android:name
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:25:19-44
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:26:19-44
 activity#com.example.heiroghliphics_translate_project.StartSplash
-ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:26:9-49
+ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:27:9-49
 	android:name
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:26:19-46
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:27:19-46
 activity#com.example.heiroghliphics_translate_project.MainActivity
-ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:27:9-50
+ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:28:9-50
 	android:name
-		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:27:19-47
+		ADDED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml:28:19-47
 uses-sdk
 INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\androidprojects2\Heiroghliphics_translate_project\app\src\main\AndroidManifest.xml
@@ -306,10 +312,6 @@ ADDED from [androidx.room:room-runtime:2.3.0] C:\Users\h\.gradle\caches\transfor
 		ADDED from [androidx.room:room-runtime:2.3.0] C:\Users\h\.gradle\caches\transforms-2\files-2.1\f8db68f1034ecb530e8b68d95614d92b\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
 	android:name
 		ADDED from [androidx.room:room-runtime:2.3.0] C:\Users\h\.gradle\caches\transforms-2\files-2.1\f8db68f1034ecb530e8b68d95614d92b\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from [:image_picker] C:\flutter_windows_2.0.6-stable\flutter\.pub-cache\hosted\pub.dartlang.org\image_picker-0.7.5+4\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-80
-	android:name
-		ADDED from [:image_picker] C:\flutter_windows_2.0.6-stable\flutter\.pub-cache\hosted\pub.dartlang.org\image_picker-0.7.5+4\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from [:image_picker] C:\flutter_windows_2.0.6-stable\flutter\.pub-cache\hosted\pub.dartlang.org\image_picker-0.7.5+4\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-81
 	android:name
