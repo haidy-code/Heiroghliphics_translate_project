@@ -23,6 +23,9 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import org.json.JSONObject;
+
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -67,54 +70,20 @@ public class translationFullDetailFragment extends Fragment {
             }
         });
 
-            //Find the directory for the SD Card using the API
-            //*Don't* hardcode "/sdcard"
-//                    File sdcard = Environment.getExternalStorageDirectory();
-//        //Get the text file
-//                    File file = new File(sdcard,"/Android/data/com.example.heiroghliphics_translate_project/files/counter.txt");
-//
-//        //Read text from file
-//                    StringBuilder text = new StringBuilder();
-//
-//                    try {
-//                        BufferedReader br = new BufferedReader(new FileReader(file));
-//                        String line;
-//
-//                        while ((line = br.readLine()) != null) {
-//                            text.append(line);
-//                            Log.i("Test", "text : "+text+" : end");
-//                            text.append('\n');
-//                        }
-//                        br.close();
-//                    }
-//                    catch (IOException e) {
-//                        //You'll need to add proper error handling here
-//                    }
-
-            //Find the view by its id
-//                    TextView tv = (TextView)findViewById(R.id.actualTranslation);
-
-            //Set the text
-//             actualTranslation.setText(text);
                String str=readfromfile();
-     //   actualTranslation.setText(str);
-            Gson g=new Gson();
-        JsonObject jsonObject = (new JsonParser()).parse(str).getAsJsonObject();
-        Log.i("haidy3",jsonObject.getAsString());
-        actualTranslation.setText(jsonObject.getAsString());
-//              translationFullDetailFragment parentobject=g.fromJson(str,translationFullDetailFragment.class);
-             //  String translationList=parentobject.getString();
-        //JSONObject parentObject=null;
-//        try {
-//            StringBuffer finalbufferdata=new StringBuffer();
+        try {
+            JSONObject jsonObject = new JSONObject(str);
+            actualTranslation.setText(jsonObject.get("symbolsList").toString());
+            JSONArray arrJson = jsonObject.getJSONArray("symbolsList");
+//            String[] arr = new String[arrJson.length()];
+//            for(int i = 0; i < arrJson.length(); i++) {
+//                arr[i] = arrJson.getString(i);
+//                Log.i("haidy3",arr[i]);
+//            }
 
-//            String translationList=parentObject.getString("translationList");
-//            finalbufferdata.append(translationList);
-//            actualTranslation.setText(translationList);
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
-
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         Log.i("haidy",str);
 
 
@@ -129,7 +98,7 @@ public class translationFullDetailFragment extends Fragment {
         try {
             File sdcard = Environment.getExternalStorageDirectory();
             File textFile = new File(sdcard,"/Android/data/com.example.heiroghliphics_translate_project/files/data.json");
-            Log.i("fileeeeee","file error");
+            Log.i("fileeeeee","file path");
 
 
 //            File textFile = new File(Environment.getExternalStorageDirectory(),FILENAME);

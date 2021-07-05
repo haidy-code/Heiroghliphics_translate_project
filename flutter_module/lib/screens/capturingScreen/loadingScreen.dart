@@ -12,7 +12,7 @@ class LoadingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     screenWidth = MediaQuery.of(context).size.width;
     screenHeight = MediaQuery.of(context).size.height;
-    Future.delayed(Duration(seconds: 8)).then((value) {
+    Future.delayed(Duration(seconds: 3)).then((value) {
       // TODO: i will navigate from here
       Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => TranslationScreen(

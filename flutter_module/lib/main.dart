@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_module/screens/touristAttractionsScreens/placesScreenView.dart';
 import 'package:http/http.dart' as http;
+import 'package:flutter_module/screens/capturingScreen/captureingScreenView.dart';
+
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,6 +16,12 @@ class MyApp extends StatelessWidget {
       title: 'GP_App',
       theme: ThemeData(),
       home: PlacesScreen(), // CaptureingScreen
+      routes: {
+        // When navigating to the "/" route, build the FirstScreen widget.
+        // '/': (context) => PlacesScreen(),
+        // When navigating to the "/second" route, build the SecondScreen widget.
+        '/CaptureingScreen': (context) => CaptureingScreen(),
+      },
     );
   }
 }
