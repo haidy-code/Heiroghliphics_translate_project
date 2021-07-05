@@ -69,12 +69,11 @@ public class translationFullDetailFragment extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.action_translationFullDetailFragment_to_place_translationFragment);
             }
         });
-
-               String str=readfromfile();
+        String str=readfromfile();
         try {
             JSONObject jsonObject = new JSONObject(str);
-            actualTranslation.setText(jsonObject.get("symbolsList").toString());
-            JSONArray arrJson = jsonObject.getJSONArray("symbolsList");
+            actualTranslation.setText(jsonObject.get("translation").toString());
+//            JSONArray arrJson = jsonObject.getJSONArray("symbolsList");
 //            String[] arr = new String[arrJson.length()];
 //            for(int i = 0; i < arrJson.length(); i++) {
 //                arr[i] = arrJson.getString(i);
