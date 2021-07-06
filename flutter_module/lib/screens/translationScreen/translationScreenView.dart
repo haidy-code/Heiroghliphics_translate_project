@@ -175,6 +175,7 @@ class TranslationScreenView extends StatelessWidget {
                     final directory =
                         await path_provider.getExternalStorageDirectory();
                     String _localPath = directory.path;
+                    // save the image
                     await File(image.path)
                         .copy("$_localPath/Pictures/${image.name}");
                     File myfile = File('$_localPath/data.json');
@@ -183,7 +184,6 @@ class TranslationScreenView extends StatelessWidget {
                       "translation": "hello panda ",
                       "imageName": "${image.name}"
                     }.toString());
-                    // TODO: save the image
                     SystemNavigator.pop();
                   },
                   child: Image.asset(

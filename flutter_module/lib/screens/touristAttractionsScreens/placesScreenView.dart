@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_module/packages/bottomBarView.dart';
 import 'package:flutter_module/screens/capturingScreen/captureingScreenView.dart';
 import 'package:flutter_module/screens/touristAttractionsScreens/siteViewerScreen.dart';
@@ -186,15 +187,7 @@ class PlacesScreenView extends StatelessWidget {
                   },
                   () async {
                     // go to My Translation
-                    // for now will open it in a snake bar
-                    SnackBar snackBar = SnackBar(
-                      content: Text(
-                        'Go To My Translation',
-                        textAlign: TextAlign.center,
-                      ),
-                      duration: Duration(seconds: 2),
-                    );
-                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    SystemNavigator.pop();
                   },
                 ],
               ),
