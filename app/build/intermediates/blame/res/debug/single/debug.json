@@ -1,330 +1,342 @@
 [
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_right_arrow.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_right_arrow.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_medium.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_medium.ttf"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_lightitalic.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_lightitalic.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_translation_full_detail.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\fragment_translation_full_detail.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_process.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/build/generated/res/pngs/debug/drawable-mdpi/ic_process.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_place_holder.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_place_holder.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_layout_bg.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/layout_bg.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_add_bookmark.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_add_bookmark.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable-xhdpi_demotranslation2.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable-xhdpi/demotranslation2.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_baseline_keyboard_arrow_right_24.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_process.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_process.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_icon.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_icon.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_process.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_process.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_semibold.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_semibold.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_bold.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_bold.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_light.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_light.ttf"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_fragment_add_new_folder.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/fragment_add_new_folder.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_regular.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_regular.ttf"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_black.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_black.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_place_translation.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\fragment_place_translation.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_tworounded_corner.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/tworounded_corner.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_places_rv_item.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\places_rv_item.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_process.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/build/generated/res/pngs/debug/drawable-hdpi/ic_process.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_bold.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_bold.ttf"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_filled.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\circle_filled.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_circle_filled.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/circle_filled.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_mediumitalic.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_mediumitalic.ttf"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_extralight.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_extralight.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_screens.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\activity_splash_screens.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_process.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_process.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_add.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\add.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_arrow_down_24.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_arrow_down_24.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic__col_heiroglyphic.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic__col_heiroglyphic.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_two.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_two.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_fragment_explore.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/fragment_explore.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_group_8221.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_group_8221.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_c23.jpeg.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\c23.jpeg"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_extralightitalic.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_extralightitalic.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle_blank.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\circle_blank.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_fragment_my_translations.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/fragment_my_translations.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_down_24.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_arrow_down_24.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_extrabolditalic.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_extrabolditalic.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic__.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic__.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_one.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_one.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_extrabold.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_extrabold.ttf"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/activity_main.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_all_translation_rv.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\all_translation_rv.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_edit_folder.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\fragment_edit_folder.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_places_translation_rv_item.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/places_translation_rv_item.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_launcher_background.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_one.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\activity_splash_one.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_fragment_translation_full_detail.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/fragment_translation_full_detail.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_process.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_process.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_fragment_camera.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/fragment_camera.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_home.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_home.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_horizontal_layout.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/horizontal_layout.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_extralightitalic.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_extralightitalic.ttf"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_home.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_home.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_splash_screens_layout.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\splash_screens_layout.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_activity_splash_screens.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/activity_splash_screens.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_keyboard_arrow_right_24.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_baseline_keyboard_arrow_right_24.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_process.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_process.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_photo_camera.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_photo_camera.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_place_holder.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_place_holder.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search_black_24dp.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_search_black_24dp.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_italic.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_italic.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_process.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_process.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_splash_screens_layout.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/splash_screens_layout.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_bolditalic.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_bolditalic.ttf"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_e1.jpeg.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\e1.jpeg"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_fragment_edit_folder.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/fragment_edit_folder.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tworounded_corner.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\tworounded_corner.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_regular.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_regular.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/navigation_home_nav.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/navigation/home_nav.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_right_arrow.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_right_arrow.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_lightitalic.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_lightitalic.ttf"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_two.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_two.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_photo_camera.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_photo_camera.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_extralight.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_extralight.ttf"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_fragment_place_translation.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/fragment_place_translation.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_black.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_black.ttf"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_mediumitalic.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_mediumitalic.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_one.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_one.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_pyramids.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_pyramids.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_light.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_light.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\anim_bottom_anim.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\anim\\bottom_anim.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_leftarrow.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/leftarrow.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_a15.jpeg.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\a15.jpeg"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_group_8221.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_group_8221.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_extrabolditalic.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_extrabolditalic.ttf"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic__col_heiroglyphic.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic__col_heiroglyphic.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_semibolditalic.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_semibolditalic.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_process.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_process.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_add_bookmark.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_add_bookmark.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_explore.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\fragment_explore.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_places_rv_item.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/places_rv_item.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic__34.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic__34.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/anim_bottom_anim.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/anim/bottom_anim.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_demotranslation2.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable-xhdpi\\demotranslation2.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_process.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/build/generated/res/pngs/debug/drawable-ldpi/ic_process.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_shaped_subtraction.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_shaped_subtraction.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/anim_side_anim.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/anim/side_anim.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_all_translation_rv.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/all_translation_rv.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_process.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_process.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_process.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_process.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_layout_bg.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\layout_bg.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_process.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_process.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_all_translations.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\fragment_all_translations.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_fragment_all_translations.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/fragment_all_translations.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_extrabold.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_extrabold.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic__34.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic__34.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_semibold.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_semibold.ttf"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_circle_blank.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/circle_blank.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_activity_splash_one.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/activity_splash_one.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_horizontal_layout.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\horizontal_layout.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_bolditalic.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_bolditalic.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_leftarrow.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\leftarrow.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_pyramids.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_pyramids.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic__.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic__.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_start_splash.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\activity_start_splash.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_semibolditalic.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_semibolditalic.ttf"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_shaped_subtraction.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_shaped_subtraction.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_close_24.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_close_24.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\anim_side_anim.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\anim\\side_anim.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/layout_activity_start_splash.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/layout/activity_start_splash.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_icon.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\drawable\\ic_icon.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_close_24.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_close_24.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_camera.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\fragment_camera.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/font_mulish_medium.ttf.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/font/mulish_medium.ttf"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_add.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/add.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_places_translation_rv_item.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\places_translation_rv_item.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/menu_bottom_nav_menu.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/menu/bottom_nav_menu.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_my_translations.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\fragment_my_translations.xml"
     },
     {
-        "merged": "/home/abdalla/Heiroghliphics_translate_project/app/build/intermediates/res/merged/debug/drawable_ic_search_black_24dp.xml.flat",
-        "source": "/home/abdalla/Heiroghliphics_translate_project/app/src/main/res/drawable/ic_search_black_24dp.xml"
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_add_new_folder.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\layout\\fragment_add_new_folder.xml"
+    },
+    {
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_process.png.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_process.png"
+    },
+    {
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\font_mulish_italic.ttf.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\font\\mulish_italic.ttf"
+    },
+    {
+        "merged": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\build\\intermediates\\res\\merged\\debug\\navigation_home_nav.xml.flat",
+        "source": "C:\\androidprojects2\\Heiroghliphics_translate_project\\app\\src\\main\\res\\navigation\\home_nav.xml"
     }
 ]

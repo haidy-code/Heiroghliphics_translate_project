@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.heiroghliphics_translate_project.R;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
@@ -48,6 +49,7 @@ public class translationFullDetailFragment extends Fragment {
     ImageView image1;
     ImageView image2;
     ImageView image3;
+    ImageView takenimage;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -57,6 +59,7 @@ public class translationFullDetailFragment extends Fragment {
         image1=view.findViewById(R.id.analyzed_photo_1_tv);
         image2=view.findViewById(R.id.analyzed_photo_2_tv);
         image3=view.findViewById(R.id.analyzed_photo_3_tv);
+        takenimage=view.findViewById(R.id.translatedImage_iv);
         return view;
     }
 
@@ -73,19 +76,62 @@ public class translationFullDetailFragment extends Fragment {
         try {
             JSONObject jsonObject = new JSONObject(str);
             actualTranslation.setText(jsonObject.get("translation").toString());
-//            JSONArray arrJson = jsonObject.getJSONArray("symbolsList");
-//            String[] arr = new String[arrJson.length()];
-//            for(int i = 0; i < arrJson.length(); i++) {
-//                arr[i] = arrJson.getString(i);
-//                Log.i("haidy3",arr[i]);
-//            }
+            String imagename=jsonObject.get("imageName").toString();
+
+            Uri image=Uri.parse(readimage(imagename));
+
+
+            Glide.with(requireContext()).load(image).into(takenimage);
+
+            JSONArray arrJson = jsonObject.getJSONArray("symbolsList");
+            String[] arr = new String[arrJson.length()];
+            for(int i = 0; i < arrJson.length(); i++) {
+                arr[i] = arrJson.getString(i);
+
+            }
+            int drawableResourceId = requireContext().getResources().getIdentifier(arr[0].toLowerCase(), "drawable", requireContext().getPackageName());
+            Glide.with(requireContext()).load(drawableResourceId).into(image1);
+            int drawableResourceId1 = requireContext().getResources().getIdentifier(arr[1].toLowerCase(), "drawable", requireContext().getPackageName());
+            Glide.with(requireContext()).load(drawableResourceId1).into(image2);
+            int drawableResourceId2 = requireContext().getResources().getIdentifier(arr[2].toLowerCase(), "drawable", requireContext().getPackageName());
+            Glide.with(requireContext()).load(drawableResourceId2).into(image3);
 
         } catch (JSONException e) {
             e.printStackTrace();
         }
         Log.i("haidy",str);
+    }
+    private String readimage(String imagename) {
+
+        String ret="";
+        StringBuilder sb = new StringBuilder();
 
 
+        try {
+            File sdcard = Environment.getExternalStorageDirectory();
+            File imageFile = new File(sdcard,"/Android/data/com.example.heiroghliphics_translate_project/files/Pictures/"+imagename);
+//            File textFile = new File(Environment.getExternalStorageDirectory(),FILENAME);
+            FileInputStream fis = new FileInputStream(imageFile);
+
+            if(fis!=null){
+                InputStreamReader isr = new InputStreamReader(fis);
+                BufferedReader buff = new BufferedReader(isr);
+                String line = null;
+                while((line=buff.readLine())!=null){
+                    sb.append(line+'\n');
+                }
+                ret=sb.toString();
+                fis.close();
+            }
+            // actualTranslation.setText(sb);
+        }
+        catch (IOException e) {
+            //You'll need to add proper error handling here
+            e.printStackTrace();
+        }
+
+        Log.i("manon",ret);
+        return ret;
     }
 
     private String readfromfile() {
