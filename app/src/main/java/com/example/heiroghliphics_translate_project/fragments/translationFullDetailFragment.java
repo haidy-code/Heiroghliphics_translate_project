@@ -123,6 +123,7 @@ public class translationFullDetailFragment extends Fragment {
                 ret=sb.toString();
                 fis.close();
             }
+            //dfghjklkjhgf
             // actualTranslation.setText(sb);
         }
         catch (IOException e) {
