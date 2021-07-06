@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:camera/camera.dart' as cameraPlugin;
 import 'package:flutter/services.dart';
 import 'package:flutter_module/packages/bottomBarView.dart';
+import 'package:flutter_module/screens/touristAttractionsScreens/placesScreenView.dart';
 import 'package:path_provider/path_provider.dart' as path_provider;
 
 class TranslationScreen extends StatelessWidget {
@@ -174,14 +175,13 @@ class TranslationScreenView extends StatelessWidget {
                     final directory =
                         await path_provider.getExternalStorageDirectory();
                     String _localPath = directory.path;
-                    await File(image.path).copy("$_localPath/Pictures/${image.name}");
+                    await File(image.path)
+                        .copy("$_localPath/Pictures/${image.name}");
                     File myfile = File('$_localPath/data.json');
                     await myfile.writeAsString({
-                      "symbolsList": [
-                        "A15", "E1", "C23"
-                      ],
+                      "symbolsList": ["A15", "E1", "C23"],
                       "translation": "hello panda ",
-                      "imageName":"${image.name}"
+                      "imageName": "${image.name}"
                     }.toString());
                     // TODO: save the image
                     SystemNavigator.pop();
@@ -210,31 +210,15 @@ class TranslationScreenView extends StatelessWidget {
                 functions: [
                   () {
                     // back to home screen
-                    // for now will open it in a snake bar
-                    SnackBar snackBar = SnackBar(
-                      content: Text(
-                        'Go To HomeScreen',
-                        textAlign: TextAlign.center,
-                      ),
-                      duration: Duration(seconds: 2),
-                    );
-                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => PlacesScreen()));
                   },
                   () async {
                     // capture an image
                     print("go to capture");
                   },
                   () async {
-                    // go to My Translation
-                    // for now will open it in a snake bar
-                    SnackBar snackBar = SnackBar(
-                      content: Text(
-                        'Go To My Translation',
-                        textAlign: TextAlign.center,
-                      ),
-                      duration: Duration(seconds: 2),
-                    );
-                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    SystemNavigator.pop();
                   },
                 ],
               ),
