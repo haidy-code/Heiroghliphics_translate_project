@@ -11,14 +11,13 @@ import java.io.Serializable;
 @Entity (tableName = "placesfolder")
 public class Addnewfoldermodel implements Serializable {
     @PrimaryKey(autoGenerate = true)
-    private long id;
+    private int folderid;
     @ColumnInfo(name = "foldername")
     private String foldername;
     @ColumnInfo(name = "date")
     private String date;
     @ColumnInfo(name = "image")
     private String image;
-
     private  int icons;
 
     public void setImage(String image) {
@@ -57,12 +56,12 @@ public class Addnewfoldermodel implements Serializable {
         this.icons = icons;
     }
 
-    public long getId() {
-        return id;
+    public int getFolderid() {
+        return folderid;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setFolderid(int folderid) {
+        this.folderid = folderid;
     }
 
     public String getFoldername() {
@@ -83,5 +82,6 @@ public class Addnewfoldermodel implements Serializable {
 
 
 }
+
 
 

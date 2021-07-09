@@ -1,6 +1,8 @@
 package com.example.heiroghliphics_translate_project.adapters;
 
 import android.content.Context;
+import android.net.Uri;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,14 +15,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.heiroghliphics_translate_project.R;
 import com.example.heiroghliphics_translate_project.models.AllTranslationsModel;
+import com.example.heiroghliphics_translate_project.room.Translationtablemodel;
 
 import java.util.List;
 
 public class AllTranslationsRVAdapter extends RecyclerView.Adapter<AllTranslationsRVAdapter.AllTranslationsViewHolder> {
-    private List<AllTranslationsModel> allTranslationsList;
+    private List<Translationtablemodel> allTranslationsList;
     private Context context;
 
-    public AllTranslationsRVAdapter(List<AllTranslationsModel> allTranslationsList, Context context) {
+    public AllTranslationsRVAdapter(List<Translationtablemodel> allTranslationsList, Context context) {
         this.allTranslationsList = allTranslationsList;
         this.context = context;
     }
@@ -34,15 +37,21 @@ public class AllTranslationsRVAdapter extends RecyclerView.Adapter<AllTranslatio
 
     @Override
     public void onBindViewHolder(@NonNull AllTranslationsViewHolder holder, int position) {
-        AllTranslationsModel allTranslationsModel = allTranslationsList.get(position);
-        Glide.with(context).load(allTranslationsModel.getTranslatedImage()).into(holder.allTranslationImage);
 
+for (int i=0;i<allTranslationsList.size();i++) {
+    Translationtablemodel allTranslationsModel = allTranslationsList.get(i);
+    Glide.with(context).load(Uri.parse(allTranslationsModel.getCapturedimage())).into(holder.allTranslationImage);
+
+}
 
         //Navigate from allTranslation to translationFullDetail Fragment
         holder.allTranslationImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(v).navigate(R.id.action_allTranslationsFragment_to_translationFullDetailFragment);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("translationlist", allTranslationsList.get(position));
+                Navigation.findNavController(v).navigate(R.id.action_allTranslationsFragment_to_translationFullDetailFragment,bundle);
+
 
             }
         });

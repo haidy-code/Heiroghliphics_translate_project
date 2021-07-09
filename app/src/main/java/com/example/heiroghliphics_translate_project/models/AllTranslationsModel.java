@@ -1,9 +1,11 @@
 package com.example.heiroghliphics_translate_project.models;
 
-public class AllTranslationsModel {
+import java.io.Serializable;
+
+public class AllTranslationsModel implements Serializable {
     private int TranslatedImage;
 
-    public AllTranslationsModel() {
+    public AllTranslationsModel()  {
 
     }
     public AllTranslationsModel(int translatedImage) {

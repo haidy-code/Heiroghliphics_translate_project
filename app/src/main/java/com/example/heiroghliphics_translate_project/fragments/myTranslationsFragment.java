@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Environment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,13 +21,24 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.example.heiroghliphics_translate_project.R;
 import com.example.heiroghliphics_translate_project.adapters.PlacesRVAdapter;
 import com.example.heiroghliphics_translate_project.asyncTasks.GetplacesAsyncTask;
 import com.example.heiroghliphics_translate_project.asyncTasks.deleteAsyncTask;
+import com.example.heiroghliphics_translate_project.asyncTasks.insertAsyncTask;
 import com.example.heiroghliphics_translate_project.room.Addnewfoldermodel;
 import com.example.heiroghliphics_translate_project.room.RoomFactory;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.concurrent.ExecutionException;
@@ -136,6 +149,9 @@ public class myTranslationsFragment extends Fragment {
         new deleteAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute(folder);
         placesRvAdapter.notifyDataSetChanged();
     }
+
+
+
 
 
 }

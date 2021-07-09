@@ -22,6 +22,16 @@ public interface AddFolderDAO {
 
     @Delete
     void deletePlace(Addnewfoldermodel addnewfoldermodel);
+    @Query( "SELECT * FROM translationtable WHERE whichfolder like :folderid")
+    List<Translationtablemodel> gettranslations(int folderid);
+    @Insert
+    void inserttranslation(Translationtablemodel translationtablemodel);
+
+    @Query( "SELECT * FROM symbols_table WHERE whichtranslation like :transid")
+    List<Symbolstablemodel> getsymbols(int transid);
+    @Insert
+    void insertsymbol(Symbolstablemodel symbolstablemodel);
+
 
 
 

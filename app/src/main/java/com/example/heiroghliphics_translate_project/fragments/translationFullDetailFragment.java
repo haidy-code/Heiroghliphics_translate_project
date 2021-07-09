@@ -1,6 +1,8 @@
 package com.example.heiroghliphics_translate_project.fragments;
 import org.json.*;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -16,9 +18,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.Target;
 import com.example.heiroghliphics_translate_project.R;
+import com.example.heiroghliphics_translate_project.asyncTasks.GetSymbolAsyncTask;
+import com.example.heiroghliphics_translate_project.asyncTasks.GetTansAsyncTask;
+import com.example.heiroghliphics_translate_project.asyncTasks.GetplacesAsyncTask;
+import com.example.heiroghliphics_translate_project.room.Addnewfoldermodel;
+import com.example.heiroghliphics_translate_project.room.RoomFactory;
+import com.example.heiroghliphics_translate_project.room.Symbolstablemodel;
+import com.example.heiroghliphics_translate_project.room.Translationtablemodel;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -34,10 +45,14 @@ import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 import static android.provider.Telephony.Mms.Part.FILENAME;
 
@@ -50,6 +65,7 @@ public class translationFullDetailFragment extends Fragment {
     ImageView image2;
     ImageView image3;
     ImageView takenimage;
+    private List<Symbolstablemodel> symbolstablemodels = new ArrayList<>();
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -66,107 +82,96 @@ public class translationFullDetailFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Translationtablemodel translationtablemodel= null;
+        //Fragment fragment = new allTranslationsFragment();
+
+        Bundle arguments =   getArguments();
+        if(arguments != null){
+
+            translationtablemodel = (Translationtablemodel) arguments.getSerializable("translationlist");
+            actualTranslation.setText(translationtablemodel.getTranslation());
+            Glide.with(requireContext()).load(translationtablemodel.getCapturedimage()).into(takenimage);
+            try {
+                symbolstablemodels.addAll(new GetSymbolAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute( translationtablemodel.getTrans_id()).get());
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            String[] arr=new String[symbolstablemodels.size()];
+            for (int i=0;i<symbolstablemodels.size();i++){
+                 arr[i] = symbolstablemodels.get(i).getSymbolpath().toLowerCase();
+
+            }
+            int drawableResourceId = requireContext().getResources().getIdentifier(arr[0], "drawable", requireContext().getPackageName());
+                Glide.with(requireContext()).load(drawableResourceId).into(image1);
+               int drawableResourceId1 = requireContext().getResources().getIdentifier(arr[1], "drawable", requireContext().getPackageName());
+                Glide.with(requireContext()).load(drawableResourceId1).into(image2);
+                int drawableResourceId2 = requireContext().getResources().getIdentifier(arr[2], "drawable", requireContext().getPackageName());
+               Glide.with(requireContext()).load(drawableResourceId2).into(image3);
+
+        }
+
         backToPlaceTranslation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.action_translationFullDetailFragment_to_place_translationFragment);
+                Navigation.findNavController(view).popBackStack();
             }
         });
-        String str=readfromfile();
-        try {
-            JSONObject jsonObject = new JSONObject(str);
-            actualTranslation.setText(jsonObject.get("translation").toString());
-            String imagename=jsonObject.get("imageName").toString();
-
-            Uri image=Uri.parse(readimage(imagename));
 
 
-            Glide.with(requireContext()).load(image).into(takenimage);
+//            //JSONObject jsonObject = new JSONObject(str);
+//            //return translation
+//            Addnewfoldermodel returnedfolderfromdb = null;
+//
+//            Bundle arguments = getArguments();
+//            if(arguments != null){
+//                Log.i("hh1","hhhhhhhhhhhhhhhhh");
+//                returnedfolderfromdb = (Addnewfoldermodel) arguments.getSerializable("folder_object_fromdb");
+//                actualTranslation.setText(returnedfolderfromdb.getTranslation());
+//                Log.i("hh",returnedfolderfromdb.getTranslation());
+//                String imagename=returnedfolderfromdb.getTranslatedimagename();
+//                File sdcard = Environment.getExternalStorageDirectory();
+//                File imageFile = new File(sdcard,"/Android/data/com.example.heiroghliphics_translate_project/files/Pictures/");
+//
+//                Uri file=Uri.fromFile(new File(imageFile,imagename));
+//
+//                if(file.toString() != null && file.toString().length()>0)
+//                {
+//                    Glide.with(requireContext()).load(file).into(takenimage);
+//
+//                }else
+//                {
+//                    Toast.makeText(requireContext(), "Empty URI", Toast.LENGTH_SHORT).show();
+//                }
+//
+//// end of takrn image
+//                //reurn sybol list
+////
+////                String[] arr = returnedfolderfromdb.getArrsymbol();
+////
+////                int drawableResourceId = requireContext().getResources().getIdentifier(arr[0].toLowerCase(), "drawable", requireContext().getPackageName());
+////                Glide.with(requireContext()).load(drawableResourceId).into(image1);
+////                int drawableResourceId1 = requireContext().getResources().getIdentifier(arr[1].toLowerCase(), "drawable", requireContext().getPackageName());
+////                Glide.with(requireContext()).load(drawableResourceId1).into(image2);
+////                int drawableResourceId2 = requireContext().getResources().getIdentifier(arr[2].toLowerCase(), "drawable", requireContext().getPackageName());
+////                Glide.with(requireContext()).load(drawableResourceId2).into(image3);
+////
+////
+//           }
+//            else{
+//                Toast.makeText(requireContext(), "Eror bundle", Toast.LENGTH_LONG).show();
+//            }
 
-            JSONArray arrJson = jsonObject.getJSONArray("symbolsList");
-            String[] arr = new String[arrJson.length()];
-            for(int i = 0; i < arrJson.length(); i++) {
-                arr[i] = arrJson.getString(i);
-
-            }
-            int drawableResourceId = requireContext().getResources().getIdentifier(arr[0].toLowerCase(), "drawable", requireContext().getPackageName());
-            Glide.with(requireContext()).load(drawableResourceId).into(image1);
-            int drawableResourceId1 = requireContext().getResources().getIdentifier(arr[1].toLowerCase(), "drawable", requireContext().getPackageName());
-            Glide.with(requireContext()).load(drawableResourceId1).into(image2);
-            int drawableResourceId2 = requireContext().getResources().getIdentifier(arr[2].toLowerCase(), "drawable", requireContext().getPackageName());
-            Glide.with(requireContext()).load(drawableResourceId2).into(image3);
-
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        Log.i("haidy",str);
-    }
-    private String readimage(String imagename) {
-
-        String ret="";
-        StringBuilder sb = new StringBuilder();
 
 
-        try {
-            File sdcard = Environment.getExternalStorageDirectory();
-            File imageFile = new File(sdcard,"/Android/data/com.example.heiroghliphics_translate_project/files/Pictures/"+imagename);
-//            File textFile = new File(Environment.getExternalStorageDirectory(),FILENAME);
-            FileInputStream fis = new FileInputStream(imageFile);
 
-            if(fis!=null){
-                InputStreamReader isr = new InputStreamReader(fis);
-                BufferedReader buff = new BufferedReader(isr);
-                String line = null;
-                while((line=buff.readLine())!=null){
-                    sb.append(line+'\n');
-                }
-                ret=sb.toString();
-                fis.close();
-            }
-            //dfghjklkjhgf
-            // actualTranslation.setText(sb);
-        }
-        catch (IOException e) {
-            //You'll need to add proper error handling here
-            e.printStackTrace();
-        }
 
-        Log.i("manon",ret);
-        return ret;
+
+
     }
 
-    private String readfromfile() {
 
-        String ret="";
-        StringBuilder sb = new StringBuilder();
-
-
-        try {
-            File sdcard = Environment.getExternalStorageDirectory();
-            File textFile = new File(sdcard,"/Android/data/com.example.heiroghliphics_translate_project/files/data.json");
-            Log.i("fileeeeee","file path");
-
-
-//            File textFile = new File(Environment.getExternalStorageDirectory(),FILENAME);
-            FileInputStream fis = new FileInputStream(textFile);
-            if(fis!=null){
-                InputStreamReader isr = new InputStreamReader(fis);
-                BufferedReader buff = new BufferedReader(isr);
-                String line = null;
-                while((line=buff.readLine())!=null){
-                    sb.append(line+'\n');
-                }
-                ret=sb.toString();
-                fis.close();
-            }
-           // actualTranslation.setText(sb);
-        }
-        catch (IOException e) {
-            //You'll need to add proper error handling here
-            e.printStackTrace();
-        }
-        return ret;
-    }
 
 
 }
