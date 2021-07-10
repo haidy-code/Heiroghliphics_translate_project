@@ -2,45 +2,48 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_module/packages/bottomBarView.dart';
 import 'package:flutter_module/screens/capturingScreen/captureingScreenView.dart';
+import 'package:flutter_module/screens/touristAttractionsScreens/moreDetailsScreen.dart';
 import 'package:flutter_module/screens/touristAttractionsScreens/placesScreenView.dart';
 
 class SiteViwer extends StatelessWidget {
-  final int siteId;
-  SiteViwer({@required this.siteId});
+  final Map siteData;
+  SiteViwer({@required this.siteData});
   @override
   Widget build(BuildContext context) {
     // provider for getting data
     return SiteViwerScreen(
-      siteId: siteId,
+      siteData: siteData,
     );
   }
 }
 
 class SiteViwerScreen extends StatelessWidget {
   double screenWidth, screenHeight;
-  final int siteId;
-  String name, image, tages, city, cover;
-  SiteViwerScreen({@required this.siteId});
+  final Map siteData;
+  String name, tages, city, cover, description;
+  SiteViwerScreen({@required this.siteData}) {
+    name = siteData["siteName"];
+    tages = "#${siteData["governorate"]} #${siteData["type"]}";
+    city = siteData["governorate"];
+    cover = siteData["site_cover"];
+    description = siteData["description"].substring(0, 88);
+  }
   @override
   Widget build(BuildContext context) {
     screenHeight =
         MediaQuery.of(context).size.height - MediaQuery.of(context).padding.top;
     screenWidth = MediaQuery.of(context).size.width;
-    name = places[siteId]["name"];
-    tages = places[siteId]["tages"];
-    city = places[siteId]["city"];
-    cover = places[siteId]["cover"];
     return SafeArea(
       child: Scaffold(
         body: Container(
           child: Stack(
             children: [
               // the background image
-              Image.asset(
-                cover,
-                fit: BoxFit.cover,
+              Image.network(
+                "https://hieroglyphics-recognition-api.herokuapp.com/getHistoricalSitesImage/$cover",
                 width: screenWidth,
                 height: screenHeight,
+                fit: BoxFit.cover,
               ),
               // the filter on it
               Container(
@@ -102,7 +105,7 @@ class SiteViwerScreen extends StatelessWidget {
                             height: screenHeight * 0.09,
                             width: screenWidth * 0.82,
                             child: Text(
-                              "Lorem ipsum dolor sit amet, consctetur adipiscing elit, Ornare leo non mollis id cursus....",
+                              "$description ....",
                               style: TextStyle(
                                   fontSize: screenHeight * 0.023,
                                   color: Colors.white,
@@ -153,9 +156,11 @@ class SiteViwerScreen extends StatelessWidget {
                           child: Center(
                             child: InkWell(
                               onTap: () {
-                                // TODO: go to MoreDetailsScreen
-                                // Navigator.of(context).push(MaterialPageRoute(
-                                //     builder: (context) => MoreDetailsScreen()));
+                                // go to MoreDetailsScreen
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => MoreDetailsScreen(
+                                          siteData: siteData,
+                                        )));
                               },
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.center,
