@@ -1,5 +1,6 @@
 package com.example.heiroghliphics_translate_project.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.heiroghliphics_translate_project.MainActivity;
 import com.example.heiroghliphics_translate_project.R;
 
 import io.flutter.embedding.android.FlutterActivity;
@@ -21,6 +23,8 @@ public class exploreFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent intent = new Intent(requireContext(), MainActivity.class);
+        startActivity(intent);
         cashingFlutterEngine();
 
     }

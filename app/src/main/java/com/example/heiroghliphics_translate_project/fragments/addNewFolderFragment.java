@@ -204,7 +204,7 @@ public class addNewFolderFragment extends Fragment {
                         new DatePickerDialog.OnDateSetListener(){
                             @Override
                             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                                datePickerBtn.setText(dayOfMonth + "/" + (month + 1) + "/" + year);
+                                datePickerBtn.setText(dayOfMonth + "-" + (month + 1) + "-" + year);
                             }
                         },year,month,day);
 

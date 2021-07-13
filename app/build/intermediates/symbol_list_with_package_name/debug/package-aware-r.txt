@@ -1755,6 +1755,7 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable c23
 drawable circle_blank
 drawable circle_filled
+drawable default2
 drawable demotranslation2
 drawable design_fab_background
 drawable design_ic_visibility
@@ -2351,6 +2352,7 @@ id top
 id topPanel
 id touch_outside
 id tourismapp_tv
+id trans_no_tv
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -2363,7 +2365,6 @@ id translationFullDetailFragment
 id translationPlace_tv
 id translationPlaces_rv
 id translation_title_tv
-id translationsNumber_tv
 id triangle
 id unchecked
 id uniform

@@ -38,11 +38,11 @@ public class AllTranslationsRVAdapter extends RecyclerView.Adapter<AllTranslatio
     @Override
     public void onBindViewHolder(@NonNull AllTranslationsViewHolder holder, int position) {
 
-for (int i=0;i<allTranslationsList.size();i++) {
-    Translationtablemodel allTranslationsModel = allTranslationsList.get(i);
+
+    Translationtablemodel allTranslationsModel = allTranslationsList.get(position);
     Glide.with(context).load(Uri.parse(allTranslationsModel.getCapturedimage())).into(holder.allTranslationImage);
 
-}
+
 
         //Navigate from allTranslation to translationFullDetail Fragment
         holder.allTranslationImage.setOnClickListener(new View.OnClickListener() {

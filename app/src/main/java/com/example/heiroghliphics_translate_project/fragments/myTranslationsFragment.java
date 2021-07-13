@@ -29,6 +29,7 @@ import com.example.heiroghliphics_translate_project.asyncTasks.deleteAsyncTask;
 import com.example.heiroghliphics_translate_project.asyncTasks.insertAsyncTask;
 import com.example.heiroghliphics_translate_project.room.Addnewfoldermodel;
 import com.example.heiroghliphics_translate_project.room.RoomFactory;
+import com.example.heiroghliphics_translate_project.room.Translationtablemodel;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -47,7 +48,9 @@ public class myTranslationsFragment extends Fragment {
     private RecyclerView placesRv;
     PlacesRVAdapter placesRvAdapter;
     private ArrayList<Addnewfoldermodel> foldersList = new ArrayList<>();
+    private ArrayList<Translationtablemodel> transList = new ArrayList<>();
     TextView foldername;
+    TextView transno;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +63,7 @@ public class myTranslationsFragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_my_translations, container, false);
         placesRv=view.findViewById(R.id.translationPlaces_rv);
         foldername=view.findViewById(R.id.translationPlace_tv);
+        transno=view.findViewById(R.id.trans_no_tv);
         return view;
     }
 
@@ -68,7 +72,33 @@ public class myTranslationsFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         getAllfoldersFromDB();
         setupRecycleVview();
-
+      //  transList = null;
+        //Fragment fragment = new allTranslationsFragment();
+//
+//        Bundle arguments =   getArguments();
+//        if(arguments != null){
+//
+//            transList = (ArrayList<Translationtablemodel>) arguments.getSerializable("translationslist");}
+//        for (int i=0;i<foldersList.size();i++){
+//        if(foldersList.get(i).getFoldername().equals("Add Another Folder")){
+//            transno.setText("");
+//
+//
+//
+//        }
+//        else {
+//
+//
+//            // transno.setVisibility(View.VISIBLE);
+//             transno.setText("bbbbb");
+//
+//
+//
+//
+//
+//    }
+//        }
+//        transno.setText("hhhhh");
 
         }
 
@@ -97,10 +127,15 @@ public class myTranslationsFragment extends Fragment {
 
 
                 if(foldersList.get(position).getFoldername().equals("Add Another Folder")){
+                   // transno.setVisibility(View.INVISIBLE);
+
 
                    Navigation.findNavController(view).navigate(R.id.action_myTranslationsFragment_to_addNewFolderFragment);
                 }
                 else {
+
+
+                  //  transno.setVisibility(View.VISIBLE);
 
                 setUpEditOrDeletorvieweDialog(view , position);}
 

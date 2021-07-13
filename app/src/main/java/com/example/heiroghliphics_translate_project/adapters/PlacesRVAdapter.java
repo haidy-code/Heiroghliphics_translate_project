@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.heiroghliphics_translate_project.R;
@@ -17,6 +18,7 @@ import com.example.heiroghliphics_translate_project.asyncTasks.GetTansAsyncTask;
 import com.example.heiroghliphics_translate_project.asyncTasks.insertSymbolAsyncTask;
 import com.example.heiroghliphics_translate_project.asyncTasks.insertTransAsyncTask;
 import com.example.heiroghliphics_translate_project.fragments.allTranslationsFragment;
+import com.example.heiroghliphics_translate_project.fragments.myTranslationsFragment;
 import com.example.heiroghliphics_translate_project.room.Addnewfoldermodel;
 import com.example.heiroghliphics_translate_project.room.RoomFactory;
 import com.example.heiroghliphics_translate_project.room.Symbolstablemodel;
@@ -48,6 +50,8 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
     private Symbolstablemodel symbolstablemodel;
     private Context context;
     private OnPlaceClickListener onPlaceClickListener;
+    private TextView numberTranslations;
+    private ArrayList<Translationtablemodel> transList = new ArrayList<>();
 
     public interface OnPlaceClickListener {
         void onPlaceClick(View view, int position);
@@ -57,6 +61,7 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
         this.foldersList = placesList;
         this.context = context;
         this.onPlaceClickListener = onPlaceClickListener;
+
     }
 
     @NonNull
@@ -70,6 +75,21 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
     public void onBindViewHolder(@NonNull final Placesviewholder holder, int position) {
         Addnewfoldermodel placesModel= foldersList.get(position);
         holder.translationNametv.setText(placesModel.getFoldername());
+        // make number of translation invisible
+
+
+
+        if (placesModel.getFoldername()=="Add Another Folder"){
+            holder.numberTranslations.setVisibility(View.INVISIBLE);
+        }
+        else {
+       //  holder.numberTranslations.setVisibility(View.INVISIBLE);
+
+
+               holder.numberTranslations.setText(placesModel.getDate());
+
+        }
+
        // Log.d("Omar",placesModel.getImage());
 
         if(placesModel.getImage() != null){
@@ -81,7 +101,7 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
                 if (placesModel.getFoldername().equals("Add Another Folder")){
                     Glide.with(context).load(R.drawable.add).into(holder.folderTranslationImageiv);
                 }
-                Glide.with(context).load(R.drawable.ic_place_holder).into(holder.folderTranslationImageiv);
+                Glide.with(context).load(R.drawable.default2).into(holder.folderTranslationImageiv);
 
             } else {
                 if (placesModel.getFoldername().equals("Add Another Folder")){
@@ -95,7 +115,7 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
         else if (placesModel.getImage()==null&&placesModel.getIcons()==0){
             if (placesModel.getFoldername().equals("Add Another Folder")){
                 Glide.with(context).load(R.drawable.add).into(holder.folderTranslationImageiv);}
-            Glide.with(context).load(R.drawable.ic_place_holder).into(holder.folderTranslationImageiv);
+            Glide.with(context).load(R.drawable.default2).into(holder.folderTranslationImageiv);
         }
 
 
@@ -231,11 +251,13 @@ onPlaceClickListener.onPlaceClick(view,holder.getAdapterPosition());
         TextView translationNametv;
         ImageView folderTranslationImageiv;
         ImageView arrow_iv;
+        TextView  numberTranslations;
         public Placesviewholder(@NonNull View itemView) {
             super(itemView);
             translationNametv=itemView.findViewById(R.id.translationPlace_tv);
             folderTranslationImageiv=itemView.findViewById(R.id.folderTranslationImage_iv);
             arrow_iv=itemView.findViewById(R.id.arrow_iv);
+            numberTranslations=itemView.findViewById(R.id.trans_no_tv);
 
         }
     }

@@ -1,6 +1,8 @@
 package com.example.heiroghliphics_translate_project.fragments;
 import org.json.*;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -22,6 +24,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.Target;
+import com.example.heiroghliphics_translate_project.MainActivity;
 import com.example.heiroghliphics_translate_project.R;
 import com.example.heiroghliphics_translate_project.asyncTasks.GetSymbolAsyncTask;
 import com.example.heiroghliphics_translate_project.asyncTasks.GetTansAsyncTask;
@@ -54,6 +57,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
+import static android.app.Activity.RESULT_OK;
 import static android.provider.Telephony.Mms.Part.FILENAME;
 
 
@@ -66,6 +70,7 @@ public class translationFullDetailFragment extends Fragment {
     ImageView image3;
     ImageView takenimage;
     private List<Symbolstablemodel> symbolstablemodels = new ArrayList<>();
+    Translationtablemodel translationtablemodel;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -82,7 +87,7 @@ public class translationFullDetailFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Translationtablemodel translationtablemodel= null;
+       translationtablemodel= null;
         //Fragment fragment = new allTranslationsFragment();
 
         Bundle arguments =   getArguments();
@@ -113,8 +118,18 @@ public class translationFullDetailFragment extends Fragment {
         }
 
         backToPlaceTranslation.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("RestrictedApi")
             @Override
             public void onClick(View v) {
+//                Intent intent = new Intent(requireContext(), translationFullDetailFragment.class);
+//
+//                Intent intent1 = intent.putExtra("folder_id", translationtablemodel.getWhichfolder());
+//                //   intent.putExtra("addressLine", list.get(position).getAddressLine1());
+//                getTargetFragment().onActivityResult(getTargetRequestCode(), RESULT_OK, intent1);
+//                getFragmentManager().popBackStack();
+
+
+
                 Navigation.findNavController(view).popBackStack();
             }
         });

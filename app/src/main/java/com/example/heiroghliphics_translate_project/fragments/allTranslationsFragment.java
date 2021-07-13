@@ -1,5 +1,6 @@
 package com.example.heiroghliphics_translate_project.fragments;
 
+import android.app.FragmentTransaction;
 import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Bundle;
@@ -19,6 +20,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -31,6 +33,7 @@ import com.example.heiroghliphics_translate_project.room.RoomFactory;
 import com.example.heiroghliphics_translate_project.room.Translationtablemodel;
 
 import java.io.File;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
@@ -40,12 +43,15 @@ public class allTranslationsFragment extends Fragment {
     RecyclerView allTranslationsRv;
     ImageButton backToPlaceBtn;
     private AllTranslationsRVAdapter adapter;
+    Translationtablemodel translationtablemodel;
 
 
     private List<Translationtablemodel> TranslationsList = new ArrayList<>();
     ImageView imageView;
+    TextView folderName;
+    TextView folderDate;
 
-    
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -54,6 +60,8 @@ public class allTranslationsFragment extends Fragment {
         allTranslationsRv=view.findViewById(R.id.all_translation_rv);
         backToPlaceBtn=view.findViewById(R.id.back_to_place_btn);
         imageView=view.findViewById(R.id.all_translation_photo_iv);
+        folderName=view.findViewById(R.id.back_to_place_translation_tv);
+        folderDate=view.findViewById(R.id.date_tv);
         return view;
     }
 
@@ -61,6 +69,7 @@ public class allTranslationsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         setUpRecyclerView();
+
 
 
        Addnewfoldermodel returnedfolder = null;
@@ -71,11 +80,16 @@ public class allTranslationsFragment extends Fragment {
 
             returnedfolder = (Addnewfoldermodel) arguments.getSerializable("folder_object_to alltransfrag");
             arguments.clear();
+            folderName.setText(returnedfolder.getFoldername());
+            folderDate.setText(returnedfolder.getDate());
+        //    arguments.clear();
+
 //            Toast.makeText(requireContext(), (""+returnedfolder.getFolderid()), Toast.LENGTH_SHORT).show();
 
             //return translation
             try {
                 TranslationsList.addAll(new GetTansAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute( returnedfolder.getFolderid()).get());
+//                arguments.clear();
             } catch (ExecutionException e) {
                 e.printStackTrace();
             } catch (InterruptedException e) {
@@ -91,10 +105,11 @@ public class allTranslationsFragment extends Fragment {
 
                 if(file.toString() != null && file.toString().length()>0)
                 {
-                    // Glide.with(requireContext()).load(file).into(takenimage);
+                    // Glide.with(requireContext()).load(file).into(takenimage)
+                    translationtablemodel=TranslationsList.get(i);
+                    translationtablemodel.setCapturedimage(file.toString());
 
-                        Translationtablemodel translationtablemodel=TranslationsList.get(i);
-                        translationtablemodel.setCapturedimage(file.toString());
+
                   //  Glide.with(requireContext()).load(file).into(imageView);
 
 
@@ -108,6 +123,7 @@ public class allTranslationsFragment extends Fragment {
                 {
                     Toast.makeText(requireContext(), "Empty URI", Toast.LENGTH_SHORT).show();
                 }
+
             }
 
 
@@ -128,9 +144,16 @@ public class allTranslationsFragment extends Fragment {
 //
 //
         }
-        else{
-            Toast.makeText(requireContext(), "Eror bundle", Toast.LENGTH_LONG).show();
-        }
+//        else{   FragmentTransaction ft = getActivity().getFragmentManager().beginTransaction();
+//            translationFullDetailFragment frgamentB = new translationFullDetailFragment();
+//            frgamentB.setTargetFragment(allTranslationsFragment.this,1);
+//            ft.addToBackStack(allTranslationsFragment.class.getClass().getName());
+//            ft.add(R.id.content, a, "folder_id");
+//            ft.commit();
+//            returnedfolder = (Addnewfoldermodel) arguments.getSerializable("folder_object_to alltransfrag");
+//            folderName.setText(returnedfolder.getFoldername());
+//            folderDate.setText(returnedfolder.getDate());
+//        }
 
 
     }
@@ -151,6 +174,8 @@ public class allTranslationsFragment extends Fragment {
         backToPlaceBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 Navigation.findNavController(v).navigate(R.id.action_allTranslationsFragment_to_myTranslationsFragment);
             }
         });
