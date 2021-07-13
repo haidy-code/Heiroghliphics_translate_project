@@ -83,7 +83,7 @@ public  class PlacesRVAdapter extends RecyclerView.Adapter<PlacesRVAdapter.Place
             holder.numberTranslations.setVisibility(View.INVISIBLE);
         }
         else {
-       //  holder.numberTranslations.setVisibility(View.INVISIBLE);
+
 
 
                holder.numberTranslations.setText(placesModel.getDate());
