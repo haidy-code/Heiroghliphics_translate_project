@@ -68,6 +68,14 @@ public class translationFullDetailFragment extends Fragment {
     ImageView image1;
     ImageView image2;
     ImageView image3;
+    ImageView image4;
+    ImageView image5;
+    ImageView image6;
+    ImageView image7;
+    ImageView image8;
+    ImageView image9;
+    ImageView image10;
+    ImageView image11;
     ImageView takenimage;
     private List<Symbolstablemodel> symbolstablemodels = new ArrayList<>();
     Translationtablemodel translationtablemodel;
@@ -80,6 +88,14 @@ public class translationFullDetailFragment extends Fragment {
         image1=view.findViewById(R.id.analyzed_photo_1_tv);
         image2=view.findViewById(R.id.analyzed_photo_2_tv);
         image3=view.findViewById(R.id.analyzed_photo_3_tv);
+        image4=view.findViewById(R.id.analyzed_photo_5_tv);
+        image5=view.findViewById(R.id.analyzed_photo_6_tv);
+        image6=view.findViewById(R.id.analyzed_photo_7_tv);
+        image7=view.findViewById(R.id.analyzed_photo_8_tv);
+        image8=view.findViewById(R.id.analyzed_photo_9_tv);
+        image9=view.findViewById(R.id.analyzed_photo_10_tv);
+        image10=view.findViewById(R.id.analyzed_photo_11_tv);
+        image11=view.findViewById(R.id.analyzed_photo_12_tv);
         takenimage=view.findViewById(R.id.translatedImage_iv);
         return view;
     }
@@ -94,7 +110,9 @@ public class translationFullDetailFragment extends Fragment {
         if(arguments != null){
 
             translationtablemodel = (Translationtablemodel) arguments.getSerializable("translationlist");
-            actualTranslation.setText(translationtablemodel.getTranslation());
+            String x=translationtablemodel.getTranslation();
+            x=x.replaceAll("ط","  ");
+            actualTranslation.setText(x);
             Glide.with(requireContext()).load(translationtablemodel.getCapturedimage()).into(takenimage);
             try {
                 symbolstablemodels.addAll(new GetSymbolAsyncTask(RoomFactory.getDatabase(requireContext()).getAddFolder()).execute( translationtablemodel.getTrans_id()).get());
@@ -114,6 +132,23 @@ public class translationFullDetailFragment extends Fragment {
                 Glide.with(requireContext()).load(drawableResourceId1).into(image2);
                 int drawableResourceId2 = requireContext().getResources().getIdentifier(arr[2], "drawable", requireContext().getPackageName());
                Glide.with(requireContext()).load(drawableResourceId2).into(image3);
+            int drawableResourceId3 = requireContext().getResources().getIdentifier(arr[3], "drawable", requireContext().getPackageName());
+            Glide.with(requireContext()).load(drawableResourceId3).into(image4);
+            int drawableResourceId4 = requireContext().getResources().getIdentifier(arr[4], "drawable", requireContext().getPackageName());
+            Glide.with(requireContext()).load(drawableResourceId4).into(image5);
+            int drawableResourceId5 = requireContext().getResources().getIdentifier(arr[5], "drawable", requireContext().getPackageName());
+            Glide.with(requireContext()).load(drawableResourceId5).into(image6);
+            int drawableResourceId6 = requireContext().getResources().getIdentifier(arr[6], "drawable", requireContext().getPackageName());
+            Glide.with(requireContext()).load(drawableResourceId6).into(image7);
+            int drawableResourceId7 = requireContext().getResources().getIdentifier(arr[7], "drawable", requireContext().getPackageName());
+            Glide.with(requireContext()).load(drawableResourceId7).into(image8);
+            int drawableResourceId8 = requireContext().getResources().getIdentifier(arr[8], "drawable", requireContext().getPackageName());
+            Glide.with(requireContext()).load(drawableResourceId8).into(image9);
+            int drawableResourceId9 = requireContext().getResources().getIdentifier(arr[9], "drawable", requireContext().getPackageName());
+            Glide.with(requireContext()).load(drawableResourceId9).into(image10);
+            int drawableResourceId10 = requireContext().getResources().getIdentifier(arr[10], "drawable", requireContext().getPackageName());
+            Glide.with(requireContext()).load(drawableResourceId10).into(image11);
+
 
         }
 

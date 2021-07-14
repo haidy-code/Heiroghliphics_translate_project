@@ -120,6 +120,7 @@
                 android:textColor="@color/darkGray"
                 android:textSize="15sp"
                 />
+
             <ImageView
                 android:id="@+id/analyzed_photo_1_tv"
                 android:layout_width="70dp"
@@ -127,6 +128,7 @@
                 app:layout_constraintStart_toStartOf="@+id/heiroglyphic_tv"
                 app:layout_constraintTop_toBottomOf="@+id/analyzed_tv"
                 android:layout_marginTop="20dp"
+                android:layout_marginLeft="95dp"
                 android:src="@drawable/demotranslation2"
                 />
             <ImageView
@@ -147,6 +149,95 @@
                 android:layout_marginLeft="20dp"
                 android:src="@drawable/demotranslation2"
                 />
+
+            <ImageView
+                android:id="@+id/analyzed_photo_5_tv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:layout_constraintLeft_toLeftOf="@+id/analyzed_photo_1_tv"
+                app:layout_constraintRight_toRightOf="@+id/analyzed_photo_1_tv"
+                app:layout_constraintTop_toBottomOf="@+id/analyzed_photo_1_tv"
+                android:layout_marginTop="10dp"
+
+                android:src="@drawable/demotranslation2"
+                />
+            <ImageView
+                android:id="@+id/analyzed_photo_6_tv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:layout_constraintLeft_toLeftOf="@+id/analyzed_photo_2_tv"
+                app:layout_constraintRight_toRightOf="@+id/analyzed_photo_2_tv"
+                app:layout_constraintTop_toBottomOf="@+id/analyzed_photo_2_tv"
+
+                android:layout_marginTop="10dp"
+                android:src="@drawable/demotranslation2"
+                />
+            <ImageView
+                android:id="@+id/analyzed_photo_7_tv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:layout_constraintLeft_toLeftOf="@+id/analyzed_photo_3_tv"
+                app:layout_constraintRight_toRightOf="@+id/analyzed_photo_3_tv"
+                app:layout_constraintTop_toBottomOf="@+id/analyzed_photo_3_tv"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/demotranslation2"
+                />
+            <ImageView
+                android:id="@+id/analyzed_photo_8_tv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:layout_constraintLeft_toLeftOf="@+id/analyzed_photo_5_tv"
+                app:layout_constraintRight_toRightOf="@+id/analyzed_photo_5_tv"
+                app:layout_constraintTop_toBottomOf="@+id/analyzed_photo_5_tv"
+                android:layout_marginTop="10dp"
+
+                android:src="@drawable/demotranslation2"
+                />
+            <ImageView
+                android:id="@+id/analyzed_photo_9_tv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:layout_constraintLeft_toLeftOf="@+id/analyzed_photo_6_tv"
+                app:layout_constraintRight_toRightOf="@+id/analyzed_photo_6_tv"
+                app:layout_constraintTop_toBottomOf="@+id/analyzed_photo_6_tv"
+
+                android:layout_marginTop="10dp"
+                android:src="@drawable/demotranslation2"
+                />
+            <ImageView
+                android:id="@+id/analyzed_photo_10_tv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:layout_constraintLeft_toLeftOf="@+id/analyzed_photo_7_tv"
+                app:layout_constraintRight_toRightOf="@+id/analyzed_photo_7_tv"
+                app:layout_constraintTop_toBottomOf="@+id/analyzed_photo_7_tv"
+
+                android:layout_marginTop="10dp"
+                android:src="@drawable/demotranslation2"
+                />
+            <ImageView
+                android:id="@+id/analyzed_photo_11_tv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:layout_constraintLeft_toLeftOf="@+id/analyzed_photo_8_tv"
+                app:layout_constraintRight_toRightOf="@+id/analyzed_photo_8_tv"
+                app:layout_constraintTop_toBottomOf="@+id/analyzed_photo_8_tv"
+
+                android:layout_marginTop="10dp"
+                android:src="@drawable/demotranslation2"
+                />
+            <ImageView
+                android:id="@+id/analyzed_photo_12_tv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:layout_constraintLeft_toLeftOf="@+id/analyzed_photo_9_tv"
+                app:layout_constraintRight_toRightOf="@+id/analyzed_photo_9_tv"
+                app:layout_constraintTop_toBottomOf="@+id/analyzed_photo_9_tv"
+
+                android:layout_marginTop="10dp"
+                android:src="@drawable/demotranslation2"
+                />
+
 <!--            *********************** start os yellow rounded rectangle*******************-->
             <View
                 android:id="@+id/yellow_roundedrectangle_v"
@@ -162,6 +253,7 @@
                 />
 <!--            *********************** end os yellow rounded rectangle*******************-->
             <ImageView
+                android:id="@+id/heirogliphic_yellow"
                 android:layout_width="100dp"
                 android:layout_height="250dp"
                 android:src="@drawable/ic__col_heiroglyphic"

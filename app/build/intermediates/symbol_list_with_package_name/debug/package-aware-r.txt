@@ -1755,6 +1755,11 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable c23
 drawable circle_blank
 drawable circle_filled
+drawable d2
+drawable d21
+drawable d28
+drawable d36
+drawable d54
 drawable default2
 drawable demotranslation2
 drawable design_fab_background
@@ -1763,6 +1768,8 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable e1
+drawable e9
+drawable g43
 drawable horizontal_layout
 drawable ic__
 drawable ic__34
@@ -1793,6 +1800,7 @@ drawable ic_shaped_subtraction
 drawable ic_two
 drawable layout_bg
 drawable leftarrow
+drawable m17
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1813,6 +1821,7 @@ drawable mtrl_navigation_bar_item_background
 drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
+drawable n31
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -1826,10 +1835,13 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable o49
+drawable s29
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable tworounded_corner
+drawable z1
 font mulish_black
 font mulish_bold
 font mulish_bolditalic
@@ -1942,9 +1954,17 @@ id allTranslationsFragment
 id all_translation_photo_iv
 id all_translation_rv
 id always
+id analyzed_photo_10_tv
+id analyzed_photo_11_tv
+id analyzed_photo_12_tv
 id analyzed_photo_1_tv
 id analyzed_photo_2_tv
 id analyzed_photo_3_tv
+id analyzed_photo_5_tv
+id analyzed_photo_6_tv
+id analyzed_photo_7_tv
+id analyzed_photo_8_tv
+id analyzed_photo_9_tv
 id analyzed_tv
 id animateToEnd
 id animateToStart
@@ -2092,6 +2112,7 @@ id guideline
 id hardware
 id header_title
 id heiro_tv
+id heirogliphic_yellow
 id heiroglyphic_tv
 id hideable
 id home

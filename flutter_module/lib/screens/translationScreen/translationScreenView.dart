@@ -180,8 +180,8 @@ class TranslationScreenView extends StatelessWidget {
                         .copy("$_localPath/Pictures/${image.name}");
                     File myfile = File('$_localPath/data.json');
                     await myfile.writeAsString({
-                      "symbolsList": ["A15", "E1", "C23"],
-                      "translation": "hellopanda ",
+                      "symbolsList": ["O49", "O49", "D36", "D21", "N31", "D28", "Z1", "D21", "G43", "M17", "D54"],
+                      "translation": "helloطpanda ",
                       "imageName": "${image.name}"
                     }.toString());
                     SystemNavigator.pop();
