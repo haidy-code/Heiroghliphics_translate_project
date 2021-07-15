@@ -3,36 +3,10 @@ import 'package:flutter/services.dart';
 import 'package:flutter_module/core/models/placesScreen/placesScreenModel.dart';
 import 'package:flutter_module/packages/bottomBarView.dart';
 import 'package:flutter_module/screens/capturingScreen/captureingScreenView.dart';
+import 'package:flutter_module/screens/touristAttractionsScreens/filterWidgets/filterScreen.dart';
 import 'package:flutter_module/screens/touristAttractionsScreens/placesScreenLogic.dart';
 import 'package:flutter_module/screens/touristAttractionsScreens/siteViewerScreen.dart';
 import 'package:provider/provider.dart';
-
-final List<Map<String, dynamic>> places = [
-  {
-    "name": "Pyramids Of Giza",
-    "image": "assets/images/touristAttractionsScreens/image1.png",
-    "cover": "assets/images/touristAttractionsScreens/image4.png",
-    "tages": "# Giza  # Culture  #Historical",
-    "city": "Giza",
-    "siteId": 0
-  },
-  {
-    "name": "Abu Simple Temple",
-    "image": "assets/images/touristAttractionsScreens/image2.png",
-    "cover": "assets/images/touristAttractionsScreens/image5.jpg",
-    "tages": "# Aswan  # Culture  #Historical",
-    "city": "Aswan",
-    "siteId": 1
-  },
-  {
-    "name": "Philae Temple",
-    "image": "assets/images/touristAttractionsScreens/image3.png",
-    "cover": "assets/images/touristAttractionsScreens/image6.jpeg",
-    "tages": "# Aswan  # Culture  #Historical",
-    "city": "Aswan",
-    "siteId": 2
-  }
-];
 
 class PlacesScreen extends StatelessWidget {
   @override
@@ -54,169 +28,165 @@ class PlacesScreenView extends StatelessWidget {
     screenHeight =
         MediaQuery.of(context).size.height - MediaQuery.of(context).padding.top;
     return Scaffold(
-      body: Container(child: Consumer<PlacesScreenModel>(
-          builder: (context, PlacesScreenModel psm, child) {
-        if (psm.isTheDataLoadedOk &&
-            psm.listOfData != null &&
-            !(psm.listOfData.isEmpty))
-          return Stack(
-            children: [
-              // the appbar
-              Positioned(
-                  top: MediaQuery.of(context).padding.top,
-                  width: screenWidth,
-                  child: Center(
-                    child: Container(
-                      width: screenWidth * 0.85,
-                      height: screenHeight * 0.17,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          // the title
-                          Padding(
-                            padding: const EdgeInsets.all(1),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                // the title
-                                Text(
-                                  "Explore",
-                                  style: TextStyle(
-                                      fontSize: screenHeight * 0.04,
-                                      color: Colors.grey.shade600,
-                                      fontWeight: FontWeight.w400),
-                                ),
-                                // the sortIcon
-                                Image.asset(
-                                  "assets/icons/touristAttractionsScreens/filter.png",
-                                  width: screenHeight * 0.08,
-                                  height: screenHeight * 0.08,
-                                  color: Colors.yellow,
-                                )
-                              ],
+      body: Container(
+          child: Stack(
+        children: [
+          // the appbar
+          Positioned(
+              top: MediaQuery.of(context).padding.top,
+              width: screenWidth,
+              child: Center(
+                child: Container(
+                  width: screenWidth * 0.85,
+                  height: screenHeight * 0.17,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      // the title
+                      Padding(
+                        padding: const EdgeInsets.all(1),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            // the title
+                            Text(
+                              "Explore",
+                              style: TextStyle(
+                                  fontSize: screenHeight * 0.04,
+                                  color: Colors.grey.shade600,
+                                  fontWeight: FontWeight.w400),
                             ),
-                          ),
-
-                          // the search bar
-                          Container(
-                            height: screenHeight * 0.07,
-                            width: screenWidth * 0.85,
-                            decoration: BoxDecoration(
-                                color: Color(0x88dadada),
-                                borderRadius: BorderRadius.all(
-                                    Radius.circular(screenHeight * 0.07))),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                // search icon
-                                IconButton(
-                                    icon: Icon(
-                                      Icons.search,
-                                      color: Color(0xff4a4a4a),
-                                    ),
-                                    onPressed: () {
-                                      print("i am going tp search");
-                                    }),
-                                // edit text field
-                                Container(
-                                  width: screenWidth * 0.55,
-                                  child: TextField(
-                                    onChanged: (input) {},
-                                    keyboardType: TextInputType.text,
-                                    style: TextStyle(),
-                                    decoration: InputDecoration(
-                                      border: InputBorder.none,
-                                      hintText: "Try \"Luxor\"",
-                                      hintStyle: TextStyle(
-                                        color: Color(0xffc2c2c2),
-                                        fontFamily: "Cairo",
-                                      ),
-                                    ),
-                                    cursorColor: Color(0xff4a4a4a),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                  )),
-              // the screenbody
-              Positioned(
-                  top: screenHeight * 0.22,
-                  width: screenWidth,
-                  height: screenHeight * 0.63,
-                  child: Center(
-                    child: Container(
-                      width: screenWidth * 0.9,
-                      height: screenHeight * 0.63,
-                      padding: EdgeInsets.only(top: 10),
-                      child: Theme(
-                        data: ThemeData(accentColor: Colors.white),
-                        child: SingleChildScrollView(
-                          child: Column(
-                            children: [
-                              ...List.generate(
-                                  psm.listOfData.length,
-                                  (index) => TouristAttractionOuter(
-                                        siteData: psm.listOfData[index],
-                                      ))
-                            ],
-                          ),
+                            // the sortIcon
+                            InkWell(
+                              onTap: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => FilterScreen()));
+                              },
+                              child: Image.asset(
+                                "assets/icons/touristAttractionsScreens/filter.png",
+                                width: screenHeight * 0.08,
+                                height: screenHeight * 0.08,
+                                color: Colors.yellow,
+                              ),
+                            )
+                          ],
                         ),
                       ),
-                    ),
-                  )),
-              // the bottom navigationbar
-              Positioned(
-                bottom: 0,
-                child: BottomNavigationBarPainted(
-                  icons: [
-                    "assets/icons/bottomNavigationBar/home.png",
-                    "assets/icons/bottomNavigationBar/photo-camera.png",
-                    "assets/icons/bottomNavigationBar/add-bookmark.png"
-                  ],
-                  texts: ["Explore", "My Translation"],
-                  iconsColors: [
-                    Color(0xffffd600),
-                    Colors.white,
-                    Color(0xffb6b7b7)
-                  ],
-                  functions: [
-                    () {
-                      // home screen
-                      print("i am already here");
-                    },
-                    () async {
-                      // capture an image
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => CaptureingScreen()));
-                    },
-                    () async {
-                      // go to My Translation
-                      SystemNavigator.pop();
-                    },
-                  ],
-                ),
-              )
-            ],
-          );
-        else {
-          placesScreenLogic = PlacesScreenLogic(psm: psm);
-          placesScreenLogic.getNeededData();
-          return Container(
-            child: Center(
-              child: Theme(
-                  data: ThemeData(
-                    accentColor: Colors.yellow[700],
+
+                      // the search bar
+                      Container(
+                        height: screenHeight * 0.07,
+                        width: screenWidth * 0.85,
+                        decoration: BoxDecoration(
+                            color: Color(0x88dadada),
+                            borderRadius: BorderRadius.all(
+                                Radius.circular(screenHeight * 0.07))),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            // search icon
+                            IconButton(
+                                icon: Icon(
+                                  Icons.search,
+                                  color: Color(0xff4a4a4a),
+                                ),
+                                onPressed: () {
+                                  print("i am going tp search");
+                                }),
+                            // edit text field
+                            Container(
+                              width: screenWidth * 0.55,
+                              child: TextField(
+                                onChanged: (input) {},
+                                keyboardType: TextInputType.text,
+                                style: TextStyle(),
+                                decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                  hintText: "Try \"Luxor\"",
+                                  hintStyle: TextStyle(
+                                    color: Color(0xffc2c2c2),
+                                    fontFamily: "Cairo",
+                                  ),
+                                ),
+                                cursorColor: Color(0xff4a4a4a),
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
                   ),
-                  child: CircularProgressIndicator()),
+                ),
+              )),
+          // the screenbody
+          Positioned(
+              top: screenHeight * 0.22,
+              width: screenWidth,
+              height: screenHeight * 0.63,
+              child: Center(
+                child: Container(
+                    width: screenWidth * 0.9,
+                    height: screenHeight * 0.63,
+                    padding: EdgeInsets.only(top: 10),
+                    child: Consumer<PlacesScreenModel>(
+                        builder: (context, PlacesScreenModel psm, child) {
+                      if (psm.isTheDataLoadedOk &&
+                          psm.listOfData != null &&
+                          !(psm.listOfData.isEmpty))
+                        return Theme(
+                          data: ThemeData(accentColor: Colors.white),
+                          child: ListView.builder(
+                              itemCount: psm.listOfData.length,
+                              itemBuilder: (context, index) =>
+                                  TouristAttractionOuter(
+                                      siteData: psm.listOfData[index])),
+                        );
+                      else {
+                        placesScreenLogic = PlacesScreenLogic(psm: psm);
+                        placesScreenLogic.getNeededData();
+                        return Container(
+                          child: Center(
+                            child: Theme(
+                                data: ThemeData(
+                                  accentColor: Colors.yellow[700],
+                                ),
+                                child: CircularProgressIndicator()),
+                          ),
+                        );
+                      }
+                    })),
+              )),
+          // the bottom navigationbar
+          Positioned(
+            bottom: 0,
+            child: BottomNavigationBarPainted(
+              icons: [
+                "assets/icons/bottomNavigationBar/home.png",
+                "assets/icons/bottomNavigationBar/photo-camera.png",
+                "assets/icons/bottomNavigationBar/add-bookmark.png"
+              ],
+              texts: ["Explore", "My Translation"],
+              iconsColors: [Color(0xffffd600), Colors.white, Color(0xffb6b7b7)],
+              functions: [
+                () {
+                  // home screen
+                  print("i am already here");
+                },
+                () async {
+                  // capture an image
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => CaptureingScreen()));
+                },
+                () async {
+                  // go to My Translation
+                  SystemNavigator.pop();
+                },
+              ],
             ),
-          );
-        }
-      })),
+          )
+        ],
+      )),
     );
   }
 }
@@ -231,7 +201,7 @@ class TouristAttractionOuter extends StatelessWidget {
   }) {
     image = siteData["site_image"];
     name = siteData["siteName"];
-    tages ="#${siteData["governorate"]} #${siteData["type"]}";
+    tages = "#${siteData["governorate"]} #${siteData["type"]}";
     city = siteData["governorate"];
     siteId = siteData["site_id"];
   }

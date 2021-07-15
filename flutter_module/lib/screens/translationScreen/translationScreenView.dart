@@ -20,6 +20,21 @@ class TranslationScreen extends StatelessWidget {
 class TranslationScreenView extends StatelessWidget {
   double screenWidth, screenHeight, screenTopPadding;
   cameraPlugin.XFile image;
+  List<String> iconsList = [
+    "O49",
+    "O49",
+    "D36",
+    "D21",
+    "N31",
+    "D28",
+    "Z1",
+    "D21",
+    "G43",
+    "M17",
+    "D54"
+  ];
+  String tranlation =
+      "the great god, touch the earth with the forehead in obeisance,be forgetful, neglectful,unite.";
   TranslationScreenView({this.image});
   @override
   Widget build(BuildContext context) {
@@ -38,7 +53,7 @@ class TranslationScreenView extends StatelessWidget {
                 width: screenWidth,
                 child: Container(
                     color: Colors.white,
-                    child: Image.asset("assets/images/tempImage.png",
+                    child: Image.asset("assets/images/shosho.jpeg",
                         fit: BoxFit.fill)
                     // Image.file(File(image.path), fit: BoxFit.fill)
                     )),
@@ -72,7 +87,7 @@ class TranslationScreenView extends StatelessWidget {
                       child: SingleChildScrollView(
                         child: Container(
                           width: screenWidth,
-                          height: screenHeight * 0.8,
+                          height: screenHeight * 0.85,
                           child: Stack(
                             children: [
                               //Title
@@ -105,7 +120,7 @@ class TranslationScreenView extends StatelessWidget {
                                   child: Container(
                                     width: screenWidth - screenHeight * 0.08,
                                     child: Text(
-                                      "This is a temp translation till a proper image passed to the model",
+                                      tranlation,
                                       style: TextStyle(
                                           fontSize: screenHeight * 0.022,
                                           fontWeight: FontWeight.w300),
@@ -127,22 +142,25 @@ class TranslationScreenView extends StatelessWidget {
                                   top: screenHeight * 0.3,
                                   left: screenHeight * 0.04,
                                   child: Container(
-                                      child: Row(
-                                    children: [
-                                      Container(
-                                          padding: EdgeInsets.only(right: 16),
-                                          child: Image.asset(
-                                            "assets/icons/icon1.png",
-                                          )),
-                                      Container(
-                                          child: Image.asset(
-                                        "assets/icons/icon2.png",
-                                      )),
-                                    ],
-                                  ))),
+                                      width: screenWidth * 0.9,
+                                      child: Wrap(
+                                        children: [
+                                          ...List.generate(
+                                            iconsList.length,
+                                            (index) => Container(
+                                                width: 50,
+                                                height: 50,
+                                                padding:
+                                                    EdgeInsets.only(right: 16),
+                                                child: Image.asset(
+                                                  "assets/icons/${iconsList[index]}.jpeg",
+                                                )),
+                                          )
+                                        ],
+                                      ))),
                               // extra draw
                               Positioned(
-                                  top: screenHeight * 0.4,
+                                  top: screenHeight * 0.45,
                                   child: Container(
                                     padding: EdgeInsets.only(
                                         top: 20, bottom: 20, right: 10),
@@ -180,8 +198,9 @@ class TranslationScreenView extends StatelessWidget {
                         .copy("$_localPath/Pictures/${image.name}");
                     File myfile = File('$_localPath/data.json');
                     await myfile.writeAsString({
-                      "symbolsList": ["O49", "O49", "D36", "D21", "N31", "D28", "Z1", "D21", "G43", "M17", "D54"],
-                      "translation": "theطgreatطgodظطtouchطtheطearthطwithطtheطforeheadطinطobeisanceظbeطforgetfulظطneglectfulظunite.",
+                      "symbolsList": iconsList,
+                      "translation":
+                          "theطgreatطgodظطtouchطtheطearthطwithطtheطforeheadطinطobeisanceظbeطforgetfulظطneglectfulظunite.",
                       "imageName": "${image.name}"
                     }.toString());
                     SystemNavigator.pop();
