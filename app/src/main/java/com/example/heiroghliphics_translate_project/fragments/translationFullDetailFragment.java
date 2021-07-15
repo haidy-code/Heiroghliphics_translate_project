@@ -112,6 +112,7 @@ public class translationFullDetailFragment extends Fragment {
             translationtablemodel = (Translationtablemodel) arguments.getSerializable("translationlist");
             String x=translationtablemodel.getTranslation();
             x=x.replaceAll("ط","  ");
+            x=x.replaceAll("ظ",",");
             actualTranslation.setText(x);
             Glide.with(requireContext()).load(translationtablemodel.getCapturedimage()).into(takenimage);
             try {
